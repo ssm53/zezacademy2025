@@ -1,0 +1,90 @@
+import React from "react";
+import Image from "next/image";
+
+// Example images
+import teachingMethodImage from "/src/public/assets/teaching-method.png";
+import careerSupportImage from "/src/public/assets/career-support.png";
+
+const TeachingMethod = () => {
+  return (
+    <section className="bg-white py-16 px-4">
+      <div className="">
+        {/* Grid for Teaching Method and Career Support */}
+        <div className="grid md:grid-cols-2 gap-8 items-center">
+          {/* Left Column - Teaching Method */}
+          <div className="space-y-6">
+            <h2 className="text-2xl font-bold text-gray-900">
+              Our Teaching Method
+            </h2>
+            <ul className="list-disc ml-6 space-y-2 text-gray-600">
+              <li>100% theory 20% practical.</li>
+              <li>
+                We dive deep into building projects very fast. This is not for
+                aspiring school or university. It is fast-paced.
+              </li>
+              <li>
+                No need for materials or lectures, we have 700+ hours of
+                content!
+              </li>
+            </ul>
+          </div>
+
+          {/* Right Column - Image */}
+          <div className="rounded-lg overflow-hidden shadow-lg">
+            <Image
+              src={teachingMethodImage}
+              alt="Teaching Method"
+              className="w-full h-auto"
+            />
+          </div>
+        </div>
+
+        {/* Career Support Section */}
+        <div className="grid md:grid-cols-2 gap-8 items-center mt-16">
+          {/* Left Column - Image */}
+          <div className="rounded-lg overflow-hidden shadow-lg">
+            <Image
+              src={careerSupportImage}
+              alt="Career Support"
+              className="w-full h-auto"
+            />
+          </div>
+
+          {/* Right Column - Career Support */}
+          <div className="space-y-6">
+            <h2 className="text-2xl font-bold text-gray-900">Career Support</h2>
+            <p className="text-gray-600">Upon graduation, you will get:</p>
+            <ul className="list-disc ml-6 space-y-2 text-gray-600">
+              <li>A certificate</li>
+              <li>A great recommendation letter</li>
+              <li>Resume templates</li>
+              <li>Cover letter templates</li>
+              <li>Portfolio templates</li>
+              <li>Real interview practice</li>
+              <li>Guidance on how to get your first job.</li>
+            </ul>
+          </div>
+        </div>
+
+        {/* Money-back Guarantee Section */}
+        <div className="mt-16 bg-primary text-white rounded-lg p-8">
+          <h2 className="text-2xl font-bold">100% Money-back Guarantee</h2>
+          <p className="mt-4">
+            We're confident in our program, which is why we offer a money-back
+            guarantee:
+          </p>
+          <ul className="list-disc ml-6 mt-4 space-y-2">
+            <li>You graduate from the bootcamp and receive our certificate.</li>
+            <li>
+              You apply to tech jobs, get interviews, and do your part for six
+              months.
+            </li>
+            <li>If you don’t get a job, get your money back!</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default TeachingMethod;

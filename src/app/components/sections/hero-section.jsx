@@ -1,0 +1,93 @@
+import React from "react";
+
+const Hero = () => {
+  return (
+    <section className="bg-primary py-12 px-6 h-auto">
+      <div className=" grid md:grid-cols-2 gap-8 items-center">
+        {/* Left Side - Main Content */}
+        <div>
+          <h1 className="text-5xl font-bold text-white">
+            <span className="text-secondary">Hey</span>
+            <span className="text-white">Learn</span>
+            <span className="text-secondary">2</span>
+            <span className="text-white">Code's</span> <br />
+            Full Stack Coding Bootcamp
+          </h1>
+          <p className="mt-6 text-lg text-gray-300">
+            Become a Full-Stack Developer in 4 Months and get a developer job.
+            If not, it is 100% FREE.
+          </p>
+
+          {/* Buttons */}
+          <div className="mt-6 flex space-x-4">
+            <button className="bg-secondary hover:bg-secondary text-white px-6 py-3 rounded-lg">
+              Apply Now
+            </button>
+            <button className="bg-white text-secondary hover:bg-blue-100 px-6 py-3 rounded-lg">
+              Get Free Access
+            </button>
+          </div>
+
+          <p className="mt-4 text-xs text-gray-400">
+            ONLY FOR THOSE WHO GRADUATED LESS THAN 6 YEARS AGO
+          </p>
+
+          {/* Perks */}
+          <div className="grid grid-cols-2 gap-4 mt-6 text-sm text-white">
+            <div className="border border-gray-600 p-3 rounded-lg">
+              Get developer job or it’s 100% free
+            </div>
+            <div className="border border-gray-600 p-3 rounded-lg">
+              Proper career support after graduation
+            </div>
+            <div className="border border-gray-600 p-3 rounded-lg">
+              Only 6 Students per cohort
+            </div>
+            <div className="border border-gray-600 p-3 rounded-lg">
+              Build project that impress recruiters
+            </div>
+          </div>
+        </div>
+
+        {/* Right Side - Testimonial */}
+        <div className="relative bg-white p-6 rounded-lg shadow-lg">
+          {/* Video Card */}
+          <div className="relative rounded-lg overflow-hidden shadow-md">
+            <iframe
+              width="100%"
+              height="180"
+              src="https://www.youtube.com/embed/dQw4w9WgXcQ" // Add your video link here
+              title="Testimonial Video"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            ></iframe>
+          </div>
+
+          {/* Testimonial Text */}
+          <p className="mt-4 text-sm text-gray-600">
+            Lorem ipsum dolor amet consectetur pellentesque scelerisque
+            fermentum bibendum ipsum massa cursus aliquet feugiat.
+          </p>
+
+          {/* Reviewer Details */}
+          <div className="flex items-center mt-4">
+            <img
+              className="w-10 h-10 rounded-full"
+              src="https://randomuser.me/api/portraits/men/32.jpg"
+              alt="Reviewer"
+            />
+            <div className="ml-3">
+              <p className="text-sm font-semibold text-gray-800">
+                Kris Steigerwald
+              </p>
+              <p className="text-xs text-yellow-400">★★★★★</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default Hero;
