@@ -1,16 +1,21 @@
 "use client";
 import React, { useState } from "react";
 import Image from "next/image";
-import { FiMenu, FiX } from "react-icons/fi"; // Icons for Hamburger and Cross
+import { FiMenu } from "react-icons/fi"; // Hamburger icon
 import logo from "../../../public/assets/logo.png"; // Import the image using relative path
+import {
+  Drawer,
+  DrawerTrigger,
+  DrawerContent,
+  DrawerHeader,
+  DrawerTitle,
+  DrawerDescription,
+  DrawerFooter,
+  DrawerClose,
+} from "@/components/ui/drawer"; // Importing ShadCN drawer components
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
-
-  // Function to toggle the hamburger menu
-  const toggleMenu = () => {
-    setIsOpen(!isOpen);
-  };
 
   return (
     <div className="relative">
@@ -30,65 +35,81 @@ const Header = () => {
             {/* Hide the "Apply Now" button on mobile screens */}
             <button
               type="button"
-              className="text-[#FFFFFF] bg-secondary  focus:ring-4  font-medium rounded-lg text-sm px-4 py-2 text-center    
- hidden md:block"
+              className="text-[#FFFFFF] bg-secondary focus:ring-4 font-medium rounded-lg text-sm px-4 py-2 text-center hidden md:block"
             >
               Apply Now
             </button>
 
-            {/* Hamburger Icon */}
-            <button
-              onClick={toggleMenu}
-              type="button"
-              className="bg-lightGray text-[#FFFFFF] inline-flex items-center p-2 w-10 h-10 justify-center "
-            >
-              {isOpen ? (
-                <FiX className="w-6 h-6" aria-hidden="true" /> // Cross Icon when open
-              ) : (
-                <FiMenu className="w-6 h-6" aria-hidden="true" /> // Hamburger Icon when closed
-              )}
-              {/* <span className=" sr-only">Toggle navigation</span> */}
-            </button>
+            {/* Drawer trigger (Hamburger Icon) */}
+            <Drawer open={isOpen} onOpenChange={setIsOpen}>
+              <DrawerTrigger>
+                <button
+                  onClick={() => setIsOpen(!isOpen)}
+                  type="button"
+                  className="bg-lightGray text-[#FFFFFF] inline-flex items-center p-2 w-10 h-10 justify-center"
+                >
+                  <FiMenu className="w-6 h-6" aria-hidden="true" />
+                </button>
+              </DrawerTrigger>
+
+              <DrawerContent
+                className="drawer-animation"
+                style={{
+                  transition: "transform 0.3s ease-out",
+                }}
+              >
+                <DrawerHeader>
+                  <DrawerClose>
+                    <button
+                      onClick={() => setIsOpen(false)}
+                      className="absolute top-4 right-4 text-xl"
+                    >
+                      &times;
+                    </button>
+                  </DrawerClose>
+                </DrawerHeader>
+                <div className="p-4">
+                  <ul className="flex flex-col space-y-4">
+                    <li>
+                      <a href="#" className="hover:text-secondary-700">
+                        Home
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" className="hover:text-secondary-700">
+                        Free Materials
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" className="hover:text-secondary-700">
+                        Our Founder
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" className="hover:text-secondary-700">
+                        Our Cohorts
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" className="hover:text-secondary-700">
+                        Why Us
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" className="hover:text-secondary-700">
+                        Pricing
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" className="hover:text-secondary-700">
+                        Contact
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </DrawerContent>
+            </Drawer>
           </div>
-          {/* Dropdown Menu */}
-          {isOpen && (
-            <div className="absolute top-[70px] right-0 z-10 bg-white border border-gray-200 rounded-lg shadow-lg w-48 dark:bg-gray-800 dark:border-gray-700">
-              <ul className="flex flex-col space-y-4 p-4">
-                <li>
-                  <a
-                    href="#"
-                    className="text-gray-900 dark:text-white hover:text-secondary-700"
-                  >
-                    Home
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    className="text-gray-900 dark:text-white hover:text-secondary-700"
-                  >
-                    About
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    className="text-gray-900 dark:text-white hover:text-secondary-700"
-                  >
-                    Services
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    className="text-gray-900 dark:text-white hover:text-secondary-700"
-                  >
-                    Contact
-                  </a>
-                </li>
-              </ul>
-            </div>
-          )}
         </div>
       </nav>
       <hr />

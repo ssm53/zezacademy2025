@@ -6,7 +6,9 @@ import FaqAccordian from "./components/sections/faqs";
 import GetStarted from "./components/sections/get-started";
 import HandsOnLearning from "./components/sections/handson-learning";
 import Hero from "./components/sections/hero-section";
+import OurCohorts from "./components/sections/our-cohorts";
 import OurFounder from "./components/sections/our-founder";
+import Pricing from "./components/sections/pricing";
 import PricingTable from "./components/sections/pricing-table";
 import SixHundred from "./components/sections/sixhundred-hours";
 import TeachingMethod from "./components/sections/teaching-method";
@@ -21,6 +23,7 @@ export default function Home() {
       <Hero />
       <SixHundred />
       <OurFounder />
+      <OurCohorts />
       <TeachingMethod />
       <HandsOnLearning />
       <WhatLearn />
@@ -29,6 +32,7 @@ export default function Home() {
       <Testimonials />
       <PricingTable />
       <CurriculumTable />
+      <Pricing />
       <ContactUs />
       <FaqAccordian />
       <Footer />
