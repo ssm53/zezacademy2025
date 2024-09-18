@@ -2,11 +2,10 @@ import React from "react";
 
 const SixHundred = () => {
   return (
-    <section className="bg-gray-50 py-16">
-      <div className=" px-6 lg:flex lg:justify-between lg:items-center">
-        {/* Left Section */}
+    <section className="bg-gray-50 py-16 ">
+      <div className=" px-6 lg:flex lg:justify-between lg:items-center max-w-[1440px] mx-auto">
         <div className="lg:w-1/2">
-          <h3 className="text-sm font-semibold text-gray-500 uppercase mb-2">
+          <h3 className="text-sm font-semibold text-lightGray uppercase mb-2">
             600+ HOURS OF MATERIAL
           </h3>
           <h2 className="text-4xl font-bold text-gray-900 mb-4">
@@ -26,21 +25,17 @@ const SixHundred = () => {
           </button>
         </div>
 
-        {/* Right Section */}
         <div className="lg:w-1/2 lg:pl-16 mt-10 lg:mt-0 flex flex-wrap justify-center gap-6">
-          {/* Card 1 */}
           <div className="bg-white shadow-lg rounded-lg p-6 text-center w-full sm:w-1/2 md:w-1/3 flex-shrink-0">
             <h3 className="text-4xl font-bold text-blue-600">600+</h3>
             <p className="text-gray-600 mt-2">Hours of material</p>
           </div>
 
-          {/* Card 2 */}
           <div className="bg-white shadow-lg rounded-lg p-6 text-center w-full sm:w-1/2 md:w-1/3 flex-shrink-0">
             <h3 className="text-4xl font-bold text-blue-600">07</h3>
             <p className="text-gray-600 mt-2">Projects</p>
           </div>
 
-          {/* Card 3 */}
           <div className="bg-white shadow-lg rounded-lg p-6 text-center w-full sm:w-1/2 md:w-1/3 flex-shrink-0">
             <h3 className="text-4xl font-bold text-blue-600">20</h3>
             <p className="text-gray-600 mt-2">Challenges</p>

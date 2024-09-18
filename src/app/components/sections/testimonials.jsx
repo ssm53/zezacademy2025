@@ -3,7 +3,7 @@ const testimonials = [
     name: "Chris Do",
     feedback:
       "Lorem ipsum dolor amet consectetur pellentesque scelerisque fermentum bibendum ipsum massa cursus aliquet feugiat.",
-    image: "/path-to-image.jpg", // Replace with actual image path or URL
+    image: "/path-to-image.jpg",
     rating: 4,
   },
   {
@@ -45,7 +45,7 @@ const testimonials = [
 
 export default function Testimonials() {
   return (
-    <section className=" px-4 py-16">
+    <section className="max-w-[1440px] mx-auto px-4 py-16">
       <h2 className="text-4xl font-bold text-center mb-6">
         What Our Students Are Saying
       </h2>

@@ -24,56 +24,56 @@ const Footer = () => {
         </div>
 
         {/* Sit Map */}
-        <div>
+        {/* <div>
           <h3 className="text-lg font-semibold">Sit Map</h3>
           <ul className="mt-4 space-y-2">
             <li>
-              <a href="#" className="hover:text-blue-400">
+              <a href="#" className="hover:text-secondary">
                 Home
               </a>
             </li>
             <li>
-              <a href="#" className="hover:text-blue-400">
+              <a href="#" className="hover:text-secondary">
                 Why Us
               </a>
             </li>
             <li>
-              <a href="#" className="hover:text-blue-400">
+              <a href="#" className="hover:text-secondary">
                 Curriculum
               </a>
             </li>
             <li>
-              <a href="#" className="hover:text-blue-400">
+              <a href="#" className="hover:text-secondary">
                 Pricing
               </a>
             </li>
             <li>
-              <a href="#" className="hover:text-blue-400">
+              <a href="#" className="hover:text-secondary">
                 Student
               </a>
             </li>
             <li>
-              <a href="#" className="hover:text-blue-400">
+              <a href="#" className="hover:text-secondary">
                 FAQs
               </a>
             </li>
           </ul>
-        </div>
+        </div> */}
 
         {/* Social Media */}
         <div>
           <h3 className="text-lg font-semibold">Social Media</h3>
           <div className="mt-4 flex items-center justify-center md:justify-start space-x-4">
-            <a href="#" className="hover:text-blue-400">
+            <a href="#" className="hover:text-secondary">
               <FaLinkedin size={24} />
             </a>
-            <a href="#" className="hover:text-blue-400">
+            <a href="#" className="hover:text-secondary">
               <FaInstagram size={24} />
             </a>
-            <a href="#" className="hover:text-blue-400">
+            <a href="#" className="hover:text-secondary">
               <FaTwitter size={24} />
             </a>
-            <a href="#" className="hover:text-blue-400">
+            <a href="#" className="hover:text-secondary">
               <FaYoutube size={24} />
             </a>
           </div>

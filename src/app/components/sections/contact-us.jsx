@@ -10,7 +10,6 @@ import markerIcon2x from "leaflet/dist/images/marker-icon-2x.png";
 import markerIcon from "leaflet/dist/images/marker-icon.png";
 import markerShadow from "leaflet/dist/images/marker-shadow.png";
 
-// Fix marker icon path issue in React
 delete L.Icon.Default.prototype._getIconUrl;
 L.Icon.Default.mergeOptions({
   iconRetinaUrl: markerIcon2x,
@@ -20,9 +19,8 @@ L.Icon.Default.mergeOptions({
 
 const ContactUs = () => {
   return (
-    <section className="py-12 px-6 sm:px-8 md:px-10 lg:px-12 xl:px-16">
+    <section className="max-w-[1440px] mx-auto py-12 px-6 sm:px-8 md:px-10 lg:px-12 xl:px-16">
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-        {/* Contact Us Section */}
         <div className="bg-white p-6 rounded-md shadow-md">
           <h2 className="text-2xl font-bold mb-4 text-primary">Contact Us</h2>
           <p className="text-gray-600 mb-4">
@@ -49,7 +47,6 @@ const ContactUs = () => {
           </div>
         </div>
 
-        {/* Expected Study Hours Section */}
         <div className="bg-white p-6 rounded-md shadow-md">
           <h2 className="text-2xl font-bold mb-4 text-primary">
             Expected Study Hours
@@ -69,7 +66,6 @@ const ContactUs = () => {
             </div>
           </div>
         </div>
-        {/* Further Details of Bootcamp Section */}
         <div className="bg-white p-6 rounded-md shadow-md">
           <h2 className="text-2xl font-bold mb-4">
             Further Details of Bootcamp
@@ -88,7 +84,6 @@ const ContactUs = () => {
           </div>
         </div>
 
-        {/* Map Section */}
         <div className="bg-white p-6 rounded-md shadow-md">
           <h2 className="text-2xl font-bold mb-4">Location Map</h2>
           <MapContainer

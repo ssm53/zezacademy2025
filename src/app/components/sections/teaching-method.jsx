@@ -1,17 +1,14 @@
 import React from "react";
 import Image from "next/image";
 
-// Example images
 import teachingMethodImage from "/src/public/assets/teaching-method.png";
 import careerSupportImage from "/src/public/assets/career-support.png";
 
 const TeachingMethod = () => {
   return (
     <section className="bg-white py-16 px-4">
-      <div className="">
-        {/* Grid for Teaching Method and Career Support */}
+      <div className="max-w-[1440px] mx-auto">
         <div className="grid md:grid-cols-2 gap-8 items-center">
-          {/* Left Column - Teaching Method */}
           <div className="space-y-6">
             <h2 className="text-2xl font-bold text-gray-900">
               Our Teaching Method
@@ -29,7 +26,6 @@ const TeachingMethod = () => {
             </ul>
           </div>
 
-          {/* Right Column - Image */}
           <div className="rounded-lg overflow-hidden shadow-lg">
             <Image
               src={teachingMethodImage}
@@ -39,9 +35,7 @@ const TeachingMethod = () => {
           </div>
         </div>
 
-        {/* Career Support Section */}
         <div className="grid md:grid-cols-2 gap-8 items-center mt-16">
-          {/* Left Column - Image */}
           <div className="rounded-lg overflow-hidden shadow-lg">
             <Image
               src={careerSupportImage}
@@ -50,7 +44,6 @@ const TeachingMethod = () => {
             />
           </div>
 
-          {/* Right Column - Career Support */}
           <div className="space-y-6">
             <h2 className="text-2xl font-bold text-gray-900">Career Support</h2>
             <p className="text-gray-600">Upon graduation, you will get:</p>
@@ -66,7 +59,6 @@ const TeachingMethod = () => {
           </div>
         </div>
 
-        {/* Money-back Guarantee Section */}
         <div className="mt-16 bg-primary text-white rounded-lg p-8">
           <h2 className="text-2xl font-bold">100% Money-back Guarantee</h2>
           <p className="mt-4">

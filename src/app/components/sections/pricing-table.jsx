@@ -1,16 +1,13 @@
 const PricingTable = () => {
   return (
-    <section className="py-12">
-      {/* Heading Section */}
+    <section className="py-12 max-w-[1440px] mx-auto">
       <div className="text-center mb-8">
         <h2 className="text-3xl font-bold">Why It Makes Sense To Join Us?</h2>
         <p className="text-gray-500 mt-2">Compare the difference by yourself</p>
       </div>
 
-      {/* Table Section with outer border radius and padding */}
       <div className="overflow-x-auto px-4 md:px-8">
         {" "}
-        {/* Added horizontal padding here */}
         <div className="rounded-lg shadow-lg border border-gray-300 overflow-hidden">
           <table className="min-w-full bg-white rounded-lg border-collapse">
             <thead>

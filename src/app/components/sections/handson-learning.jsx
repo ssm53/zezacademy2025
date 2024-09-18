@@ -1,6 +1,5 @@
 import Marquee from "react-fast-marquee";
 
-// Manually define the array of image paths
 const logos = [
   "src/public/assets/css3.png",
   "src/public/assets/github.png",

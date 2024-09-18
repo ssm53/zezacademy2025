@@ -15,7 +15,7 @@ const Header = () => {
   return (
     <div className="relative">
       <nav className="bg-primary">
-        <div className=" h-[80px] flex flex-wrap items-center justify-between mx-auto p-4">
+        <div className="max-w-[1440px] h-[80px] flex flex-wrap items-center justify-between mx-auto p-4">
           <a
             href="#"
             className="flex items-center space-x-3 rtl:space-x-reverse"

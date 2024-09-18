@@ -2,14 +2,13 @@ import React from "react";
 
 const Hero = () => {
   return (
-    <section className="bg-primary py-12 px-6 h-auto">
-      <div className=" grid md:grid-cols-2 gap-8 items-center">
-        {/* Left Side - Main Content */}
+    <section className="bg-[#0F243D] py-12 px-6">
+      <div className="max-w-[1440px] mx-auto grid md:grid-cols-2 gap-8 items-center">
         <div>
           <h1 className="text-5xl font-bold text-white">
-            <span className="text-secondary">Hey</span>
+            <span className="text-blue-400">Hey</span>
             <span className="text-white">Learn</span>
-            <span className="text-secondary">2</span>
+            <span className="text-blue-400">2</span>
             <span className="text-white">Code's</span> <br />
             Full Stack Coding Bootcamp
           </h1>
@@ -18,12 +17,11 @@ const Hero = () => {
             If not, it is 100% FREE.
           </p>
 
-          {/* Buttons */}
           <div className="mt-6 flex space-x-4">
-            <button className="bg-secondary hover:bg-secondary text-white px-6 py-3 rounded-lg">
+            <button className="bg-blue-500 hover:bg-blue-600 text-white px-6 py-3 rounded-lg">
               Apply Now
             </button>
-            <button className="bg-white text-secondary hover:bg-blue-100 px-6 py-3 rounded-lg">
+            <button className="bg-white text-blue-600 hover:bg-blue-100 px-6 py-3 rounded-lg">
               Get Free Access
             </button>
           </div>
@@ -32,7 +30,6 @@ const Hero = () => {
             ONLY FOR THOSE WHO GRADUATED LESS THAN 6 YEARS AGO
           </p>
 
-          {/* Perks */}
           <div className="grid grid-cols-2 gap-4 mt-6 text-sm text-white">
             <div className="border border-gray-600 p-3 rounded-lg">
               Get developer job or it’s 100% free
@@ -49,9 +46,7 @@ const Hero = () => {
           </div>
         </div>
 
-        {/* Right Side - Testimonial */}
         <div className="relative bg-white p-6 rounded-lg shadow-lg">
-          {/* Video Card */}
           <div className="relative rounded-lg overflow-hidden shadow-md">
             <iframe
               width="100%"
@@ -64,13 +59,11 @@ const Hero = () => {
             ></iframe>
           </div>
 
-          {/* Testimonial Text */}
           <p className="mt-4 text-sm text-gray-600">
             Lorem ipsum dolor amet consectetur pellentesque scelerisque
             fermentum bibendum ipsum massa cursus aliquet feugiat.
           </p>
 
-          {/* Reviewer Details */}
           <div className="flex items-center mt-4">
             <img
               className="w-10 h-10 rounded-full"

@@ -3,9 +3,8 @@ import Image from "next/image";
 
 const OurFounder = () => {
   return (
-    <section className="bg-primary py-16">
-      <div className=" px-6 lg:flex lg:items-center">
-        {/* Left Section: Video */}
+    <section className="bg-primary py-16 ">
+      <div className=" max-w-[1440px] mx-auto px-6 lg:flex lg:items-center">
         <div className="lg:w-1/2 mb-8 lg:mb-0">
           <div className="relative rounded-lg overflow-hidden shadow-lg">
             <Image
@@ -16,7 +15,7 @@ const OurFounder = () => {
               className="object-cover w-full h-full"
             />
             <a
-              href="https://www.youtube.com/watch?v=HF0iqQ2ZzFU&t=2s" // replace with actual video link
+              href="https://www.youtube.com/watch?v=HF0iqQ2ZzFU&t=2s" 
               className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-30"
               aria-label="Play video"
             >
@@ -31,7 +30,6 @@ const OurFounder = () => {
           </div>
         </div>
 
-        {/* Right Section: Content */}
         <div className="lg:w-1/2 lg:pl-12 text-white">
           <h4 className="text-sm font-semibold text-secondary uppercase mb-2">
             About Founder

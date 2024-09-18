@@ -1,7 +1,6 @@
 const CurriculumTable = () => {
   return (
-    <section className="py-12">
-      {/* Heading Section */}
+    <section className="max-w-[1440px] mx-auto py-12">
       <div className="text-center mb-8">
         <h2 className="text-3xl font-bold">
           Full-Time vs Part-Time Curriculum
@@ -13,13 +12,10 @@ const CurriculumTable = () => {
         </p>
       </div>
 
-      {/* Table Section with outer border radius and padding */}
       <div className="overflow-x-auto px-4 md:px-8">
         {" "}
-        {/* Added horizontal padding */}
         <div className="rounded-lg shadow-lg border border-gray-200 overflow-hidden">
           {" "}
-          {/* Outer div for border-radius */}
           <table className="w-full border border-gray-200 bg-white rounded-lg shadow-lg">
             <thead>
               <tr className="text-left">
