@@ -3,42 +3,42 @@ const testimonials = [
     name: "Chris Do",
     feedback:
       "Lorem ipsum dolor amet consectetur pellentesque scelerisque fermentum bibendum ipsum massa cursus aliquet feugiat.",
-    image: "/path-to-image.jpg",
+    image: "/reviewer.png",
     rating: 4,
   },
   {
     name: "Kris Steigerwald",
     feedback:
       "Lorem ipsum dolor amet consectetur pellentesque scelerisque fermentum bibendum ipsum massa cursus aliquet feugiat.",
-    image: "/path-to-image.jpg",
+    image: "/reviewer.png",
     rating: 4,
   },
   {
     name: "Aliya M.",
     feedback:
       "Lorem ipsum dolor amet consectetur pellentesque scelerisque fermentum bibendum ipsum massa cursus aliquet feugiat.",
-    image: "/path-to-image.jpg",
+    image: "/reviewer.png",
     rating: 5,
   },
   {
     name: "Hussain K.",
     feedback:
       "Lorem ipsum dolor amet consectetur pellentesque scelerisque fermentum bibendum ipsum massa cursus aliquet feugiat.",
-    image: "/path-to-image.jpg",
+    image: "/reviewer.png",
     rating: 4,
   },
   {
     name: "Denial S.",
     feedback:
       "Lorem ipsum dolor amet consectetur pellentesque scelerisque fermentum bibendum ipsum massa cursus aliquet feugiat.",
-    image: "/path-to-image.jpg",
+    image: "/reviewer.png",
     rating: 5,
   },
   {
     name: "Rahul Sharma",
     feedback:
       "Lorem ipsum dolor amet consectetur pellentesque scelerisque fermentum bibendum ipsum massa cursus aliquet feugiat.",
-    image: "/path-to-image.jpg",
+    image: "/reviewer.png",
     rating: 5,
   },
 ];

@@ -1,16 +1,16 @@
 import Marquee from "react-fast-marquee";
 
 const logos = [
-  "/css3.png",
-  "/github.png",
-  "/graphql.png",
-  "/pinia.png",
-  "/psql.png",
-  "/react.png",
-  "/sequelize.png",
-  "/svelte.png",
-  "/psql.png",
-  "/react.png",
+  "/css3.svg",
+  "/github.svg",
+  "/graphql.svg",
+  "/pinia.svg",
+  "/psql.svg",
+  "/react.svg",
+  "/sequelize.svg",
+  "/svelte.svg",
+  "/psql.svg",
+  "/react.svg",
 ];
 
 const HandsOnLearning = () => {
@@ -31,7 +31,7 @@ const HandsOnLearning = () => {
               <div
                 key={index}
                 className="flex items-center justify-center bg-white rounded-lg p-4 shadow-lg"
-                style={{ width: "120px", height: "120px" }}
+                style={{ width: "100px", height: "100px" }}
               >
                 <img
                   src={logo}

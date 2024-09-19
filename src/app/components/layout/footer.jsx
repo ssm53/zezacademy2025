@@ -3,11 +3,11 @@ import { FaLinkedin, FaInstagram, FaTwitter, FaYoutube } from "react-icons/fa";
 const Footer = () => {
   return (
     <footer className="bg-primary text-white py-8 px-4 md:px-16">
-      <div className=" grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
         {/* Logo and Contact Information */}
         <div>
-          <h2 className="text-2xl font-bold ">
-            <span className="text-secondary"> Hey</span>
+          <h2 className="text-2xl font-bold">
+            <span className="text-secondary">Hey</span>
             <span className="">
               Learn <span className="text-secondary">2</span> Code
             </span>
@@ -16,16 +16,18 @@ const Footer = () => {
             Lorem ipsum dolor sit amet lorem consectetur pretium neque l
           </p>
           <p className="mt-4 flex items-center justify-center md:justify-start">
-            <span className="mr-2">✉️</span> shaun@heylearn2code.com
+            <img src="/mailbox.svg" alt="mail icon" className="w-6 h-6 mr-2" />
+            shaun@heylearn2code.com
           </p>
           <p className="mt-2 flex items-center justify-center md:justify-start">
-            <span className="mr-2">📞</span> +6 012 339 7028
+            <img src="/phone.svg" alt="phone icon" className="w-6 h-6 mr-2" />
+            +6 012 339 7028
           </p>
         </div>
 
-        {/* Sit Map */}
-        {/* <div>
-          <h3 className="text-lg font-semibold">Sit Map</h3>
+        {/* Site Map */}
+        <div className="hidden md:block">
+          <h3 className="text-lg font-semibold">Site Map</h3>
           <ul className="mt-4 space-y-2">
             <li>
               <a href="#" className="hover:text-secondary">
@@ -58,7 +60,7 @@ const Footer = () => {
               </a>
             </li>
           </ul>
-        </div> */}
+        </div>
 
         {/* Social Media */}
         <div>

@@ -1,9 +1,6 @@
 import React from "react";
 import Image from "next/image";
 
-import teachingMethodImage from "/src/public/assets/teaching-method.png";
-import careerSupportImage from "/src/public/assets/career-support.png";
-
 const TeachingMethod = () => {
   return (
     <section className="bg-white py-16 px-4">
@@ -28,9 +25,11 @@ const TeachingMethod = () => {
 
           <div className="rounded-lg overflow-hidden shadow-lg">
             <Image
-              src={teachingMethodImage}
+              src="/teaching.svg"
               alt="Teaching Method"
-              className="w-full h-auto"
+              width={500} // Set appropriate width
+              height={300} // Set appropriate height
+              layout="responsive"
             />
           </div>
         </div>
@@ -38,9 +37,11 @@ const TeachingMethod = () => {
         <div className="grid md:grid-cols-2 gap-8 items-center mt-16">
           <div className="rounded-lg overflow-hidden shadow-lg">
             <Image
-              src={careerSupportImage}
+              src="/meeting.svg"
               alt="Career Support"
-              className="w-full h-auto"
+              width={500} // Set appropriate width
+              height={300} // Set appropriate height
+              layout="responsive"
             />
           </div>
 

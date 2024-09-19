@@ -1,5 +1,6 @@
 "use client";
 import { useState } from "react";
+import { FaChevronUp, FaChevronDown } from "react-icons/fa"; // Import the icons
 
 const faqs = [
   {
@@ -17,7 +18,26 @@ const faqs = [
     answer:
       "Lorem ipsum dolor sit amet lorem consectetur pretium neque lorem ipsum dolor sit amet consectetur pretium neque.",
   },
-  // Add more FAQ items here if needed
+  {
+    question: "Is the bootcamp remote or in-person?",
+    answer:
+      "Lorem ipsum dolor sit amet lorem consectetur pretium neque lorem ipsum dolor sit amet consectetur pretium neque.",
+  },
+  {
+    question: "What projects will I build during the bootcamp?",
+    answer:
+      "Lorem ipsum dolor sit amet lorem consectetur pretium neque lorem ipsum dolor sit amet consectetur pretium neque.",
+  },
+  {
+    question: "Are there any prerequisites to join?",
+    answer:
+      "Lorem ipsum dolor sit amet lorem consectetur pretium neque lorem ipsum dolor sit amet consectetur pretium neque.",
+  },
+  {
+    question: "What happens after completing the bootcamp?",
+    answer:
+      "Lorem ipsum dolor sit amet lorem consectetur pretium neque lorem ipsum dolor sit amet consectetur pretium neque.",
+  },
 ];
 
 export default function FaqAccordian() {
@@ -28,7 +48,7 @@ export default function FaqAccordian() {
   };
 
   return (
-    <section className="max-w-[1300px] mx-auto px-4 py-16">
+    <section className="max-w-[1300px] mx-auto px-6 md:px-16 lg:px-32 py-16">
       <h2 className="text-4xl font-bold text-center mb-6">
         Frequently Asked Questions
       </h2>
@@ -38,14 +58,24 @@ export default function FaqAccordian() {
       </p>
       <div className="space-y-4">
         {faqs.map((faq, index) => (
-          <div key={index} className="border-b border-gray-300 pb-4">
+          <div
+            key={index}
+            className="border border-gray-300 rounded-lg pb-4"
+            style={{ borderRadius: "10px" }}
+          >
             <button
               onClick={() => handleToggle(index)}
-              className="w-full text-left flex justify-between items-center py-4 focus:outline-none"
+              className="w-full text-left flex justify-between items-center py-4 px-6 focus:outline-none"
             >
-              <span className="font-semibold text-lg">{faq.question}</span>
+              <span className="font-semibold text-lg text-lightGray">
+                {faq.question}
+              </span>
               <span className="text-xl">
-                {activeIndex === index ? "-" : "+"}
+                {activeIndex === index ? (
+                  <FaChevronUp className="text-secondary" /> // Use arrow up for expanded
+                ) : (
+                  <FaChevronDown className="text-secondary" /> // Use arrow down for collapsed
+                )}
               </span>
             </button>
             <div
@@ -53,7 +83,7 @@ export default function FaqAccordian() {
                 activeIndex === index ? "max-h-screen" : "max-h-0"
               }`}
             >
-              <p className="text-gray-600 pt-2">{faq.answer}</p>
+              <p className="text-gray-600 pt-2 px-6">{faq.answer}</p>
             </div>
           </div>
         ))}
