@@ -1,16 +1,16 @@
 import Marquee from "react-fast-marquee";
 
 const logos = [
-  "src/public/assets/css3.png",
-  "src/public/assets/github.png",
-  "src/public/assets/graphql.png",
-  "src/public/assets/pinia.png",
-  "src/public/assets/psql.png",
-  "src/public/assets/react.png",
-  "src/public/assets/sequelize.png",
-  "src/public/assets/svelte.png",
-  "src/public/assets/psql.png",
-  "src/public/assets/react.png",
+  "/css3.png",
+  "/github.png",
+  "/graphql.png",
+  "/pinia.png",
+  "/psql.png",
+  "/react.png",
+  "/sequelize.png",
+  "/svelte.png",
+  "/psql.png",
+  "/react.png",
 ];
 
 const HandsOnLearning = () => {

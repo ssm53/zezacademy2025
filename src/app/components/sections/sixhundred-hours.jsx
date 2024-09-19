@@ -3,7 +3,7 @@ import React from "react";
 const SixHundred = () => {
   return (
     <section className="bg-gray-50 py-16 ">
-      <div className=" px-6 lg:flex lg:justify-between lg:items-center max-w-[1440px] mx-auto">
+      <div className=" px-6 lg:flex lg:justify-between lg:items-center max-w-[1300px] mx-auto">
         <div className="lg:w-1/2">
           <h3 className="text-sm font-semibold text-lightGray uppercase mb-2">
             600+ HOURS OF MATERIAL

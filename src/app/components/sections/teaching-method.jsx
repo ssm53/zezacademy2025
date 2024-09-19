@@ -7,7 +7,7 @@ import careerSupportImage from "/src/public/assets/career-support.png";
 const TeachingMethod = () => {
   return (
     <section className="bg-white py-16 px-4">
-      <div className="max-w-[1440px] mx-auto">
+      <div className="max-w-[1300px] mx-auto">
         <div className="grid md:grid-cols-2 gap-8 items-center">
           <div className="space-y-6">
             <h2 className="text-2xl font-bold text-gray-900">

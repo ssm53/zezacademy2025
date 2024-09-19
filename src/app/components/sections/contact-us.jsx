@@ -19,7 +19,7 @@ L.Icon.Default.mergeOptions({
 
 const ContactUs = () => {
   return (
-    <section className="max-w-[1440px] mx-auto py-12 px-6 sm:px-8 md:px-10 lg:px-12 xl:px-16">
+    <section className="max-w-[1300px] mx-auto py-12 px-6 sm:px-8 md:px-10 lg:px-12 xl:px-16">
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
         <div className="bg-white p-6 rounded-md shadow-md">
           <h2 className="text-2xl font-bold mb-4 text-primary">Contact Us</h2>

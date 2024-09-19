@@ -45,7 +45,7 @@ const testimonials = [
 
 export default function Testimonials() {
   return (
-    <section className="max-w-[1440px] mx-auto px-4 py-16">
+    <section className="max-w-[1300px] mx-auto px-4 py-16">
       <h2 className="text-4xl font-bold text-center mb-6">
         What Our Students Are Saying
       </h2>

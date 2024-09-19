@@ -1,9 +1,11 @@
 import React from "react";
+import { FiPlayCircle } from "react-icons/fi"; // Play button icon
 
 const Hero = () => {
   return (
     <section className="bg-[#0F243D] py-12 px-6 min-h-screen flex items-center">
-      <div className="max-w-[1440px] mx-auto grid md:grid-cols-2 gap-8 items-center">
+      <div className="max-w-[1300px] mx-auto grid md:grid-cols-2 gap-8 items-center md:gap-[14rem]">
+        {/* Left Side - Heading and Text */}
         <div>
           <h1 className="text-4xl md:text-5xl font-bold text-white text-center md:text-left">
             <span className="text-blue-400">Hey</span>
@@ -48,17 +50,23 @@ const Hero = () => {
           </div>
         </div>
 
-        <div className="relative bg-white p-6 rounded-lg shadow-lg">
-          <div className="relative rounded-lg overflow-hidden shadow-md">
+        {/* Right Side - Video Card */}
+        <div
+          className="relative bg-white p-6 rounded-lg shadow-lg"
+          style={{ width: "400px", height: "434px" }}
+        >
+          <div className="relative rounded-lg overflow-hidden shadow-md w-full h-[260px]">
             <iframe
-              width="100%"
-              height="180"
-              src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+              className="absolute top-0 left-0 w-full h-full"
+              src="https://www.youtube.com/embed/dQw4w9WgXcQ?controls=01&rel=0&modestbranding=1&showinfo=0"
               title="Testimonial Video"
               frameBorder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
             ></iframe>
+            <div className="absolute inset-0 flex items-center justify-center">
+              <FiPlayCircle className="text-blue-500 w-16 h-16" />
+            </div>
           </div>
 
           <p className="mt-4 text-sm text-gray-600">

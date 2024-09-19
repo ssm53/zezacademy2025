@@ -20,7 +20,7 @@ const Header = () => {
   return (
     <div className="relative">
       <nav className="bg-primary">
-        <div className="max-w-[1440px] h-[80px] flex flex-wrap items-center justify-between mx-auto p-4">
+        <div className="max-w-[1300px] h-[80px] flex flex-wrap items-center justify-between mx-auto p-2">
           <a
             href="#"
             className="flex items-center space-x-3 rtl:space-x-reverse"
@@ -35,14 +35,14 @@ const Header = () => {
             {/* Hide the "Apply Now" button on mobile screens */}
             <button
               type="button"
-              className="text-[#FFFFFF] bg-secondary focus:ring-4 font-medium rounded-lg text-sm px-4 py-2 text-center hidden md:block"
+              className="text-[#FFFFFF] bg-secondary focus:ring-4 font-medium rounded-[3px] text-sm px-4 py-2 text-center hidden md:block"
             >
               Apply Now
             </button>
 
             {/* Drawer trigger (Hamburger Icon) */}
             <Drawer open={isOpen} onOpenChange={setIsOpen}>
-              <DrawerTrigger>
+              <DrawerTrigger asChild>
                 <button
                   onClick={() => setIsOpen(!isOpen)}
                   type="button"

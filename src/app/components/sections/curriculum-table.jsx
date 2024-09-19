@@ -1,6 +1,6 @@
 const CurriculumTable = () => {
   return (
-    <section className="max-w-[1440px] mx-auto py-12">
+    <section className="max-w-[1300px] mx-auto py-12">
       <div className="text-center mb-8">
         <h2 className="text-3xl font-bold">
           Full-Time vs Part-Time Curriculum

@@ -1,6 +1,6 @@
 import Footer from "./components/layout/footer";
 import Header from "./components/layout/header";
-import ContactUs from "./components/sections/contact-us";
+// import ContactUs from "./components/sections/contact-us";
 import CurriculumTable from "./components/sections/curriculum-table";
 import FaqAccordian from "./components/sections/faqs";
 import GetStarted from "./components/sections/get-started";
@@ -33,7 +33,7 @@ export default function Home() {
       <PricingTable />
       <CurriculumTable />
       <Pricing />
-      <ContactUs />
+      {/* <ContactUs /> */}
       <FaqAccordian />
       <Footer />
     </>
