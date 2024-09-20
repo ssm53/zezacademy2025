@@ -30,6 +30,7 @@ const TeachingMethod = () => {
               width={500}
               height={300}
               className="w-auto"
+              style={{ width: "fit-content" }}
             />
           </div>
         </div>

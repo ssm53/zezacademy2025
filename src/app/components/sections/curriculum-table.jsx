@@ -1,21 +1,19 @@
 const CurriculumTable = () => {
   return (
     <section className="max-w-[1300px] mx-auto py-12">
-      <div className="text-center mb-8">
-        <h2 className="text-3xl font-bold">
-          Full-Time vs Part-Time Curriculum
+      <div className="px-8 text-start mb-8">
+        <h2 className=" text-4xl font-bold text-primary">
+          Full-Time vs Part-Time <br /> Curriculum
         </h2>
         <p className="text-gray-500 mt-2">
           Our bootcamp is only $500, a 90% discount from the regular price of
-          $5,000. And, if you don’t land a job after completing our program, you
-          get a full refund. 100% risk-free.
+          $5,000. <br /> And, if you don’t land a job after completing our
+          program, you get a full refund. <br /> 100% risk-free.
         </p>
       </div>
 
       <div className="overflow-x-auto px-4 md:px-8">
-        {" "}
         <div className="rounded-lg shadow-lg border border-gray-200 overflow-hidden">
-          {" "}
           <table className="w-full border border-gray-200 bg-white rounded-lg shadow-lg">
             <thead>
               <tr className="text-left">

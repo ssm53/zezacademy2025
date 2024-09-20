@@ -201,7 +201,7 @@ const Hero = () => {
             <span className="text-blue-400">Hey</span>
             <span className="text-white">Learn</span>
             <span className="text-blue-400">2</span>
-            <span className="text-white">Code's</span>{" "}
+            <span className="text-white">Code's</span>
             <br className="hidden md:block" />
             Full Stack Coding Bootcamp
           </h1>

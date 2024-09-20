@@ -24,17 +24,17 @@ export default function Home() {
       <Hero />
       <SixHundred />
       <OurFounder />
-      <HandsOnLearning />
-      <WhatLearn />
-      <GetStarted />
       <OurCohorts />
       <BootcampSection />
       <WhyChoose />
       <TeachingMethod />
-      <Testimonials />
+      <HandsOnLearning />
+      <WhatLearn />
+      <GetStarted />
       <PricingTable />
       <CurriculumTable />
       <Pricing />
+      <Testimonials />
       {/* <ContactUs /> */}
       <FaqAccordian />
       <Footer />
