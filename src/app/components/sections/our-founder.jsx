@@ -52,7 +52,7 @@ const OurFounder = () => {
           <div className="flex space-x-4">
             <a
               href="https://www.linkedin.com/in/shaun"
-              className="bg-white text-gray-900 font-medium py-2 px-4 rounded-lg flex items-center space-x-2 hover:bg-gray-100 transition"
+              className="bg-white text-primary font-medium py-2 px-4 rounded-lg flex items-center space-x-2 hover:bg-gray-100 transition"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"

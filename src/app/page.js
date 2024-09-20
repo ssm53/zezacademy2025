@@ -1,5 +1,6 @@
 import Footer from "./components/layout/footer";
 import Header from "./components/layout/header";
+import BootcampSection from "./components/sections/boot-camp";
 // import ContactUs from "./components/sections/contact-us";
 import CurriculumTable from "./components/sections/curriculum-table";
 import FaqAccordian from "./components/sections/faqs";
@@ -24,6 +25,7 @@ export default function Home() {
       <SixHundred />
       <OurFounder />
       <OurCohorts />
+      <BootcampSection />
       <TeachingMethod />
       <HandsOnLearning />
       <WhatLearn />

@@ -48,46 +48,49 @@ export default function FaqAccordian() {
   };
 
   return (
-    <section className="max-w-[1300px] mx-auto px-6 md:px-16 lg:px-32 py-16">
-      <h2 className="text-4xl font-bold text-center mb-6">
-        Frequently Asked Questions
-      </h2>
-      <p className="text-lg text-center text-gray-600 mb-12">
-        Got questions? We’ve got answers! Here's everything you need to know
-        before joining.
-      </p>
-      <div className="space-y-4">
-        {faqs.map((faq, index) => (
-          <div
-            key={index}
-            className="border border-gray-300 rounded-lg pb-4"
-            style={{ borderRadius: "10px" }}
-          >
-            <button
-              onClick={() => handleToggle(index)}
-              className="w-full text-left flex justify-between items-center py-4 px-6 focus:outline-none"
-            >
-              <span className="font-semibold text-lg text-lightGray">
-                {faq.question}
-              </span>
-              <span className="text-xl">
-                {activeIndex === index ? (
-                  <FaChevronUp className="text-secondary" /> // Use arrow up for expanded
-                ) : (
-                  <FaChevronDown className="text-secondary" /> // Use arrow down for collapsed
-                )}
-              </span>
-            </button>
+    <div className="bg-[#F7F8F9]">
+      <section className=" max-w-[1300px] mx-auto px-6 md:px-16 lg:px-32 py-16">
+        <h2 className="text-4xl font-bold text-center mb-6 text-primary">
+          Frequently Asked Questions
+        </h2>
+        <p className="text-lg text-center text-gray-600 mb-12">
+          Got questions? We’ve got answers! Here's everything you need to know{" "}
+          <br />
+          before joining.
+        </p>
+        <div className="space-y-4">
+          {faqs.map((faq, index) => (
             <div
-              className={`overflow-hidden transition-all duration-500 ease-in-out ${
-                activeIndex === index ? "max-h-screen" : "max-h-0"
-              }`}
+              key={index}
+              className="border border-gray-300 rounded-lg pb-4"
+              style={{ borderRadius: "10px" }}
             >
-              <p className="text-gray-600 pt-2 px-6">{faq.answer}</p>
+              <button
+                onClick={() => handleToggle(index)}
+                className="w-full text-left flex justify-between items-center py-4 px-6 focus:outline-none"
+              >
+                <span className="font-semibold text-lg text-lightGray">
+                  {faq.question}
+                </span>
+                <span className="text-xl">
+                  {activeIndex === index ? (
+                    <FaChevronUp className="text-secondary" /> // Use arrow up for expanded
+                  ) : (
+                    <FaChevronDown className="text-secondary" /> // Use arrow down for collapsed
+                  )}
+                </span>
+              </button>
+              <div
+                className={`overflow-hidden transition-all duration-500 ease-in-out ${
+                  activeIndex === index ? "max-h-screen" : "max-h-0"
+                }`}
+              >
+                <p className="text-gray-600 pt-2 px-6">{faq.answer}</p>
+              </div>
             </div>
-          </div>
-        ))}
-      </div>
-    </section>
+          ))}
+        </div>
+      </section>
+    </div>
   );
 }

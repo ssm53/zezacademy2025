@@ -7,7 +7,7 @@ const TeachingMethod = () => {
       <div className="max-w-[1300px] mx-auto">
         <div className="grid md:grid-cols-2 gap-8 items-center">
           <div className="space-y-6">
-            <h2 className="text-2xl font-bold text-gray-900">
+            <h2 className="text-2xl font-bold text-primary">
               Our Teaching Method
             </h2>
             <ul className="list-disc ml-6 space-y-2 text-gray-600">
@@ -46,7 +46,7 @@ const TeachingMethod = () => {
           </div>
 
           <div className="space-y-6">
-            <h2 className="text-2xl font-bold text-gray-900">Career Support</h2>
+            <h2 className="text-2xl font-bold text-primary">Career Support</h2>
             <p className="text-gray-600">Upon graduation, you will get:</p>
             <ul className="list-disc ml-6 space-y-2 text-gray-600">
               <li>A certificate</li>
@@ -60,13 +60,19 @@ const TeachingMethod = () => {
           </div>
         </div>
 
-        <div className="mt-16 bg-primary text-white rounded-lg p-8">
-          <h2 className="text-2xl font-bold">100% Money-back Guarantee</h2>
+        <div className="mt-16 bg-primary text-white rounded-lg p-8 relative">
+          <h2 className="text-2xl sm:text-4xl font-bold">
+            100% Money-back <br /> Guarantee
+          </h2>
           <p className="mt-4">
             We're confident in our program, which is why we offer a money-back
             guarantee:
           </p>
-          <ul className="list-disc ml-6 mt-4 space-y-2">
+          <ul className="w-full sm:w-1/2 text-[#FFFFFFCC] list-disc ml-[-1px] mt-4 space-y-2 border border-[#19395F] p-8 rounded-[15px]">
+            <p>
+              To qualify, students must meet and maintain eligibility as
+              outlined below:
+            </p>
             <li>You graduate from the bootcamp and receive our certificate.</li>
             <li>
               You apply to tech jobs, get interviews, and do your part for six
@@ -74,6 +80,15 @@ const TeachingMethod = () => {
             </li>
             <li>If you don’t get a job, get your money back!</li>
           </ul>
+          <p className="pt-[12px] text-[#FFFFFFCC]">
+            *If you follow those steps above, but still don't get a tech job,
+            you get a full-refund!
+          </p>
+          <img
+            src="/Rectangle.svg"
+            alt="rectangle"
+            className="hidden sm:block absolute bottom-0 right-0"
+          />
         </div>
       </div>
     </section>

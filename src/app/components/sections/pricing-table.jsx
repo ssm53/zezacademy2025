@@ -7,7 +7,6 @@ const PricingTable = () => {
       </div>
 
       <div className="overflow-x-auto px-4 md:px-8">
-        {" "}
         <div className="rounded-lg shadow-lg border border-gray-300 overflow-hidden">
           <table className="min-w-full bg-white rounded-lg border-collapse">
             <thead>

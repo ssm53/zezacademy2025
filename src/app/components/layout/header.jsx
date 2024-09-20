@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import { FiMenu } from "react-icons/fi"; // Hamburger icon
-import logo from "../../../public/assets/logo.png"; // Import the image using relative path
+// import logo from "../../../public/assets/logo.png";
 import {
   Drawer,
   DrawerTrigger,
@@ -25,11 +25,17 @@ const Header = () => {
             href="#"
             className="flex items-center space-x-3 rtl:space-x-reverse"
           >
-            <Image
+            {/* <Image
               className="w-[200px] h-[50px] sm:w-[256px] sm:h-[51px]"
               src={logo}
               alt="Logo"
-            />
+            /> */}
+            <h1 className="text-3xl md:text-4xl font-bold text-white text-center md:text-left">
+              <span className="text-blue-400">Hey</span>
+              <span className="text-white">Learn</span>
+              <span className="text-blue-400">2</span>
+              <span className="text-white">Code</span>
+            </h1>
           </a>
           <div className="flex items-center space-x-3">
             {/* Hide the "Apply Now" button on mobile screens */}
@@ -112,7 +118,7 @@ const Header = () => {
           </div>
         </div>
       </nav>
-      <hr />
+      <hr className="border-[0px,0px,1px,0px]" />
     </div>
   );
 };

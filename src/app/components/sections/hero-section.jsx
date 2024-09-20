@@ -1,5 +1,128 @@
-import React from "react";
+"use client";
+import React, { useEffect, useRef } from "react";
+import {
+  StackedCarousel,
+  ResponsiveContainer,
+} from "react-stacked-center-carousel";
+import Fab from "@mui/material/Fab";
+import KeyboardArrowLeftIcon from "@mui/icons-material/KeyboardArrowLeft";
+import KeyboardArrowRightIcon from "@mui/icons-material/KeyboardArrowRight";
 import { FiPlayCircle } from "react-icons/fi"; // Play button icon
+import "./video-card.css";
+
+const data = [
+  {
+    image: "https://picsum.photos/200/300/?random=1",
+    text: "hello",
+  },
+  {
+    image: "https://picsum.photos/200/300/?random=12",
+    text: "lel",
+  },
+  {
+    image: "https://picsum.photos/200/300/?random=13",
+    text: "kak",
+  },
+  {
+    image: "https://picsum.photos/200/300/?random=15",
+    text: "kk",
+  },
+  {
+    image: "https://picsum.photos/200/300/?random=10",
+    text: "away",
+  },
+];
+
+// Slide component for carousel
+const Slide = React.memo(function ({
+  data,
+  dataIndex,
+  isCenterSlide,
+  swipeTo,
+  slideIndex,
+}) {
+  const coverImage = data[dataIndex].image;
+  const text = data[dataIndex].text;
+
+  return (
+    <div className="card-card" draggable={false}>
+      <div className={`cover fill ${isCenterSlide ? "off" : "on"}`}>
+        <div
+          className="card-overlay fill"
+          onClick={() => {
+            if (!isCenterSlide) swipeTo(slideIndex);
+          }}
+        />
+      </div>
+      <div className="detail fill">
+        <div className="discription">
+          <img
+            style={{ width: 100, height: "auto" }} // Ensure proper sizing
+            alt="slide"
+            className="cover-image"
+            src={coverImage}
+          />
+          <p>{text}</p>
+        </div>
+      </div>
+    </div>
+  );
+});
+
+// Stacked Carousel component
+const CardExample = () => {
+  const ref = useRef(null);
+
+  const maxVisibleSlide = window.innerWidth < 768 ? 1 : 5; // Show only 1 on mobile
+  const customScales = Array.from(
+    { length: (maxVisibleSlide + 3) / 2 },
+    (_, index) => 1 - index * 0.15
+  ); // Example scale values
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      ref.current?.goNext();
+    }, 10000);
+    return () => clearInterval(interval); // Clean up
+  }, []);
+
+  return (
+    <div className="card">
+      <div style={{ width: "100%", position: "relative" }}>
+        <ResponsiveContainer
+          carouselRef={ref}
+          render={(width) => (
+            <StackedCarousel
+              ref={ref}
+              slideComponent={Slide}
+              slideWidth={window.innerWidth < 768 ? "100%" : 450} // Full width on mobile
+              carouselWidth={width} // Adjust width based on container
+              data={data}
+              maxVisibleSlide={maxVisibleSlide} // Pass maxVisibleSlide here
+              disableSwipe
+              customScales={customScales} // Use the calculated customScales
+              transitionTime={450}
+            />
+          )}
+        />
+        <Fab
+          className="card-button left"
+          size="small"
+          onClick={() => ref.current?.goBack()}
+        >
+          <KeyboardArrowLeftIcon style={{ fontSize: 30 }} />
+        </Fab>
+        <Fab
+          className="card-button right"
+          size="small"
+          onClick={() => ref.current?.goNext()}
+        >
+          <KeyboardArrowRightIcon style={{ fontSize: 30 }} />
+        </Fab>
+      </div>
+    </div>
+  );
+};
 
 const Hero = () => {
   return (
@@ -33,60 +156,26 @@ const Hero = () => {
           <p className="mt-4 text-xs text-gray-400 text-center md:text-left">
             ONLY FOR THOSE WHO GRADUATED LESS THAN 6 YEARS AGO
           </p>
-
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-6 text-sm text-white">
-            <div className="border border-gray-600 p-3 rounded-lg text-center">
+          {/* Grid with Vertical and Horizontal Lines */}
+          <div className="grid grid-cols-1 sm:grid-cols-4 sm:gap-0 gap-4 mt-6 text-sm text-white divide-y divide-[#1D436F] sm:divide-y-0 sm:divide-x border border-[#1D436F] rounded-[15px]">
+            <div className="relative p-3 rounded-lg text-center">
               Get developer job or it’s 100% free
             </div>
-            <div className="border border-gray-600 p-3 rounded-lg text-center">
+            <div className="relative p-3 rounded-lg text-center">
               Proper career support after graduation
             </div>
-            <div className="border border-gray-600 p-3 rounded-lg text-center">
+            <div className="relative p-3 rounded-lg text-center">
               Only 6 Students per cohort
             </div>
-            <div className="border border-gray-600 p-3 rounded-lg text-center">
+            <div className="relative p-3 rounded-lg text-center">
               Build project that impress recruiters
             </div>
           </div>
         </div>
 
-        {/* Right Side - Video Card */}
-        <div
-          className="relative bg-white p-6 rounded-lg shadow-lg"
-          style={{ width: "400px", height: "434px" }}
-        >
-          <div className="relative rounded-lg overflow-hidden shadow-md w-full h-[260px]">
-            <iframe
-              className="absolute top-0 left-0 w-full h-full"
-              src="https://www.youtube.com/embed/dQw4w9WgXcQ?controls=01&rel=0&modestbranding=1&showinfo=0"
-              title="Testimonial Video"
-              frameBorder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-            ></iframe>
-            <div className="absolute inset-0 flex items-center justify-center">
-              <FiPlayCircle className="text-blue-500 w-16 h-16" />
-            </div>
-          </div>
-
-          <p className="mt-4 text-sm text-gray-600">
-            Lorem ipsum dolor amet consectetur pellentesque scelerisque
-            fermentum bibendum ipsum massa cursus aliquet feugiat.
-          </p>
-
-          <div className="flex items-center mt-4">
-            <img
-              className="w-10 h-10 rounded-full"
-              src="https://randomuser.me/api/portraits/men/32.jpg"
-              alt="Reviewer"
-            />
-            <div className="ml-3">
-              <p className="text-sm font-semibold text-gray-800">
-                Kris Steigerwald
-              </p>
-              <p className="text-xs text-yellow-400">★★★★★</p>
-            </div>
-          </div>
+        {/* Right Side - Replaced Video Card with Carousel */}
+        <div>
+          <CardExample />
         </div>
       </div>
     </section>
