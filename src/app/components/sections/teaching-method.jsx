@@ -25,11 +25,10 @@ const TeachingMethod = () => {
 
           <div className="rounded-lg overflow-hidden shadow-lg">
             <Image
-              src="/teaching.svg"
+              src="/teaching.svg" // Assuming the image is statically imported
               alt="Teaching Method"
               width={500} // Set appropriate width
               height={300} // Set appropriate height
-              layout="responsive"
             />
           </div>
         </div>
@@ -37,11 +36,10 @@ const TeachingMethod = () => {
         <div className="grid md:grid-cols-2 gap-8 items-center mt-16">
           <div className="rounded-lg overflow-hidden shadow-lg">
             <Image
-              src="/meeting.svg"
+              src="/meeting.svg" // Assuming the image is statically imported
               alt="Career Support"
               width={500} // Set appropriate width
               height={300} // Set appropriate height
-              layout="responsive"
             />
           </div>
 
@@ -60,7 +58,7 @@ const TeachingMethod = () => {
           </div>
         </div>
 
-        <div className="mt-16 bg-primary text-white rounded-lg p-8 relative">
+        <div className="mt-16 bg-primary text-white rounded-[23px] p-8 relative">
           <h2 className="text-2xl sm:text-4xl font-bold">
             100% Money-back <br /> Guarantee
           </h2>
@@ -78,7 +76,7 @@ const TeachingMethod = () => {
               You apply to tech jobs, get interviews, and do your part for six
               months.
             </li>
-            <li>If you don’t get a job, get your money back!</li>
+            <li>If you don't get a job, get your money back!</li>
           </ul>
           <p className="pt-[12px] text-[#FFFFFFCC]">
             *If you follow those steps above, but still don't get a tech job,

@@ -1,5 +1,5 @@
 "use client";
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import {
   StackedCarousel,
   ResponsiveContainer,
@@ -72,18 +72,32 @@ const Slide = React.memo(function ({
 // Stacked Carousel component
 const CardExample = () => {
   const ref = useRef(null);
-
-  const maxVisibleSlide = window.innerWidth < 768 ? 1 : 5; // Show only 1 on mobile
-  const customScales = Array.from(
-    { length: (maxVisibleSlide + 3) / 2 },
-    (_, index) => 1 - index * 0.15
-  ); // Example scale values
+  const [maxVisibleSlide, setMaxVisibleSlide] = useState(5); // Default to 5
+  const [customScales, setCustomScales] = useState([]);
 
   useEffect(() => {
+    const updateCarouselSettings = () => {
+      const newMaxVisibleSlide = window.innerWidth < 768 ? 1 : 5;
+      setMaxVisibleSlide(newMaxVisibleSlide);
+
+      const newCustomScales = Array.from(
+        { length: (newMaxVisibleSlide + 3) / 2 },
+        (_, index) => 1 - index * 0.15
+      );
+      setCustomScales(newCustomScales);
+    };
+
+    updateCarouselSettings(); // Set initial values
+    window.addEventListener("resize", updateCarouselSettings); // Update on resize
+
     const interval = setInterval(() => {
       ref.current?.goNext();
     }, 10000);
-    return () => clearInterval(interval); // Clean up
+
+    return () => {
+      clearInterval(interval);
+      window.removeEventListener("resize", updateCarouselSettings);
+    };
   }, []);
 
   return (

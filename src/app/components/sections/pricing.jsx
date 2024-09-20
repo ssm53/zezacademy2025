@@ -37,7 +37,7 @@ const Pricing = () => {
               {/* Price Details */}
               <h4 className="text-4xl font-extrabold">
                 $500USD/ &nbsp;
-                <span className="text-3xl text-[#ECECEC] line-through">
+                <span className="text-3xl text-gray-400 line-through">
                   $5,000USD
                 </span>
               </h4>

@@ -8,11 +8,12 @@ const OurFounder = () => {
         <div className="lg:w-1/2 mb-8 lg:mb-0">
           <div className="relative rounded-lg overflow-hidden shadow-lg">
             <Image
-              src="/founder-video-thumbnail.jpg"
+              src="/founder.svg"
               alt="Founder presenting"
               width={800}
               height={450}
               className="object-cover w-full h-full"
+              priority
             />
             <a
               href="https://www.youtube.com/watch?v=HF0iqQ2ZzFU&t=2s"
