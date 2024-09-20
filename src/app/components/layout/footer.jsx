@@ -1,4 +1,5 @@
 import { FaLinkedin, FaInstagram, FaTwitter, FaYoutube } from "react-icons/fa";
+import Image from "next/image";
 
 const Footer = () => {
   return (
@@ -16,11 +17,23 @@ const Footer = () => {
             Lorem ipsum dolor sit amet lorem consectetur pretium neque l
           </p>
           <p className="mt-4 flex items-center justify-center md:justify-start">
-            <img src="/mailbox.svg" alt="mail icon" className="w-6 h-6 mr-2" />
+            <Image
+              src="/mailbox.svg"
+              alt="mail icon"
+              width={20} // Set appropriate width
+              height={20} // Set appropriate height
+              className="w-6 h-6 mr-2"
+            />
             shaun@heylearn2code.com
           </p>
           <p className="mt-2 flex items-center justify-center md:justify-start">
-            <img src="/phone.svg" alt="phone icon" className="w-6 h-6 mr-2" />
+            <Image
+              src="/phone.svg"
+              alt="phone icon"
+              width={20} // Set appropriate width
+              height={20} // Set appropriate height
+              className="w-6 h-6 mr-2"
+            />
             +6 012 339 7028
           </p>
         </div>

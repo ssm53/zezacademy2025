@@ -5,7 +5,7 @@ const TeachingMethod = () => {
   return (
     <section className="bg-white py-16 px-4">
       <div className="max-w-[1300px] mx-auto">
-        <div className="grid md:grid-cols-2 gap-8 items-center">
+        <div className="grid md:grid-cols-2 gap-8 items-center justify-between">
           <div className="space-y-6">
             <h2 className="text-2xl font-bold text-primary">
               Our Teaching Method
@@ -23,23 +23,24 @@ const TeachingMethod = () => {
             </ul>
           </div>
 
-          <div className="rounded-lg overflow-hidden shadow-lg">
+          <div className="flex justify-end rounded-lg overflow-hidden shadow-lg">
             <Image
-              src="/teaching.svg" // Assuming the image is statically imported
+              src="/teaching.svg"
               alt="Teaching Method"
-              width={500} // Set appropriate width
-              height={300} // Set appropriate height
+              width={500}
+              height={300}
+              className="w-auto"
             />
           </div>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-8 items-center mt-16">
-          <div className="rounded-lg overflow-hidden shadow-lg">
+        <div className="grid md:grid-cols-2 gap-8 items-center mt-16 justify-between">
+          <div className="flex justify-start rounded-lg overflow-hidden shadow-lg">
             <Image
-              src="/meeting.svg" // Assuming the image is statically imported
+              src="/meeting.svg"
               alt="Career Support"
-              width={500} // Set appropriate width
-              height={300} // Set appropriate height
+              width={500}
+              height={300}
             />
           </div>
 

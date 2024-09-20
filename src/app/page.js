@@ -24,13 +24,13 @@ export default function Home() {
       <Hero />
       <SixHundred />
       <OurFounder />
-      <OurCohorts />
-      <BootcampSection />
-      <TeachingMethod />
       <HandsOnLearning />
       <WhatLearn />
       <GetStarted />
+      <OurCohorts />
+      <BootcampSection />
       <WhyChoose />
+      <TeachingMethod />
       <Testimonials />
       <PricingTable />
       <CurriculumTable />

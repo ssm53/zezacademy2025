@@ -62,7 +62,7 @@ export default function FaqAccordian() {
           {faqs.map((faq, index) => (
             <div
               key={index}
-              className="border border-gray-300 rounded-lg pb-4"
+              className="faq-item border border-gray-300 rounded-lg pb-4"
               style={{ borderRadius: "10px" }}
             >
               <button
@@ -81,7 +81,7 @@ export default function FaqAccordian() {
                 </span>
               </button>
               <div
-                className={`overflow-hidden transition-all duration-500 ease-in-out ${
+                className={`overflow-hidden  transition-all duration-100 ease-in-out ${
                   activeIndex === index ? "max-h-screen" : "max-h-0"
                 }`}
               >

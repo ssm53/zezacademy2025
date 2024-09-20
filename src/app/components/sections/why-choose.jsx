@@ -1,16 +1,17 @@
 // components/WhyChoose.js
+import Image from "next/image";
 import CustomSlider from "./custom-slider";
 
-const bannerLodgos = [
-  "/Group 14.png",
-  "/Group 14.png",
-  "/Group 14.png",
-  "/Group 14.png",
-  "/Group 14.png",
-  "/Group 14.png",
-  "/Group 14.png",
-  "/Group 14.png",
-];
+// const bannerLodgos = [
+//   "/Group 14.png",
+//   "/Group 14.png",
+//   "/Group 14.png",
+//   "/Group 14.png",
+//   "/Group 14.png",
+//   "/Group 14.png",
+//   "/Group 14.png",
+//   "/Group 14.png",
+// ];
 
 const WhyChoose = () => {
   const features = [
@@ -18,49 +19,34 @@ const WhyChoose = () => {
       title: "Job Guarantee or It’s Free",
       description:
         "Get a job after completion of the course, or your money back.",
-      icon: "💼",
+      icon: "/100.svg", // Replace with your image path
     },
     {
       title: "Exclusive Cohorts",
       description:
         "Get more one-on-one time and personal guidance from your instructor.",
-      icon: "🎓",
+      icon: "/user.svg", // Replace with your image path
     },
     {
       title: "Instant Help",
       description: "Get the help you need within 15 minutes.",
-      icon: "🛠️",
+      icon: "/chatbot.svg", // Replace with your image path
     },
     {
       title: "Build and Sell AI Products",
       description: "Learn how to create AI-driven solutions.",
-      icon: "🤖",
+      icon: "/ai.svg", // Replace with your image path
     },
     {
       title: "Work with Real Clients",
       description: "Build real products and get paid for it.",
-      icon: "💼",
+      icon: "/multiuser.svg", // Replace with your image path
     },
     {
       title: "Career Support",
       description:
         "We help you with job applications, resumes, and interview tips.",
-      icon: "🧑‍💼",
-    },
-    {
-      title: "Instant Help",
-      description: "Get the help you need within 15 minutes.",
-      icon: "🛠️",
-    },
-    {
-      title: "Build and Sell AI Products",
-      description: "Learn how to create AI-driven solutions.",
-      icon: "🤖",
-    },
-    {
-      title: "Work with Real Clients",
-      description: "Build real products and get paid for it.",
-      icon: "💼",
+      icon: "/people.svg", // Replace with your image path
     },
   ];
 
@@ -74,16 +60,34 @@ const WhyChoose = () => {
         {/* Desktop View */}
         <div className="hidden lg:grid grid-cols-3 gap-8">
           {features.map((feature, index) => (
-            <div
-              key={index}
-              className="bg-[#0E2644] p-6 rounded-lg text-center"
-            >
-              <div className="text-4xl">{feature.icon}</div>
+            <div key={index} className="bg-[#0E2644] p-6 rounded-lg text-start">
+              <Image
+                src={feature.icon}
+                alt={feature.title}
+                width={64} // Adjust the width as needed
+                height={64} // Adjust the height as needed
+              />
               <h3 className="text-lg font-semibold mt-4">{feature.title}</h3>
-              <p className="mt-2">{feature.description}</p>
+              <p className="mt-2 text-[#F1F1F1]">{feature.description}</p>
             </div>
           ))}
         </div>
+        <ul className="w-full sm:w-full text-[#FFFFFFCC] list-disc ml-[-1px] mt-4 space-y-2 border border-[#19395F] p-8 rounded-[15px]">
+          <strong>Bonuses</strong>
+          <li>You will learn how to build AI products.</li>
+          <li>
+            You will learn how to create a website in less than 30 minutes
+            (which you can sell to businesses)
+          </li>
+          <li>
+            You will learn how to build a google review filtering system (which
+            you can sell to businesses)
+          </li>
+          <li>
+            Chat Gpt is great. We teach you how to properly utilize it for
+            coding!
+          </li>
+        </ul>
 
         {/* Mobile View - Custom Slider */}
         <div className="lg:hidden">

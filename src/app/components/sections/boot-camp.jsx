@@ -30,7 +30,7 @@ export default function BootcampSection() {
             </div>
           </div>
           <h3 className="text-lg font-semibold text-primary mb-2">
-            Have never Coded before but want to Learn
+            Have never Coded before <br /> but want to Learn
           </h3>
           <p className="text-gray-600">
             Jumpstart your coding journey with hands-on learning and guidance,
@@ -47,7 +47,7 @@ export default function BootcampSection() {
             </div>
           </div>
           <h3 className="text-lg font-semibold text-primary mb-2">
-            Tried online Tutorials but feel Stuck
+            Tried online Tutorials but <br /> feel Stuck
           </h3>
           <p className="text-gray-600">
             Turn your ideas into real-world applications by learning to code and
@@ -64,7 +64,7 @@ export default function BootcampSection() {
             </div>
           </div>
           <h3 className="text-lg font-semibold text-primary mb-2">
-            Looking for a career switch or start-up Builder
+            Looking for a career switch <br /> or start-up Builder
           </h3>
           <p className="text-gray-600">
             Transition into the tech industry with the skills and confidence

@@ -20,7 +20,7 @@ const SixHundred = () => {
             Click the button below, fill up a few questions, and get your free
             access! We will email you your login credentials within a day.
           </p>
-          <button className="bg-primary text-white py-3 px-6 rounded-[5px] hover:bg-gray-800 transition">
+          <button className="bg-primary text-white py-3 px-6 rounded-[5px] hover:bg-secondary transition">
             Get Free Access
           </button>
         </div>

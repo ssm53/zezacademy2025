@@ -1,5 +1,6 @@
 "use client";
 import React, { useEffect, useRef, useState } from "react";
+import { FiPlayCircle } from "react-icons/fi"; // Play button icon
 import {
   StackedCarousel,
   ResponsiveContainer,
@@ -7,29 +8,33 @@ import {
 import Fab from "@mui/material/Fab";
 import KeyboardArrowLeftIcon from "@mui/icons-material/KeyboardArrowLeft";
 import KeyboardArrowRightIcon from "@mui/icons-material/KeyboardArrowRight";
-import { FiPlayCircle } from "react-icons/fi"; // Play button icon
 import "./video-card.css";
 
 const data = [
   {
     image: "https://picsum.photos/200/300/?random=1",
     text: "hello",
+    youtubeLink: "https://www.youtube.com/watch?v=abc123", // Sample YouTube link
   },
   {
     image: "https://picsum.photos/200/300/?random=12",
     text: "lel",
+    youtubeLink: "https://www.youtube.com/watch?v=def456",
   },
   {
     image: "https://picsum.photos/200/300/?random=13",
     text: "kak",
+    youtubeLink: "https://www.youtube.com/watch?v=ghi789",
   },
   {
     image: "https://picsum.photos/200/300/?random=15",
     text: "kk",
+    youtubeLink: "https://www.youtube.com/watch?v=jkl012",
   },
   {
     image: "https://picsum.photos/200/300/?random=10",
     text: "away",
+    youtubeLink: "https://www.youtube.com/watch?v=mno345",
   },
 ];
 
@@ -43,6 +48,7 @@ const Slide = React.memo(function ({
 }) {
   const coverImage = data[dataIndex].image;
   const text = data[dataIndex].text;
+  const youtubeLink = data[dataIndex].youtubeLink;
 
   return (
     <div className="card-card" draggable={false}>
@@ -54,15 +60,62 @@ const Slide = React.memo(function ({
           }}
         />
       </div>
-      <div className="detail fill">
-        <div className="discription">
+
+      {/* Video Section */}
+      <div className="video-section relative">
+        <img
+          src={coverImage}
+          alt="Video Thumbnail"
+          className="w-full h-auto rounded-t-lg"
+        />
+        <a
+          href={youtubeLink}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="absolute inset-0 flex items-center justify-center"
+        >
+          <FiPlayCircle className="text-blue-500 text-6xl" />
+        </a>
+      </div>
+
+      {/* Description Section */}
+      <div className="detail p-4">
+        <p className="text-gray-600 text-sm">
+          Lorem ipsum dolor amet consectetur pellent esque scelerisque fermentum
+          bibendum ipsum massa cursus aliquet feugiat.
+        </p>
+
+        <div className="flex items-center mt-4">
+          {/* Profile Image */}
           <img
-            style={{ width: 100, height: "auto" }} // Ensure proper sizing
-            alt="slide"
-            className="cover-image"
-            src={coverImage}
+            src="https://picsum.photos/40"
+            alt="Profile"
+            className="rounded-full w-10 h-10 mr-3"
           />
-          <p>{text}</p>
+
+          {/* Name and Rating */}
+          <div>
+            <p className="font-bold text-gray-900">Kris Steigerwald</p>
+            <div className="flex text-blue-500">
+              {Array(5)
+                .fill("")
+                .map((_, i) => (
+                  <svg
+                    key={i}
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="h-4 w-4 fill-current"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  >
+                    <polygon points="12 2 15 8.5 22 9.3 17 14 18 21 12 17.7 6 21 7 14 2 9.3 9 8.5 12 2" />
+                  </svg>
+                ))}
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -159,10 +212,10 @@ const Hero = () => {
           </p>
 
           <div className="mt-6 flex justify-center md:justify-start space-x-4">
-            <button className="bg-blue-500 hover:bg-blue-600 text-white px-6 py-3 rounded-lg">
+            <button className="w-[142px] sm:w-[190px] h-[50px] bg-blue-500 hover:bg-blue-600 text-white px-6 py-3 rounded-[5px]">
               Apply Now
             </button>
-            <button className="bg-white text-blue-600 hover:bg-blue-100 px-6 py-3 rounded-lg">
+            <button className="w-[142px] sm:w-[190px] h-[50px] bg-white text-blue-600 hover:bg-blue-100 px-6 py-3 rounded-[5px] whitespace-nowrap flex justify-center">
               Get Free Access
             </button>
           </div>
@@ -171,7 +224,7 @@ const Hero = () => {
             ONLY FOR THOSE WHO GRADUATED LESS THAN 6 YEARS AGO
           </p>
           {/* Grid with Vertical and Horizontal Lines */}
-          <div className="grid grid-cols-1 sm:grid-cols-4 sm:gap-0 gap-4 mt-6 text-sm text-white divide-y divide-[#1D436F] sm:divide-y-0 sm:divide-x border border-[#1D436F] rounded-[15px]">
+          <div className=" grid grid-cols-1 sm:grid-cols-4 sm:gap-0 gap-4 mt-6 text-sm text-white divide-y divide-[#1D436F] sm:divide-y-0 sm:divide-x border border-[#1D436F] rounded-[15px]">
             <div className="relative p-3 rounded-lg text-center">
               Get developer job or it’s 100% free
             </div>
@@ -182,15 +235,12 @@ const Hero = () => {
               Only 6 Students per cohort
             </div>
             <div className="relative p-3 rounded-lg text-center">
-              Build project that impress recruiters
+              Flexible payment methods
             </div>
           </div>
         </div>
-
-        {/* Right Side - Replaced Video Card with Carousel */}
-        <div>
-          <CardExample />
-        </div>
+        {/* Right Side - Stacked Video Carousel */}
+        <CardExample />
       </div>
     </section>
   );
