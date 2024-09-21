@@ -37,7 +37,7 @@ export const CardStack = ({ items, offset, scaleFactor }) => {
       {cards.map((card, index) => (
         <motion.div
           key={card.id}
-          className="absolute bg-white h-[434px] w-auto sm:w-385px rounded-3xl p-4 shadow-xl border border-neutral-200 flex flex-col justify-between"
+          className="absolute bg-white h-[434px] w-[330px] sm:mx-auto sm:w-[385px] rounded-3xl p-4 shadow-xl border border-neutral-200 flex flex-col justify-between"
           style={{
             transformOrigin: "top center",
             left: index * CARD_OFFSET, // Shift cards to the right side
@@ -112,7 +112,7 @@ export const CardStack = ({ items, offset, scaleFactor }) => {
       ))}
 
       {/* Navigation Arrows */}
-      <div className="absolute -bottom-12 flex justify-center  text-center items-center ">
+      <div className="mx-auto absolute -bottom-12 flex justify-center  text-center items-center ">
         <button
           className="bg-gray-300 p-2 rounded-full"
           onClick={prevCard}
