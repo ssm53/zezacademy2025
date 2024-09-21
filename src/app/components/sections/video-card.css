@@ -1,17 +1,23 @@
 .card .card-button {
-  position: absolute;
-  top: 43%;
   box-shadow: none;
   border-radius: 5px;
   width: 36px;
   height: 36px;
   background-color: transparent;
 }
-.card .card-button.right {
-  right: 0%;
+
+.card .arrows-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
 }
+
+.card .card-button.right {
+  margin-left: 10px;
+}
+
 .react-stacked-center-carousel {
-  padding: 20px 0;
+  padding: 0 0 20px;
 }
 
 .card-card {
@@ -19,7 +25,7 @@
   cursor: pointer;
   width: 100%;
   border-radius: 15px;
-  height: 300px;
+  height: 380px; /* Adjusted height */
   position: relative;
   background-color: #ffffff;
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2), 0 0 4px rgba(0, 0, 0, 0.05);
@@ -29,20 +35,12 @@
   transform: scale(1.05);
 }
 
-.react-stacked-center-carousel-slide-0 .card-card {
-  cursor: default;
-}
-
-.react-stacked-center-carousel-slide-0 .card-card:hover {
-  transform: none;
-}
-
 .fill {
   width: 100%;
   height: 100%;
 }
 
-.card-card .card-overlay {
+.card-overlay {
   user-select: none;
   position: absolute;
   background-color: #00000099;
@@ -52,66 +50,4 @@
 
 .card-card:hover .card-overlay {
   background-color: #0000002d;
-}
-
-.react-stacked-center-carousel-slide-0 .card-overlay {
-  background-color: #00000099 !important;
-}
-
-.card-card .cover-image {
-  object-fit: cover;
-}
-
-.card-card .cover {
-  position: absolute;
-  transition: opacity 300ms ease;
-}
-.react-stacked-center-carousel-slide-0 .card-card .cover {
-  transition: opacity 300ms ease, z-index 0ms 300ms;
-}
-
-.card-card .cover.on {
-  opacity: 1;
-  z-index: 1;
-}
-
-.card-card .cover.off {
-  opacity: 0;
-  z-index: -1;
-}
-
-.react-stacked-center-carousel-slide--1 {
-  left: unset !important;
-  right: 0 !important;
-}
-.react-stacked-center-carousel-slide--2 {
-  left: unset !important;
-  right: 0 !important;
-}
-.react-stacked-center-carousel-slide--3 {
-  left: unset !important;
-  right: 0 !important;
-}
-
-.card-card .detail {
-  display: flex;
-}
-.card-card .video {
-  width: 20%;
-}
-.card-card .discription {
-  display: flex;
-  flex-direction: column;
-  margin: 10px;
-}
-@media (max-width: 768px) {
-  .card-card {
-    height: auto; /* Allow auto height for smaller screens */
-  }
-  .card-card .video {
-    width: 100%; /* Adjust video width */
-  }
-  .card-card .discription {
-    margin: 5px; /* Adjust margin for smaller screens */
-  }
 }

@@ -8,6 +8,7 @@ import {
 import Fab from "@mui/material/Fab";
 import KeyboardArrowLeftIcon from "@mui/icons-material/KeyboardArrowLeft";
 import KeyboardArrowRightIcon from "@mui/icons-material/KeyboardArrowRight";
+import { CardStackDemo } from "../card-stackdemo";
 import "./video-card.css";
 
 const data = [
@@ -240,7 +241,8 @@ const Hero = () => {
           </div>
         </div>
         {/* Right Side - Stacked Video Carousel */}
-        <CardExample />
+        {/* <CardExample /> */}
+        <CardStackDemo />
       </div>
     </section>
   );
