@@ -19,34 +19,34 @@ const WhyChoose = () => {
       title: "Job Guarantee or It’s Free",
       description:
         "Get a job after completion of the course, or your money back.",
-      icon: "/100.svg", // Replace with your image path
+      icon: "/100.svg",
     },
     {
       title: "Exclusive Cohorts",
       description:
         "Get more one-on-one time and personal guidance from your instructor.",
-      icon: "/user.svg", // Replace with your image path
+      icon: "/user.svg",
     },
     {
       title: "Instant Help",
       description: "Get the help you need within 15 minutes.",
-      icon: "/chatbot.svg", // Replace with your image path
+      icon: "/chatbot.svg",
     },
     {
       title: "Build and Sell AI Products",
       description: "Learn how to create AI-driven solutions.",
-      icon: "/ai.svg", // Replace with your image path
+      icon: "/ai.svg",
     },
     {
       title: "Work with Real Clients",
       description: "Build real products and get paid for it.",
-      icon: "/multiuser.svg", // Replace with your image path
+      icon: "/multiuser.svg",
     },
     {
       title: "Career Support",
       description:
         "We help you with job applications, resumes, and interview tips.",
-      icon: "/people.svg", // Replace with your image path
+      icon: "/people.svg",
     },
   ];
 

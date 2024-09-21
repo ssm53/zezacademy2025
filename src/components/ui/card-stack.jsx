@@ -1,83 +1,88 @@
 "use client";
-import { useEffect, useState } from "react";
+import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 
-let interval;
-
 export const CardStack = ({ items, offset, scaleFactor }) => {
-  const CARD_OFFSET = offset || 10;
-  const SCALE_FACTOR = scaleFactor || 0.06;
+  const CARD_OFFSET = offset || 20; // Offset for right shift
+  const TOP_OFFSET = 15; // Adjust for slight upward stacking
+  const SCALE_FACTOR = scaleFactor || 0.06; // Scale for the smaller card effect
   const [cards, setCards] = useState(items);
+  const [currentIndex, setCurrentIndex] = useState(0);
 
   useEffect(() => {
-    startFlipping();
-    return () => clearInterval(interval);
-  }, []);
+    setCards(items);
+  }, [items]);
 
-  const startFlipping = () => {
-    interval = setInterval(() => {
-      setCards((prevCards) => {
-        const newArray = [...prevCards];
-        newArray.unshift(newArray.pop());
-        return newArray;
-      });
-    }, 5000);
+  const nextCard = () => {
+    setCards((prevCards) => {
+      const newArray = [...prevCards];
+      newArray.unshift(newArray.pop());
+      return newArray;
+    });
+    setCurrentIndex((prev) => (prev + 1) % cards.length);
+  };
+
+  const prevCard = () => {
+    setCards((prevCards) => {
+      const newArray = [...prevCards];
+      newArray.push(newArray.shift());
+      return newArray;
+    });
+    setCurrentIndex((prev) => (prev - 1 + cards.length) % cards.length);
   };
 
   return (
-    <div className="relative h-[434px] w-[385px] md:h-[434px] md:w-[385px] flex justify-end">
+    <div className="relative h-[434px] w-[385px] md:h-[444px] md:w-[385px] flex justify-start">
+      {/* Card Stack */}
       {cards.map((card, index) => (
         <motion.div
           key={card.id}
           className="absolute bg-white h-[434px] w-[385px] rounded-3xl p-4 shadow-xl border border-neutral-200 flex flex-col justify-between"
           style={{
             transformOrigin: "top center",
-            right: index * CARD_OFFSET,
+            left: index * CARD_OFFSET, // Shift cards to the right side
+            top: index * TOP_OFFSET, // Stack cards upwards
+            zIndex: cards.length - index, // Ensure correct z-index stacking
+          }}
+          initial={{
+            top: index * TOP_OFFSET,
+            left: index * CARD_OFFSET, // Initial right stacking
+            scale: 1 - index * SCALE_FACTOR, // Scale effect
           }}
           animate={{
-            top: index * -CARD_OFFSET,
+            top: index * TOP_OFFSET,
+            left: index * CARD_OFFSET, // Right stack during animation
             scale: 1 - index * SCALE_FACTOR,
-            zIndex: cards.length - index,
+          }}
+          transition={{
+            type: "spring",
+            stiffness: 260,
+            damping: 20,
           }}
         >
           {/* Video thumbnail */}
           <div className="relative h-48 w-full rounded-xl overflow-hidden">
-            <img
-              src="/videothumbnail.svg"
-              alt="Video Thumbnail"
-              className="h-full w-full object-cover"
-            />
-            <div className="absolute inset-0 flex justify-center items-center">
-              <div className="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="h-6 w-6 text-white"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                  strokeWidth={2}
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M14.752 11.168l-4.587-2.296a.5.5 0 00-.747.436v4.584a.5.5 0 00.747.436l4.587-2.296a.5.5 0 000-.872z"
-                  />
-                </svg>
-              </div>
-            </div>
+            <iframe
+              width="100%"
+              height="100%"
+              src={card.videoUrl}
+              title="YouTube video player"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            ></iframe>
           </div>
 
           {/* Description */}
-          <div className="">
+          <div>
             <p className="text-sm text-gray-600">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Pellentesque scelerisque fermentum bibendum. Lorem ipsum dolor sit
-              amet, consectetur adipiscing elit.
+              {card.description ||
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit Lorem ipsum dolor sit amet, consectetur adipiscing elit Lorem ipsum dolor sit amet, consectetur adipiscing elit"}
             </p>
           </div>
 
           {/* User Info and Rating */}
-          <div className=" flex items-center space-x-3">
+          <div className="flex items-center space-x-3">
             <img
               src="/videoavatar.svg"
               alt="Avatar"
@@ -105,6 +110,50 @@ export const CardStack = ({ items, offset, scaleFactor }) => {
           </div>
         </motion.div>
       ))}
+
+      {/* Navigation Arrows */}
+      <div className="absolute -bottom-12 flex justify-center  text-center items-center ">
+        <button
+          className="bg-gray-300 p-2 rounded-full"
+          onClick={prevCard}
+          aria-label="Previous Card"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            className="h-6 w-6"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            strokeWidth={2}
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              d="M15 19l-7-7 7-7"
+            />
+          </svg>
+        </button>
+        <button
+          className="bg-gray-300 p-2 rounded-full"
+          onClick={nextCard}
+          aria-label="Next Card"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            className="h-6 w-6"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            strokeWidth={2}
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              d="M9 5l7 7-7 7"
+            />
+          </svg>
+        </button>
+      </div>
     </div>
   );
 };
