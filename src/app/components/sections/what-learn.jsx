@@ -9,7 +9,7 @@ const WhatLearn = () => {
           <h2 className="text-3xl font-bold text-primary">
             What You will Learn In
           </h2>
-          <h3 className="text-3xl font-bold text-blue-500">This Course?</h3>
+          <h3 className="text-3xl font-bold text-secondary">This Course?</h3>
           <p className="text-[#0F243DCC] mt-4">
             This is not another theory-heavy course. We focus on doing. You’ll
             build real projects, get feedback, and learn by doing.
@@ -53,7 +53,7 @@ const WhatLearn = () => {
         </div>
 
         {/* Admission Requirements Section */}
-        <div className="px-6 mt-12 bg-blue-500 text-white text-start py-8 rounded-lg">
+        <div className="px-6 mt-12 bg-secondary text-white text-start py-8 rounded-lg">
           <h3 className="text-4xl font-semibold mb-4">
             Admission Requirements
           </h3>

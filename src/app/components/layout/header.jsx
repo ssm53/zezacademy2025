@@ -27,9 +27,9 @@ const Header = () => {
             className="flex items-center space-x-3 rtl:space-x-reverse"
           >
             <h1 className="text-3xl md:text-4xl font-bold text-white text-center md:text-left">
-              <span className="text-blue-400">Hey</span>
+              <span className="text-secondary">Hey</span>
               <span className="text-white">Learn</span>
-              <span className="text-blue-400">2</span>
+              <span className="text-secondary">2</span>
               <span className="text-white">Code</span>
             </h1>
           </a>
@@ -72,7 +72,6 @@ const Header = () => {
                       &times;
                     </button>
                   </DrawerClose>
-                  {/* Mobile Arrow Icon */}
                   <div className="md:hidden flex justify-center mt-2">
                     <FiArrowDown className="text-2xl text-gray-500" />
                   </div>

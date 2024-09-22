@@ -101,13 +101,13 @@ const PricingTable = () => {
                   Practical Skills
                 </td>
                 <td className="py-4 px-6 border-b border-r border-l text-secondary">
-                  <span className="text-blue-500">&#10003;</span>
+                  <span className="text-secondary">&#10003;</span>
                 </td>
                 <td className="py-4 px-6 border-b border-r border-l text-secondary">
-                  <span className="text-blue-500">&#10003;</span>
+                  <span className="text-secondary">&#10003;</span>
                 </td>
                 <td className="py-4 px-6 border-b border-r border-l text-secondary">
-                  <span className="text-blue-500">&#10003;</span>
+                  <span className="text-secondary">&#10003;</span>
                 </td>
               </tr>
               <tr>
@@ -115,13 +115,13 @@ const PricingTable = () => {
                   Career Prep
                 </td>
                 <td className="py-4 px-6 border-b border-r border-l text-secondary">
-                  <span className="text-blue-500">&#10003;</span>
+                  <span className="text-secondary">&#10003;</span>
                 </td>
                 <td className="py-4 px-6 border-b border-r border-l text-secondary">
-                  <span className="text-blue-500">&#10003;</span>
+                  <span className="text-secondary">&#10003;</span>
                 </td>
                 <td className="py-4 px-6 border-b border-r border-l text-secondary">
-                  <span className="text-blue-500">&#10003;</span>
+                  <span className="text-secondary">&#10003;</span>
                 </td>
               </tr>
               <tr>
@@ -129,13 +129,13 @@ const PricingTable = () => {
                   Real-life Project for a Real Business
                 </td>
                 <td className="py-4 px-6 text-secondary border-r ">
-                  <span className="text-blue-500">&#10003;</span>
+                  <span className="text-secondary">&#10003;</span>
                 </td>
                 <td className="py-4 px-6 text-secondary border-r">
-                  <span className="text-blue-500">&#10003;</span>
+                  <span className="text-secondary">&#10003;</span>
                 </td>
                 <td className="py-4 px-6 text-secondary border-r">
-                  <span className="text-blue-500">&#10003;</span>
+                  <span className="text-secondary">&#10003;</span>
                 </td>
               </tr>
             </tbody>

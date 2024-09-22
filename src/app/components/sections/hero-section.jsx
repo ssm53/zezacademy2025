@@ -10,9 +10,9 @@ const Hero = () => {
         {/* Left Side - Heading and Text */}
         <div>
           <h1 className="text-4xl sm:text-6xl font-bold text-white text-center md:text-left">
-            <span className="text-blue-400">Hey</span>
+            <span className="text-secondary">Hey</span>
             <span className="text-white">Learn</span>
-            <span className="text-blue-400">2</span>
+            <span className="text-secondary">2</span>
             <span className="text-white">Code's</span>
             <br className="hidden md:block" />
             Full Stack Coding <br /> Bootcamp
@@ -24,7 +24,7 @@ const Hero = () => {
           </p>
 
           <div className="mt-6 flex justify-center md:justify-start space-x-4">
-            <button className="w-[142px] sm:w-[193px] h-[50px] bg-blue-500 hover:bg-blue-600 text-white px-6 py-3 rounded-[5px]">
+            <button className="w-[142px] sm:w-[193px] h-[50px] bg-secondary hover:bg-secondary text-white px-6 py-3 rounded-[5px]">
               Apply Now
             </button>
             <button className="w-[142px] sm:w-[193px] h-[50px] bg-white  hover:bg-blue-100 px-6 py-3 rounded-[5px] whitespace-nowrap flex justify-center">

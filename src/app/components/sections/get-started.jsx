@@ -16,7 +16,7 @@ const GetStarted = () => {
           </div>
           {/* Apply Now Button */}
           <div className="mt-4 md:mt-0">
-            <button className="bg-blue-500 text-white font-semibold px-6 py-3 rounded-lg hover:bg-blue-600">
+            <button className="bg-secondary text-white font-semibold px-6 py-3 rounded-lg hover:bg-secondary">
               Apply Now
             </button>
           </div>
@@ -25,7 +25,7 @@ const GetStarted = () => {
         {/* Steps Section */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {/* Step 1 */}
-          <div className="p-6 bg-white border border-gray-200 rounded-lg shadow-md">
+          <div className="p-6 bg-white 200 rounded-lg shadow-none sm:shadow-md ">
             <div className="flex items-center mb-4">
               <div className="w-12 h-12 bg-yellow-500 text-white rounded-full flex items-center justify-center font-bold text-lg">
                 01
@@ -40,7 +40,7 @@ const GetStarted = () => {
           </div>
 
           {/* Step 2 */}
-          <div className="p-6 bg-white border border-gray-200 rounded-lg shadow-md">
+          <div className="p-6 bg-white 200 rounded-lg shadow-md">
             <div className="flex items-center mb-4">
               <div className="w-12 h-12 bg-green-500 text-white rounded-full flex items-center justify-center font-bold text-lg">
                 02
@@ -56,9 +56,9 @@ const GetStarted = () => {
           </div>
 
           {/* Step 3 */}
-          <div className="p-6 bg-white border border-gray-200 rounded-lg shadow-md">
+          <div className="p-6 bg-white 200 rounded-lg shadow-md">
             <div className="flex items-center mb-4">
-              <div className="w-12 h-12 bg-blue-500 text-white rounded-full flex items-center justify-center font-bold text-lg">
+              <div className="w-12 h-12 bg-secondary text-white rounded-full flex items-center justify-center font-bold text-lg">
                 03
               </div>
               <h4 className="ml-4 text-xl font-semibold text-gray-700">

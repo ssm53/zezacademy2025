@@ -32,21 +32,23 @@ const OurFounder = () => {
         </div>
 
         <div className="lg:w-1/2 lg:pl-12 text-white">
-          <h4 className="text-sm font-semibold text-secondary uppercase mb-2">
+          <h4 className="text-sm font-semibold text-white uppercase mb-1">
             About Founder
           </h4>
-          <h2 className="text-4xl font-bold mb-4">Our Founder</h2>
-          <p className="text-lg font-medium mb-6">
-            Hey peeps, I'm Shaun, Founder of{" "}
+          <h2 className="text-[20px] sm:text-[48px] font-bold mb-2">
+            Our Founder
+          </h2>
+          <p className="text-lg font-medium mb-4">
+            Hey peeps, I'm Shaun, Founder of
             <span className="font-bold">"HeyLearn2Code"</span>
           </p>
-          <p className="mb-6">
+          <p className="mb-4 text-[#E9EAEB]">
             I started learning to code in April 2023, and by the end of the
             year, I had four software developer job offers. Without a degree.
             Now, I’m building AI products, including EZLA, an AI SaaS launching
             Q4 2024.
           </p>
-          <p className="mb-8">
+          <p className="mb-6 text-[#E9EAEB]">
             Emphasize your switch from accounting to coding, showcasing the
             value of learning tech skills even without formal education.
           </p>
@@ -67,7 +69,7 @@ const OurFounder = () => {
             </a>
             <a
               href="/founder-details"
-              className="bg-secondary text-white font-medium py-2 px-4 rounded-lg hover:bg-secondary transition"
+              className=" text-secondary border border-secondary font-medium py-2 px-4 rounded-lg hover:bg-secondary hover:text-white transition"
             >
               Learn More
             </a>

@@ -8,9 +8,10 @@ import search from "/public/search.svg";
 export default function BootcampSection() {
   return (
     <section className="max-w-[1300px] mx-auto py-16 px-4 lg:px-8">
-      <div className="text-center mb-12">
-        <h2 className="text-3xl lg:text-4xl font-bold text-primary">
-          Who Is This <span className="text-secondary">Bootcamp For?</span>
+      <div className="text-start mb-12">
+        <h2 className="leading-[50px] sm:text-[48px] text-[20px]  font-bold text-primary">
+          Who Is This <br className="sm:visible none" />
+          <span className="text-secondary">Bootcamp For?</span>
         </h2>
         <p className="mt-4 text-gray-600">
           Feeling stuck in your current career? Whether you’re new to coding or

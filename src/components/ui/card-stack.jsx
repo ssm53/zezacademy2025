@@ -97,7 +97,7 @@ export const CardStack = ({ items, offset, scaleFactor }) => {
                   <svg
                     key={i}
                     xmlns="http://www.w3.org/2000/svg"
-                    className="h-4 w-4 text-blue-500"
+                    className="h-4 w-4 text-secondary"
                     viewBox="0 0 24 24"
                     fill="currentColor"
                     stroke="none"

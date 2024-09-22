@@ -61,7 +61,7 @@ export default function Testimonials() {
             key={index}
             className="bg-white p-6 shadow-md rounded-md text-start"
           >
-            <div className="text-2xl text-blue-500 mb-4">
+            <div className="text-2xl text-secondary mb-4">
               <BiSolidQuoteLeft />
             </div>
             <p className="text-gray-600 mt-[-10px] mb-6">
