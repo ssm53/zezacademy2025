@@ -4,7 +4,7 @@ import { FaChevronUp, FaChevronDown } from "react-icons/fa"; // Import the icons
 
 const faqs = [
   {
-    question: "Do I need any coding experience to join the bootcamp?",
+    question: "Do I need any coding experience  bootcamp?",
     answer:
       "Lorem ipsum dolor sit amet lorem consectetur pretium neque lorem ipsum dolor sit amet consectetur pretium neque.",
   },
@@ -62,14 +62,14 @@ export default function FaqAccordian() {
           {faqs.map((faq, index) => (
             <div
               key={index}
-              className="faq-item border border-gray-300 rounded-lg pb-4"
+              className="faq-item border shadow-md bg-white rounded-lg pb-4"
               style={{ borderRadius: "10px" }}
             >
               <button
                 onClick={() => handleToggle(index)}
                 className="w-full text-left flex justify-between items-center py-4 px-6 focus:outline-none"
               >
-                <span className="font-semibold text-lg text-lightGray">
+                <span className=" font-semibold text-[15px] sm:text-lg text-lightGray">
                   {faq.question}
                 </span>
                 <span className="text-xl">
