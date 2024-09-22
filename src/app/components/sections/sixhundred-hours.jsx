@@ -20,25 +20,37 @@ const SixHundred = () => {
             Click the button below, fill up a few questions, and get your free
             access! We will email you your login credentials within a day.
           </p>
-          <button className="bg-primary text-white py-3 px-6 rounded-[5px] hover:bg-secondary transition">
+          <button className="bg-primary text-white py-3 px-6 rounded-[5px] hover:bg-secondary transition w-full sm:w-auto">
             Get Free Access
           </button>
         </div>
 
-        <div className="lg:w-[45%] lg:pl-16 mt-10 lg:mt-0 flex flex-wrap justify-center gap-6 bg-[#F3F5F7] p-[15px] rounded-[15px] sm:flex-wrap xs:flex-nowrap">
-          <div className="bg-white rounded-[32px] p-10 text-center w-full xs:w-[30%] sm:w-1/2 md:w-[43%] flex-shrink-0">
-            <h3 className="text-4xl font-bold text-secondary">600+</h3>
-            <p className="text-[#0F243DCC] mt-2">Hours of material</p>
+        <div className="lg:w-[39%] mt-10 lg:mt-0 flex flex-wrap justify-center lg:justify-start gap-[8px] lg:gap-[12px] bg-[#F3F5F7] p-[14px] md-p-[22px] lg:p-[22px] rounded-[15px] sm:flex-wrap xs:flex-nowrap">
+          <div className="bg-white rounded-[20px] md-rounded-[32px] py-[1.5rem] md:py-[3rem] px-0 text-center w-[31%] sm:w-1/2 md:w-[43%] flex-shrink-0">
+            <h3 className="text-[26px] md:text-4xl font-bold text-secondary">
+              600+
+            </h3>
+            <p className="text-[#0F243DCC] mt-2 text-[12px] sm:text-base">
+              Hours of material
+            </p>
           </div>
 
-          <div className="bg-white rounded-[32px] p-10 text-center w-full xs:w-[30%] sm:w-1/2 md:w-[43%] flex-shrink-0">
-            <h3 className="text-4xl font-bold text-secondary">07</h3>
-            <p className="text-[#0F243DCC] mt-2">Projects</p>
+          <div className="bg-white rounded-[20px] md-rounded-[32px] py-[1.5rem] md:py-[3rem] px-0 text-center w-[31%] sm:w-1/2 md:w-[43%] flex-shrink-0 p-4">
+            <h3 className="text-[26px] md:text-4xl font-bold text-secondary">
+              07
+            </h3>
+            <p className="text-[#0F243DCC] mt-2 text-[12px] sm:text-base">
+              Projects
+            </p>
           </div>
 
-          <div className="bg-white rounded-[32px] p-10 text-center w-full xs:w-[30%] sm:w-1/2 md:w-[43%] flex-shrink-0">
-            <h3 className="text-4xl font-bold text-secondary">20</h3>
-            <p className="text-[#0F243DCC] mt-2">Challenges</p>
+          <div className="bg-white rounded-[20px] md-rounded-[32px] py-[1.5rem] md:py-[3rem] px-0 text-center w-[31%] sm:w-1/2 md:w-[43%] flex-shrink-0 p-4">
+            <h3 className="text-[26px] md:text-4xl font-bold text-secondary">
+              20
+            </h3>
+            <p className="text-[#0F243DCC] mt-2 text-[12px] sm:text-base">
+              Challenges
+            </p>
           </div>
         </div>
       </div>

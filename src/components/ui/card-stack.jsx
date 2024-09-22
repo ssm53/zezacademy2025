@@ -112,7 +112,7 @@ export const CardStack = ({ items, offset, scaleFactor }) => {
       ))}
 
       {/* Navigation Arrows */}
-      <div className="mx-auto absolute -bottom-12 flex justify-center  text-center items-center ">
+      <div className="mx-auto absolute -bottom-12 flex justify-center  text-center items-center gap-1">
         <button
           className="bg-gray-300 p-2 rounded-full"
           onClick={prevCard}
