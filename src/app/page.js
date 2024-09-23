@@ -1,7 +1,7 @@
 import Footer from "./components/layout/footer";
 import Header from "./components/layout/header";
 import BootcampSection from "./components/sections/boot-camp";
-// import ContactUs from "./components/sections/contact-us";
+import ContactUs from "./components/sections/contact-us";
 import CurriculumTable from "./components/sections/curriculum-table";
 import FaqAccordian from "./components/sections/faqs";
 import GetStarted from "./components/sections/get-started";
@@ -35,7 +35,7 @@ export default function Home() {
       <CurriculumTable />
       <Pricing />
       <Testimonials />
-      {/* <ContactUs /> */}
+      <ContactUs />
       <FaqAccordian />
       <Footer />
     </>

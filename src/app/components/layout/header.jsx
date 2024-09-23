@@ -23,7 +23,7 @@ const Header = () => {
       <nav className="bg-primary">
         <div className="max-w-[1300px] h-[80px] flex flex-wrap items-center justify-between mx-auto p-6 lg:p-0">
           <a
-            href="#"
+            href="#home"
             className="flex items-center space-x-3 rtl:space-x-reverse"
           >
             <h1 className="text-3xl md:text-4xl font-bold text-white text-center md:text-left">

@@ -19,13 +19,19 @@ L.Icon.Default.mergeOptions({
 
 const ContactUs = () => {
   return (
-    <section className="max-w-[1300px] mx-auto py-12 px-6 sm:px-8 md:px-10 lg:px-12 xl:px-16">
+    <section
+      id="contact"
+      className="max-w-[1300px] mx-auto py-12 px-6 sm:px-8 md:px-10 lg:px-12 xl:px-16"
+    >
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-        <div className="bg-white p-6 rounded-md shadow-md">
-          <h2 className="text-2xl font-bold mb-4 text-primary">Contact Us</h2>
+        <div className="h-auto sm:h-[467px] bg-white p-6 rounded-md shadow-md">
+          <h2 className="text-[48px] font-bold mb-4 text-primary">
+            Contact Us
+          </h2>
           <p className="text-gray-600 mb-4">
-            Email, call or complete the form to learn how{" "}
-            <strong>HeyLearn2code</strong> can solve your messaging problem.
+            Email, call or complete the form to learn how <br />
+            <strong>HeyLearn2code</strong> can solve your messaging <br />{" "}
+            problem.
           </p>
           <div>
             <p className="text-lg font-medium">shaun@heylearn2code.com</p>
@@ -47,20 +53,20 @@ const ContactUs = () => {
           </div>
         </div>
 
-        <div className="bg-white p-6 rounded-md shadow-md">
-          <h2 className="text-2xl font-bold mb-4 text-primary">
+        <div className="bg-[#F7F8F9] p-6 rounded-md shadow-md">
+          <h2 className="text-[44px] font-bold mb-4 text-primary">
             Expected Study Hours
           </h2>
-          <div className="grid grid-cols-2 gap-4">
-            <div className="bg-gray-100 p-4 rounded-md text-center">
+          <div className="rounded-md bg-[#FFFFFF] grid grid-cols-2 gap-4">
+            <div className="border-r p-4 rounded-md text-center">
               <h3 className="text-xl font-semibold text-primary">
-                Full-Time Students
+                Full-Time <br /> Students
               </h3>
               <p className="text-primary">7 hours per day</p>
             </div>
-            <div className="bg-gray-100 p-4 rounded-md text-center">
+            <div className=" p-4 rounded-md text-center">
               <h3 className="text-xl font-semibold text-primary">
-                Part-Time Students
+                Part-Time <br /> Students
               </h3>
               <p>7 hours per day</p>
             </div>

@@ -51,7 +51,7 @@ const WhyChoose = () => {
   ];
 
   return (
-    <div className="bg-primary text-white py-12">
+    <div id="why-us" className="bg-primary text-white py-12">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 className="text-center text-3xl font-extrabold mb-8">
           Why Choose <span className="text-secondary">HeyLearn2Code?</span>

@@ -5,7 +5,10 @@ import { CardStackDemo } from "../card-stackdemo";
 
 const Hero = () => {
   return (
-    <section className="bg-[#0F243D] py-12 pb-16 px-6 sm:h-[40rem] h-auto flex items-center">
+    <section
+      id="home"
+      className="bg-[#0F243D] py-12 pb-16 px-6 sm:h-[40rem] h-auto flex items-center"
+    >
       <div className="max-w-[1300px] mx-auto grid md:grid-cols-2 gap-8 items-center md:gap-[14rem]">
         {/* Left Side - Heading and Text */}
         <div>

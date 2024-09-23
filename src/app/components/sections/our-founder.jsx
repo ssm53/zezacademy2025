@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const OurFounder = () => {
   return (
-    <section className="bg-primary py-16 ">
+    <section id="our-founder" className="bg-primary py-16 ">
       <div className=" max-w-[1300px] mx-auto px-6 lg:flex lg:items-center">
         <div className="lg:w-1/2 mb-8 lg:mb-0">
           <div className="relative rounded-lg overflow-hidden shadow-lg">

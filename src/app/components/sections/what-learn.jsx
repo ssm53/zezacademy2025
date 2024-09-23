@@ -6,14 +6,20 @@ const WhatLearn = () => {
       <div className="container mx-auto px-4">
         {/* Heading Section */}
         <div className="text-start mb-8">
-          <h2 className="text-3xl font-bold text-primary">
+          <h2 className="text-4xl font-bold text-primary">
             What You will Learn In
           </h2>
-          <h3 className="text-3xl font-bold text-secondary">This Course?</h3>
+          <h3 className="text-4xl font-bold text-secondary">This Course?</h3>
           <p className="text-[#0F243DCC] mt-4">
-            This is not another theory-heavy course. We focus on doing. You’ll
-            build real projects, get feedback, and learn by doing.
+            This is not another theory-heavy course. We focus on doing. <br />{" "}
+            You’ll build real projects, get feedback, and learn by doing.
           </p>
+          {/* Apply Now Button */}
+          <div className="flex text-center mt-4">
+            <button className="bg-secondary text-white font-semibold px-6 py-3 rounded-lg hover:bg-secondary-dark">
+              Apply Now
+            </button>
+          </div>
         </div>
 
         {/* Content Section */}
@@ -43,13 +49,6 @@ const WhatLearn = () => {
               <li>Weeks 10-12: Self-paced</li>
             </ul>
           </div>
-        </div>
-
-        {/* Apply Now Button */}
-        <div className="text-center mt-8">
-          <button className="bg-secondary text-white font-semibold px-6 py-3 rounded-lg hover:bg-secondary-dark">
-            Apply Now
-          </button>
         </div>
 
         {/* Admission Requirements Section */}

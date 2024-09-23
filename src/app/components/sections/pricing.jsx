@@ -2,7 +2,7 @@ import React from "react";
 
 const Pricing = () => {
   return (
-    <section className="max-w-[1280px] mx-auto px-4 py-16">
+    <section id="pricing" className="max-w-[1280px] mx-auto px-4 py-16">
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
         {/* Left Section */}
         <div className="flex flex-col justify-center">

@@ -14,14 +14,14 @@ const PricingTable = () => {
             <thead>
               <tr>
                 <th className="py-4 px-6 border-b border-r border-l text-left font-medium text-gray-700"></th>
-                <th className="py-4 px-6 border-b border-r border-l text-left font-medium text-gray-700  ">
-                  Our Bootcamp
-                </th>
                 <th className="py-4 px-6 border-b border-r border-l text-left font-medium text-white bg-secondary">
-                  Other Bootcamp
+                  Degree / Master&apos;s
                 </th>
                 <th className="py-4 px-6 border-b border-r border-l text-left font-medium text-gray-700">
-                  Degree / Master's
+                  Our Bootcamp
+                </th>
+                <th className="py-4 px-6 border-b border-r border-l text-left font-medium text-gray-700">
+                  Other Bootcamp
                 </th>
               </tr>
             </thead>
@@ -30,11 +30,11 @@ const PricingTable = () => {
                 <td className="py-4 px-6 border-b border-r border-l text-gray-700">
                   Coding Hours
                 </td>
-                <td className="py-4 px-6  border-b border-r   border-l text-gray-700">
-                  600+
-                </td>
-                <td className="py-4 px-6 border-b border-r border-l  text-gray-700">
+                <td className="py-4 px-6 border-b border-r border-l text-gray-700">
                   450+
+                </td>
+                <td className="py-4 px-6 border-b border-r border-l text-gray-700">
+                  600+
                 </td>
                 <td className="py-4 px-6 border-b border-r border-l text-gray-700">
                   450+
@@ -44,14 +44,14 @@ const PricingTable = () => {
                 <td className="py-4 px-6 border-b border-r border-l text-gray-700">
                   Total Cost
                 </td>
-                <td className="py-4 px-6  border-l border-b border-r  text-gray-700">
+                <td className="py-4 px-6 border-b border-r border-l text-gray-700">
+                  USD 80-150K
+                </td>
+                <td className="py-4 px-6 border-b border-r border-l text-gray-700">
                   USD 1.15-1.6K
                 </td>
                 <td className="py-4 px-6 border-b border-r border-l text-gray-700">
                   USD 3-20K
-                </td>
-                <td className="py-4 px-6 border-b border-r border-l text-gray-700">
-                  USD 80-150K
                 </td>
               </tr>
               <tr>
@@ -59,13 +59,13 @@ const PricingTable = () => {
                   Cost if Unemployed
                 </td>
                 <td className="py-4 px-6 border-b border-r border-l text-gray-700">
+                  USD 80-150K
+                </td>
+                <td className="py-4 px-6 border-b border-r border-l text-gray-700">
                   0
                 </td>
                 <td className="py-4 px-6 border-b border-r border-l text-gray-700">
                   USD 3-20K
-                </td>
-                <td className="py-4 px-6 border-b border-r border-l text-gray-700">
-                  USD 80-150K
                 </td>
               </tr>
               <tr>
@@ -73,13 +73,13 @@ const PricingTable = () => {
                   Time Commitment
                 </td>
                 <td className="py-4 px-6 border-b border-r border-l text-gray-700">
-                  3 months
-                </td>
-                <td className="py-4 px-6 border-b border-r border-l text-gray-700">
-                  3 months
-                </td>
-                <td className="py-4 px-6 border-b border-r border-l text-gray-700">
                   4 years
+                </td>
+                <td className="py-4 px-6 border-b border-r border-l text-gray-700">
+                  3 months
+                </td>
+                <td className="py-4 px-6 border-b border-r border-l text-gray-700">
+                  3 months
                 </td>
               </tr>
               <tr>
@@ -87,13 +87,13 @@ const PricingTable = () => {
                   Number of Students per Cohort
                 </td>
                 <td className="py-4 px-6 border-b border-r border-l text-gray-700">
+                  100+
+                </td>
+                <td className="py-4 px-6 border-b border-r border-l text-gray-700">
                   Max of 6
                 </td>
                 <td className="py-4 px-6 border-b border-r border-l text-gray-700">
                   15-40
-                </td>
-                <td className="py-4 px-6 border-b border-r border-l text-gray-700">
-                  100+
                 </td>
               </tr>
               <tr>
@@ -125,16 +125,16 @@ const PricingTable = () => {
                 </td>
               </tr>
               <tr>
-                <td className="py-4 px-6 border-r border-l text-gray-700">
+                <td className="py-4 px-6 border-b border-r border-l text-gray-700">
                   Real-life Project for a Real Business
                 </td>
-                <td className="py-4 px-6 text-secondary border-r ">
+                <td className="py-4 px-6 border-b border-r text-secondary">
                   <span className="text-secondary">&#10003;</span>
                 </td>
-                <td className="py-4 px-6 text-secondary border-r">
+                <td className="py-4 px-6 border-b border-r text-secondary">
                   <span className="text-secondary">&#10003;</span>
                 </td>
-                <td className="py-4 px-6 text-secondary border-r">
+                <td className="py-4 px-6 border-b border-r text-secondary">
                   <span className="text-secondary">&#10003;</span>
                 </td>
               </tr>

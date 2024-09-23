@@ -16,7 +16,7 @@ const GetStarted = () => {
           </div>
           {/* Apply Now Button */}
           <div className="mt-4 md:mt-0">
-            <button className="bg-secondary text-white font-semibold px-6 py-3 rounded-lg hover:bg-secondary">
+            <button className="bg-secondary w-[190px] h-[50px] text-white font-semibold px-6 py-3 rounded-[5px] hover:bg-secondary">
               Apply Now
             </button>
           </div>
