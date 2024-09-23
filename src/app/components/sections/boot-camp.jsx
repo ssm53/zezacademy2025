@@ -7,7 +7,7 @@ import search from "/public/search.svg";
 
 export default function BootcampSection() {
   return (
-    <section className="max-w-[1300px] mx-auto py-16 px-4 lg:px-8">
+    <section className="max-w-[1300px] mx-auto py-16 px-4 lg:px-0">
       <div className="text-start mb-8">
         <h2 className="leading-[30px] sm:leading-[50px] text-[20px] sm:text-[48px] font-bold text-primary">
           Who Is This <br className="hidden sm:block" />

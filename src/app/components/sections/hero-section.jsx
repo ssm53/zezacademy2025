@@ -1,9 +1,14 @@
 "use client";
-import React from "react";
-
+import React, { useState } from "react";
 import { CardStackDemo } from "../card-stackdemo";
 
 const Hero = () => {
+  const [showPopup, setShowPopup] = useState(false);
+
+  const togglePopup = () => {
+    setShowPopup(!showPopup);
+  };
+
   return (
     <section
       id="home"
@@ -30,7 +35,10 @@ const Hero = () => {
             <button className="w-[142px] sm:w-[193px] h-[50px] bg-secondary hover:bg-secondary text-white px-6 py-3 rounded-[5px]">
               Apply Now
             </button>
-            <button className="w-[142px] sm:w-[193px] h-[50px] bg-white  hover:bg-blue-100 px-6 py-3 rounded-[5px] whitespace-nowrap flex justify-center">
+            <button
+              onClick={togglePopup}
+              className="w-[142px] sm:w-[193px] h-[50px] bg-white  hover:bg-blue-100 px-6 py-3 rounded-[5px] whitespace-nowrap flex justify-center"
+            >
               Get Free Access
             </button>
           </div>
@@ -58,7 +66,86 @@ const Hero = () => {
         </div>
         <CardStackDemo />
       </div>
+
+      {showPopup && <Popup togglePopup={togglePopup} />}
     </section>
+  );
+};
+
+// Popup Component
+const Popup = ({ togglePopup }) => {
+  return (
+    <div className="fixed inset-0 flex items-center justify-center z-50 bg-black bg-opacity-50">
+      <div className="bg-white rounded-lg p-6 sm:w-[90%] md:w-[60%] lg:w-[50%] relative">
+        <button
+          className="absolute top-3 right-3 text-black font-bold"
+          onClick={togglePopup}
+        >
+          &times;
+        </button>
+        <div className="flex flex-col md:flex-row">
+          {/* Left Side Content */}
+          <div className="md:w-1/2 p-4">
+            <h2 className="text-xl font-bold mb-4">
+              Get a Sneak Peek at the Best Live Online Coding Bootcamp!
+            </h2>
+            <ul className="list-disc list-inside">
+              <li>
+                <strong>Foundations of Coding Module:</strong> Get a 2-week free
+                access to the beginner module covering HTML, CSS, and JavaScript
+                fundamentals.
+              </li>
+              <li>
+                <strong>Engaging Video Tutorials:</strong> Easy-to-follow
+                explainer videos that make coding fun and accessible.
+              </li>
+              <li>
+                <strong>Supportive Learning Community:</strong> Connect with
+                peers, join discussions, and learn together with like-minded
+                individuals.
+              </li>
+            </ul>
+          </div>
+
+          {/* Right Side Form */}
+          <div className="md:w-1/2 p-4">
+            <h2 className="text-xl font-bold mb-4">
+              Get Free Access To Our Bootcamp Materials
+            </h2>
+            <form className="space-y-4">
+              <div className="grid grid-cols-2 gap-4">
+                <input
+                  type="text"
+                  placeholder="First name"
+                  className="p-2 border rounded"
+                />
+                <input
+                  type="text"
+                  placeholder="Last name"
+                  className="p-2 border rounded"
+                />
+              </div>
+              <input
+                type="email"
+                placeholder="Your email"
+                className="w-full p-2 border rounded"
+              />
+              <input
+                type="tel"
+                placeholder="+123 Phone number"
+                className="w-full p-2 border rounded"
+              />
+              <button
+                type="submit"
+                className="w-full bg-blue-600 text-white p-3 rounded hover:bg-blue-700"
+              >
+                Get Free Access
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
   );
 };
 

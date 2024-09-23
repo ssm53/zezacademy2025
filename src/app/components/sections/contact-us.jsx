@@ -10,6 +10,15 @@ import markerIcon2x from "leaflet/dist/images/marker-icon-2x.png";
 import markerIcon from "leaflet/dist/images/marker-icon.png";
 import markerShadow from "leaflet/dist/images/marker-shadow.png";
 
+// Import your custom icons
+import Image from "next/image";
+import instagramIcon from "/public/instagram.svg";
+import mailIcon from "/public/mail.svg";
+import linkedInIcon from "/public/linkedin.svg";
+import phoneIcon from "/public/phonegraycolor.svg";
+import youtubeIcon from "/public/youtube.svg";
+import twittericon from "/public/twitter.svg";
+
 delete L.Icon.Default.prototype._getIconUrl;
 L.Icon.Default.mergeOptions({
   iconRetinaUrl: markerIcon2x,
@@ -24,56 +33,88 @@ const ContactUs = () => {
       className="max-w-[1300px] mx-auto py-12 px-6 sm:px-8 md:px-10 lg:px-12 xl:px-16"
     >
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-        <div className="h-auto sm:h-[467px] bg-white p-6 rounded-md shadow-md">
-          <h2 className="text-[48px] font-bold mb-4 text-primary">
-            Contact Us
-          </h2>
-          <p className="text-gray-600 mb-4">
-            Email, call or complete the form to learn how <br />
-            <strong>HeyLearn2code</strong> can solve your messaging <br />{" "}
-            problem.
-          </p>
+        {/* Contact Us Section */}
+        <div className="bg-white p-8 rounded-lg shadow-md flex flex-col justify-between h-full">
           <div>
-            <p className="text-lg font-medium">shaun@heylearn2code.com</p>
-            <p className="text-lg font-medium mb-2">+6 012 339 7028</p>
-            <div className="flex space-x-4">
-              <a href="#" className="text-gray-600 hover:text-primary">
-                <i className="fab fa-linkedin"></i>
-              </a>
-              <a href="#" className="text-gray-600 hover:text-primary">
-                <i className="fab fa-instagram"></i>
-              </a>
-              <a href="#" className="text-gray-600 hover:text-primary">
-                <i className="fab fa-twitter"></i>
-              </a>
-              <a href="#" className="text-gray-600 hover:text-primary">
-                <i className="fab fa-youtube"></i>
-              </a>
+            <h2 className="text-2xl font-bold mb-4 text-[#0F243DCC]">
+              Contact Us
+            </h2>
+            <p className="text-[#0F243DCC] mb-4">
+              Email, call or complete the form to learn how <br />
+              <strong>HeyLearn2code</strong> can solve your messaging problem.
+            </p>
+            <div className="space-y-4">
+              <div className="flex items-center">
+                <Image
+                  src={mailIcon}
+                  alt="Mail"
+                  width={20}
+                  height={20}
+                  className="mr-3"
+                />
+                <p className="text-lg font-medium text-[#0F243DCC]">
+                  shaun@heylearn2code.com
+                </p>
+              </div>
+              <div className="flex items-center">
+                <Image
+                  src={phoneIcon}
+                  alt="Phone"
+                  width={20}
+                  height={20}
+                  className="mr-3"
+                />
+                <p className="text-lg font-medium text-[#0F243DCC]">
+                  +6 012 339 7028
+                </p>
+              </div>
+            </div>
+          </div>
+          <div className="flex space-x-3 mt-4">
+            <a href="#" className="text-gray-600 hover:text-primary">
+              <Image src={linkedInIcon} alt="LinkedIn" width={20} height={20} />
+            </a>
+            <a href="#" className="text-gray-600 hover:text-primary">
+              <Image src={twittericon} alt="YouTube" width={20} height={20} />
+            </a>
+            <a href="#" className="text-gray-600 hover:text-primary">
+              <Image
+                src={instagramIcon}
+                alt="Instagram"
+                width={20}
+                height={20}
+              />
+            </a>
+            <a href="#" className="text-gray-600 hover:text-primary">
+              <Image src={youtubeIcon} alt="YouTube" width={20} height={20} />
+            </a>
+          </div>
+        </div>
+
+        {/* Expected Study Hours Section */}
+        <div className="bg-[#F7F8F9] p-8 rounded-lg shadow-md">
+          <h2 className="text-2xl font-bold mb-4 text-[#0F243DCC]">
+            Expected Study Hours
+          </h2>
+          <div className="grid grid-cols-2 gap-4 bg-white rounded-lg p-4">
+            <div className="border-r text-center">
+              <h3 className="text-lg font-semibold text-[#0F243DCC]">
+                Full-Time Students
+              </h3>
+              <p className="text-gray-600">7 hours per day</p>
+            </div>
+            <div className="text-center">
+              <h3 className="text-lg font-semibold text-[#0F243DCC]">
+                Part-Time Students
+              </h3>
+              <p className="text-gray-600">7 hours per day</p>
             </div>
           </div>
         </div>
 
-        <div className="bg-[#F7F8F9] p-6 rounded-md shadow-md">
-          <h2 className="text-[44px] font-bold mb-4 text-primary">
-            Expected Study Hours
-          </h2>
-          <div className="rounded-md bg-[#FFFFFF] grid grid-cols-2 gap-4">
-            <div className="border-r p-4 rounded-md text-center">
-              <h3 className="text-xl font-semibold text-primary">
-                Full-Time <br /> Students
-              </h3>
-              <p className="text-primary">7 hours per day</p>
-            </div>
-            <div className=" p-4 rounded-md text-center">
-              <h3 className="text-xl font-semibold text-primary">
-                Part-Time <br /> Students
-              </h3>
-              <p>7 hours per day</p>
-            </div>
-          </div>
-        </div>
-        <div className="bg-white p-6 rounded-md shadow-md">
-          <h2 className="text-2xl font-bold mb-4">
+        {/* Further Details of Bootcamp Section */}
+        <div className="bg-white p-8 rounded-lg shadow-md">
+          <h2 className="text-xl font-bold mb-4 text-[#0F243DCC]">
             Further Details of Bootcamp
           </h2>
           <ul className="list-disc ml-6 text-gray-600">
@@ -81,17 +122,24 @@ const ContactUs = () => {
             <li>There are on-site and remote options</li>
           </ul>
           <div className="mt-4">
-            <h3 className="font-semibold">Availability hours:</h3>
-            <p>Mon-Fri 11:30 am - 11:30 pm (UTC + 8)</p>
-            <p>
+            <h3 className="font-semibold text-[#0F243DCC]">
+              Availability hours:
+            </h3>
+            <p className="text-gray-600">
+              Mon-Fri 11:30 am - 11:30 pm (UTC + 8)
+            </p>
+            <p className="text-gray-600">
               For onsite location: Bandar Kinrara 5, Puchong, Selangor,
               Malaysia.
             </p>
           </div>
         </div>
 
-        <div className="bg-white p-6 rounded-md shadow-md">
-          <h2 className="text-2xl font-bold mb-4">Location Map</h2>
+        {/* Location Map Section */}
+        <div className="bg-white p-8 rounded-lg shadow-md">
+          <h2 className="text-xl font-bold mb-4 text-[#0F243DCC]">
+            Location Map
+          </h2>
           <MapContainer
             center={[3.0468, 101.6932]}
             zoom={13}

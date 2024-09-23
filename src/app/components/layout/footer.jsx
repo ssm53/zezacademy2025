@@ -4,7 +4,7 @@ import Image from "next/image";
 const Footer = () => {
   return (
     <div className="bg-primary">
-      <footer className=" text-white py-8 px-4 md:px-16  max-w-[1300px]">
+      <footer className=" text-white py-8 mx-auto sm:px-4 px-0   max-w-[1300px]">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
           {/* Logo and Contact Information */}
 

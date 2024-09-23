@@ -2,7 +2,7 @@ import React from "react";
 
 const Pricing = () => {
   return (
-    <section id="pricing" className="max-w-[1280px] mx-auto px-4 py-16">
+    <section id="pricing" className="max-w-[1280px] mx-auto px-4 lg:px-0 py-16">
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
         {/* Left Section */}
         <div className="flex flex-col justify-center">
@@ -27,7 +27,7 @@ const Pricing = () => {
           <p className="text-sm text-gray-600 mb-4">
             Note: this offer is limited, make sure to get it asap.
           </p>
-          <div className="bg-primary shadow-lg rounded-lg p-6 relative">
+          <div className="bg-primary shadow-sm rounded-lg p-6 relative">
             {/* Discount Badge */}
             <div className="absolute top-0 right-0 bg-[#F5BB42] text-darkBlue text-xs font-bold rounded-full px-4 py-1 -mt-4 -mr-4">
               90% OFF

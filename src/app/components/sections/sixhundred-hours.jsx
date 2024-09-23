@@ -2,8 +2,8 @@ import React from "react";
 
 const SixHundred = () => {
   return (
-    <section id="free-materials" className=" bg-gray-50 py-16 ">
-      <div className=" px-6 lg:flex lg:justify-between lg:items-center max-w-[1300px] mx-auto">
+    <section id="free-materials" className=" bg-gray-50 py-16  px-4 lg:px-0">
+      <div className="  lg:flex lg:justify-between lg:items-center max-w-[1300px] mx-auto">
         <div className="lg:w-1/2">
           <h3 className="text-sm font-semibold text-[#0F243DCC] uppercase mb-2">
             600+ HOURS OF MATERIAL

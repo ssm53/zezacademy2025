@@ -3,8 +3,8 @@ import Image from "next/image";
 
 const OurFounder = () => {
   return (
-    <section id="our-founder" className="bg-primary py-16 ">
-      <div className=" max-w-[1300px] mx-auto px-6 lg:flex lg:items-center">
+    <section id="our-founder" className="bg-primary py-16 px-4 lg:px-0">
+      <div className=" max-w-[1300px] mx-auto  lg:flex lg:items-center">
         <div className="lg:w-1/2 mb-8 lg:mb-0">
           <div className="relative rounded-lg overflow-hidden shadow-lg">
             <Image
@@ -32,12 +32,10 @@ const OurFounder = () => {
         </div>
 
         <div className="lg:w-1/2 lg:pl-12 text-white">
-          <h4 className="text-sm font-semibold text-white uppercase mb-1">
+          <h4 className="text-[15px] sm:text-[25px] font-semibold text-white uppercase mb-1">
             About Founder
           </h4>
-          <h2 className="text-[20px] sm:text-[48px] font-bold mb-2">
-            Our Founder
-          </h2>
+          <h2 className="text-[25px] sm:text-[48px] font-bold">Our Founder</h2>
           <p className="text-lg font-medium mb-4">
             Hey peeps, I'm Shaun, Founder of
             <span className="font-bold">"HeyLearn2Code"</span>

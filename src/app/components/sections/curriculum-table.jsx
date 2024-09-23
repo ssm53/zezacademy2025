@@ -1,8 +1,94 @@
+const data = [
+  {
+    label: "Duration",
+    fullTime: "3-4 months",
+    partTime: "6-8 months",
+  },
+  {
+    label: "Access to All Projects",
+    fullTime: "✔️",
+    partTime: "✔️",
+  },
+  {
+    label: "Cost",
+    fullTime: "USD 1.15-1.6K",
+    partTime: "USD 1.15-1.6K",
+  },
+  {
+    label: "Career Coaching",
+    fullTime: "✔️",
+    partTime: "✔️",
+  },
+  {
+    label: "Career Prep",
+    fullTime: "✔️",
+    partTime: "✔️",
+  },
+  {
+    label: "Real-life Project for Business",
+    fullTime: "✔️",
+    partTime: "✔️",
+  },
+  {
+    label: "Build capstone projects (AI chatbot, e-commerce marketplace)",
+    fullTime: "✔️",
+    partTime: "✔️",
+  },
+  {
+    label: "Build AI projects",
+    fullTime: "✔️",
+    partTime: "✔️",
+  },
+];
+
+export function TableDemo() {
+  return (
+    <section className="max-w-[1280px] mx-auto py-2 lg:px-0 sm:px-4">
+      <div className="border overflow-auto bg-white rounded-[15px] shadow-lg">
+        <table className="w-full text-center table-auto border-collapse rounded-lg overflow-hidden">
+          <thead className="bg-[white]">
+            <tr>
+              <th className="py-4 px-6"></th>
+              <th className="py-4 px-6 bg-primary text-white font-bold">
+                Full-Time
+              </th>
+              <th className="py-4 px-6 bg-secondary text-white font-bold">
+                Part-Time
+              </th>
+            </tr>
+          </thead>
+
+          <tbody>
+            {data.map((row, index) => (
+              <tr
+                key={index}
+                className={`border-b last:border-none ${
+                  index % 2 === 0 ? "bg-[white]" : "bg-white"
+                }`}
+              >
+                <td className="py-4 px-6 text-left border-t text-[#0F243DCC]">
+                  {row.label}
+                </td>
+                <td className="py-4 px-6 text-[#0F243DCC] border-l border-t">
+                  {row.fullTime}
+                </td>
+                <td className="py-4 px-6 border-t border-l text-[#0F243DCC]">
+                  {row.partTime}
+                </td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    </section>
+  );
+}
+
 const CurriculumTable = () => {
   return (
     <div className="bg-[#F7F8F9]">
-      <section className="max-w-[1300px] mx-auto py-12">
-        <div className="px-8 text-start mb-8">
+      <section className="max-w-[1300px] mx-auto py-12 ">
+        <div className="px-4 lg:px-0 text-start mb-8">
           <h2 className=" text-4xl font-bold text-primary">
             Full-Time vs Part-Time <br /> Curriculum
           </h2>
@@ -12,114 +98,7 @@ const CurriculumTable = () => {
             program, you get a full refund. <br /> 100% risk-free.
           </p>
         </div>
-
-        <div className="overflow-x-auto px-4 md:px-8">
-          <div className="rounded-lg shadow-lg border border-gray-200 overflow-hidden">
-            <table className="w-full border border-gray-200 bg-white rounded-lg shadow-lg">
-              <thead>
-                <tr className="text-left">
-                  <th className="py-4 px-6 border-b border-r border-gray-200"></th>
-                  <th className="py-4 px-6 border-b border-r border-gray-200 bg-gray-800 text-white">
-                    Full-Time
-                  </th>
-                  <th className="py-4 px-6 border-b border-gray-200 bg-secondary text-white">
-                    Part-Time
-                  </th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td className="py-4 px-6 border-b border-r border-gray-200">
-                    Duration
-                  </td>
-                  <td className="py-4 px-6 border-b border-r border-gray-200">
-                    3-4 months
-                  </td>
-                  <td className="py-4 px-6 border-b border-gray-200">
-                    6-8 months
-                  </td>
-                </tr>
-                <tr>
-                  <td className="py-4 px-6 border-b border-r border-gray-200">
-                    Access to All Coding Projects
-                  </td>
-                  <td className="py-4 px-6 border-b border-r border-gray-200">
-                    <span className="text-secondary">&#10003;</span>
-                  </td>
-                  <td className="py-4 px-6 border-b border-gray-200">
-                    <span className="text-secondary">&#10003;</span>
-                  </td>
-                </tr>
-                <tr>
-                  <td className="py-4 px-6 border-b border-r border-gray-200">
-                    Cost
-                  </td>
-                  <td className="py-4 px-6 border-b border-r border-gray-200">
-                    USD 1.15-1.6K
-                  </td>
-                  <td className="py-4 px-6 border-b border-gray-200">
-                    USD 1.15-1.6K
-                  </td>
-                </tr>
-                <tr>
-                  <td className="py-4 px-6 border-b border-r border-gray-200">
-                    Career Coaching
-                  </td>
-                  <td className="py-4 px-6 border-b border-r border-gray-200">
-                    <span className="text-secondary">&#10003;</span>
-                  </td>
-                  <td className="py-4 px-6 border-b border-gray-200">
-                    <span className="text-secondary">&#10003;</span>
-                  </td>
-                </tr>
-                <tr>
-                  <td className="py-4 px-6 border-b border-r border-gray-200">
-                    Career Prep
-                  </td>
-                  <td className="py-4 px-6 border-b border-r border-gray-200">
-                    <span className="text-secondary">&#10003;</span>
-                  </td>
-                  <td className="py-4 px-6 border-b border-gray-200">
-                    <span className="text-secondary">&#10003;</span>
-                  </td>
-                </tr>
-                <tr>
-                  <td className="py-4 px-6 border-b border-r border-gray-200">
-                    Real-life Project for Business
-                  </td>
-                  <td className="py-4 px-6 border-b border-r border-gray-200">
-                    <span className="text-secondary">&#10003;</span>
-                  </td>
-                  <td className="py-4 px-6 border-b border-gray-200">
-                    <span className="text-secondary">&#10003;</span>
-                  </td>
-                </tr>
-                <tr>
-                  <td className="py-4 px-6 border-b border-r border-gray-200">
-                    Build capstone projects (AI chatbot, e-commerce marketplace)
-                  </td>
-                  <td className="py-4 px-6 border-b border-r border-gray-200">
-                    <span className="text-secondary">&#10003;</span>
-                  </td>
-                  <td className="py-4 px-6 border-b border-gray-200">
-                    <span className="text-secondary">&#10003;</span>
-                  </td>
-                </tr>
-                <tr>
-                  <td className="py-4 px-6 border-b border-r border-gray-200">
-                    Build AI projects
-                  </td>
-                  <td className="py-4 px-6 border-b border-r border-gray-200">
-                    <span className="text-secondary">&#10003;</span>
-                  </td>
-                  <td className="py-4 px-6 border-b border-gray-200">
-                    <span className="text-secondary">&#10003;</span>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
+        <TableDemo /> {/* Use TableDemo here instead of CurriculumTable */}
       </section>
     </div>
   );

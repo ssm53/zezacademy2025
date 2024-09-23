@@ -4,7 +4,7 @@ const OurCohorts = () => {
   return (
     <section
       id="our-cohorts"
-      className="bg-[#F7F8F9] max-w-1300px mx-auto px-4 py-16"
+      className="bg-[#F7F8F9] max-w-1300px mx-auto  py-16 px-4 lg:px-0"
     >
       <div className="sm:text-center text-start">
         {/* Title */}

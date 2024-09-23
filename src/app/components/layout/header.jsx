@@ -19,7 +19,7 @@ const Header = () => {
   };
 
   return (
-    <div className="relative">
+    <div className="relative border-b border-[#243548] sm:border-b-[#243548] md:border-b-[#243548] lg:border-b-[#243548] xl:border-b-[#243548]">
       <nav className="bg-primary">
         <div className="max-w-[1300px] h-[80px] flex flex-wrap items-center justify-between mx-auto p-6 lg:p-0">
           <a
@@ -135,7 +135,7 @@ const Header = () => {
           </div>
         </div>
       </nav>
-      <hr className="border-[0px,0px,1px,0px]" />
+      {/* <hr className="lg:border border-[#243548] sm:border-[#243548]" /> */}
     </div>
   );
 };
