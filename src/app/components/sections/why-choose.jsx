@@ -84,8 +84,9 @@ const WhyChoose = () => {
                 </CarouselItem>
               ))}
             </CarouselContent>
-            <CarouselPrevious />
-            <CarouselNext />
+            {/* Hide arrows on mobile */}
+            <CarouselPrevious className="hidden sm:block" />
+            <CarouselNext className="hidden sm:block" />
           </Carousel>
         </div>
 

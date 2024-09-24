@@ -7,7 +7,7 @@ const GetStarted = () => {
         {/* Button and Heading Section */}
         <div className="flex flex-col md:flex-row justify-between items-center mb-8">
           <div className="text-center md:text-left">
-            <h2 className="text-3xl font-bold text-gray-800">
+            <h2 className="sm:text-4xl text-2xl font-bold text-primary">
               How to Get Started?
             </h2>
             <p className="text-gray-600 mt-2">
@@ -16,7 +16,7 @@ const GetStarted = () => {
           </div>
           {/* Apply Now Button */}
           <div className="mt-4 md:mt-0">
-            <button className="bg-secondary w-[190px] h-[50px] text-white font-semibold px-6 py-3 rounded-[5px] hover:bg-secondary">
+            <button className="bg-secondary sm:w-[190px] w-[160px]  h-[50px] text-white font-semibold px-6 py-3 rounded-[5px] hover:bg-secondary">
               Apply Now
             </button>
           </div>
