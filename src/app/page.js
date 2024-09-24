@@ -3,7 +3,7 @@ import Header from "./components/layout/header";
 import BootcampSection from "./components/sections/boot-camp";
 import ContactUs from "./components/sections/contact-us";
 import CurriculumTable from "./components/sections/curriculum-table";
-import EnrollmentSection from "./components/sections/enrollment";
+// import EnrollmentSection from "./components/sections/enrollment";
 import FaqAccordian from "./components/sections/faqs";
 import GetStarted from "./components/sections/get-started";
 import HandsOnLearning from "./components/sections/handson-learning";
@@ -34,7 +34,7 @@ export default function Home() {
       <GetStarted />
       <PricingTable />
       <CurriculumTable />
-      <EnrollmentSection />
+      {/* <EnrollmentSection /> */}
       <Pricing />
       <Testimonials />
       {/* <ContactUs /> */}

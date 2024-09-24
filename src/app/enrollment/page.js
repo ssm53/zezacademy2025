@@ -1,6 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import Image from "next/image";
+import LowerHeader from "../components/layout/enrollement-header";
 
 const EnrollmentSection = () => {
   // State for selected options
@@ -9,7 +10,8 @@ const EnrollmentSection = () => {
   const [selectedMBGOption, setSelectedMBGOption] = useState("MBG");
 
   return (
-    <div className="bg-primary min-h-screen">
+    <div id="get-free-access" className="bg-primary min-h-screen">
+      <LowerHeader />
       <div className="max-w-[1300px] mx-auto sm:px-4 px-0 py-12">
         {/* Header */}
         <div className="text-center">
@@ -24,10 +26,33 @@ const EnrollmentSection = () => {
           </p>
         </div>
 
+        {/* Additional Content */}
+        <div className="mt-8 text-white">
+          <h2 className="text-2xl font-bold">
+            Get a Sneak Peek at the Best Live Online Coding Bootcamp!
+          </h2>
+          <ul className="list-disc list-inside space-y-2">
+            <li>
+              <strong>Foundations of Coding Module:</strong> Get a 2-week free
+              access to the beginner module covering HTML, CSS, and JavaScript
+              fundamentals.
+            </li>
+            <li>
+              <strong>Engaging Video Tutorials:</strong> Easy-to-follow
+              explainer videos that make coding fun and accessible.
+            </li>
+            <li>
+              <strong>Supportive Learning Community:</strong> Connect with
+              peers, join discussions, and learn together with like-minded
+              individuals.
+            </li>
+          </ul>
+        </div>
+
         {/* Enrollment Form Section */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mt-16">
           {/* Left Form Section */}
-          <div className="text-white  p-8 rounded-lg">
+          <div className="text-white p-8 rounded-lg">
             {/* Program Type */}
             <div className="mb-6">
               <label className="block text-lg font-semibold">
@@ -43,7 +68,7 @@ const EnrollmentSection = () => {
               <label className="block text-lg font-semibold">
                 Choose Tuition Options
               </label>
-              <div className="flex space-x-4 mt-2 ">
+              <div className="flex space-x-4 mt-2">
                 {[
                   "Up-Front",
                   "3 Month Installment",
@@ -93,7 +118,7 @@ const EnrollmentSection = () => {
               </label>
               <input
                 type="text"
-                className="w-full p-3 mt-2 rounded  text-black"
+                className="w-full p-3 mt-2 rounded text-black"
               />
             </div>
           </div>

@@ -1,6 +1,8 @@
 "use client";
-import React, { useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
+import React, { useState, useEffect } from "react";
 import { CardStackDemo } from "../card-stackdemo";
+import { useRouter } from "next/navigation"; // Use the new app router
 
 const Hero = () => {
   const [showPopup, setShowPopup] = useState(false);
@@ -67,29 +69,88 @@ const Hero = () => {
         <CardStackDemo />
       </div>
 
-      {showPopup && <Popup togglePopup={togglePopup} />}
+      {/* Popup Modal with Animation */}
+      <AnimatePresence>
+        {showPopup && <Popup togglePopup={togglePopup} />}
+      </AnimatePresence>
     </section>
   );
 };
 
-// Popup Component
 const Popup = ({ togglePopup }) => {
+  const router = useRouter(); // Get router from the app router
+
+  // Modal animation variants
+  const modalVariants = {
+    hidden: { opacity: 0, scale: 0.8 },
+    visible: { opacity: 1, scale: 1, transition: { duration: 0.3 } },
+    exit: { opacity: 0, scale: 0.8, transition: { duration: 0.2 } },
+  };
+
+  // Lock scroll when the modal is open
+  useEffect(() => {
+    document.body.style.overflow = "hidden";
+    return () => {
+      document.body.style.overflow = "auto";
+    };
+  }, []);
+
+  // Form state
+  const [formData, setFormData] = useState({
+    firstName: "",
+    lastName: "",
+    email: "",
+    phone: "",
+  });
+
+  // Handle form submission
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    // Simple validation
+    if (
+      formData.firstName &&
+      formData.lastName &&
+      formData.email &&
+      formData.phone
+    ) {
+      // Navigate to the enrollment page
+      router.push("/enrollment");
+    } else {
+      alert("Please fill in all fields.");
+    }
+  };
+
+  // Handle input changes
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData((prevData) => ({ ...prevData, [name]: value }));
+  };
+
   return (
-    <div className="fixed inset-0 flex items-center justify-center z-50 bg-black bg-opacity-50">
-      <div className="bg-white rounded-lg p-6 sm:w-[90%] md:w-[60%] lg:w-[50%] relative">
+    <div className="fixed inset-0 flex items-center justify-center z-50 bg-black bg-opacity-50 backdrop-blur-md">
+      <motion.div
+        className="bg-white rounded-lg p-6 w-full max-w-md md:max-w-3xl relative mx-4 md:mx-auto"
+        initial="hidden"
+        animate="visible"
+        exit="exit"
+        variants={modalVariants}
+      >
+        {/* Close Button */}
         <button
-          className="absolute top-3 right-3 text-black font-bold"
+          className="absolute top-3 right-3 text-black font-bold text-2xl"
           onClick={togglePopup}
         >
           &times;
         </button>
+
         <div className="flex flex-col md:flex-row">
           {/* Left Side Content */}
           <div className="md:w-1/2 p-4">
             <h2 className="text-xl font-bold mb-4">
               Get a Sneak Peek at the Best Live Online Coding Bootcamp!
             </h2>
-            <ul className="list-disc list-inside">
+            <ul className="list-disc list-inside space-y-2">
               <li>
                 <strong>Foundations of Coding Module:</strong> Get a 2-week free
                 access to the beginner module covering HTML, CSS, and JavaScript
@@ -112,28 +173,40 @@ const Popup = ({ togglePopup }) => {
             <h2 className="text-xl font-bold mb-4">
               Get Free Access To Our Bootcamp Materials
             </h2>
-            <form className="space-y-4">
-              <div className="grid grid-cols-2 gap-4">
+            <form className="space-y-4" onSubmit={handleSubmit}>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <input
                   type="text"
+                  name="firstName"
                   placeholder="First name"
-                  className="p-2 border rounded"
+                  className="p-2 border rounded w-full"
+                  onChange={handleChange}
+                  required
                 />
                 <input
                   type="text"
+                  name="lastName"
                   placeholder="Last name"
-                  className="p-2 border rounded"
+                  className="p-2 border rounded w-full"
+                  onChange={handleChange}
+                  required
                 />
               </div>
               <input
                 type="email"
+                name="email"
                 placeholder="Your email"
                 className="w-full p-2 border rounded"
+                onChange={handleChange}
+                required
               />
               <input
                 type="tel"
+                name="phone"
                 placeholder="+123 Phone number"
                 className="w-full p-2 border rounded"
+                onChange={handleChange}
+                required
               />
               <button
                 type="submit"
@@ -144,7 +217,7 @@ const Popup = ({ togglePopup }) => {
             </form>
           </div>
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 };
