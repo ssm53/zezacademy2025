@@ -9,7 +9,7 @@ const TeachingMethod = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-start justify-between">
           {/* Left Section - Our Teaching Method */}
           <div className="space-y-6">
-            <h2 className="text-[28px] sm:text-3xl font-bold text-primary">
+            <h2 className="text-2xl sm:text-4xl font-bold text-primary">
               Our Teaching Method
             </h2>
             <p className="text-[16px] text-gray-600">
@@ -54,10 +54,10 @@ const TeachingMethod = () => {
 
           {/* Right Section - Career Support Content */}
           <div className="space-y-6">
-            <h2 className="text-[28px] sm:text-4xl font-bold text-primary">
+            <h2 className="text-2xl sm:text-4xl font-bold text-primary">
               Career Support
             </h2>
-            <p className="text-[16px] sm:text-2xl text-gray-600">
+            <p className="text-[16px]  text-gray-600">
               Upon graduation, you will get:
             </p>
             <ul className="flex gap-[2rem] list-disc ml-6 space-y-2 text-[16px] text-gray-600">

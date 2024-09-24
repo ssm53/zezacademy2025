@@ -2,6 +2,7 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import LowerHeader from "../components/layout/enrollement-header";
+import CurriculumTable from "../components/sections/curriculum-table";
 
 const EnrollmentSection = () => {
   // State for selected options
@@ -178,6 +179,7 @@ const EnrollmentSection = () => {
           </div>
         </div>
       </div>
+      <CurriculumTable />
     </div>
   );
 };

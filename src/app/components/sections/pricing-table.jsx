@@ -104,7 +104,10 @@ export function TableDemo() {
 
 const PricingTable = () => {
   return (
-    <section className="py-12 max-w-[1300px] mx-auto px-4 lg:px-0">
+    <section
+      id="comparison-section"
+      className="py-12 max-w-[1300px] mx-auto px-4 lg:px-0"
+    >
       <div className="text-start mb-8 ">
         <h2 className="text-primary text-4xl font-bold">
           Why It Makes Sense <br /> To Join Us?

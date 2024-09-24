@@ -86,7 +86,7 @@ export function TableDemo() {
 
 const CurriculumTable = () => {
   return (
-    <div className="bg-[#F7F8F9]">
+    <div id="curriculum-table" className=" bg-[#F7F8F9]">
       <section className="max-w-[1300px] mx-auto py-12 ">
         <div className="px-4 lg:px-0 text-start mb-8">
           <h2 className=" text-4xl font-bold text-primary">

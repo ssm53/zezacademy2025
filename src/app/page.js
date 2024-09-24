@@ -3,11 +3,11 @@ import Header from "./components/layout/header";
 import BootcampSection from "./components/sections/boot-camp";
 import ContactUs from "./components/sections/contact-us";
 import CurriculumTable from "./components/sections/curriculum-table";
-// import EnrollmentSection from "./components/sections/enrollment";
 import FaqAccordian from "./components/sections/faqs";
 import GetStarted from "./components/sections/get-started";
 import HandsOnLearning from "./components/sections/handson-learning";
 import Hero from "./components/sections/hero-section";
+import InfoSection from "./components/sections/info-section";
 import OurCohorts from "./components/sections/our-cohorts";
 import OurFounder from "./components/sections/our-founder";
 import Pricing from "./components/sections/pricing";
@@ -28,13 +28,13 @@ export default function Home() {
       <OurCohorts />
       <BootcampSection />
       <WhyChoose />
+      <InfoSection />
       <TeachingMethod />
       <HandsOnLearning />
       <WhatLearn />
       <GetStarted />
       <PricingTable />
       <CurriculumTable />
-      {/* <EnrollmentSection /> */}
       <Pricing />
       <Testimonials />
       {/* <ContactUs /> */}
