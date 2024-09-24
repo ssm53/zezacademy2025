@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import Image from "next/image";
 import LowerHeader from "../components/layout/enrollement-header";
 import CurriculumTable from "../components/sections/curriculum-table";
+import WatchMore from "../components/sections/watch-more";
 
 const EnrollmentSection = () => {
   // State for selected options
@@ -13,60 +14,35 @@ const EnrollmentSection = () => {
   return (
     <div id="get-free-access" className="bg-primary min-h-screen">
       <LowerHeader />
-      <div className="max-w-[1300px] mx-auto sm:px-4 px-0 py-12">
+      <div className="max-w-[1200px] mx-auto px-4 py-12">
         {/* Header */}
         <div className="text-center">
           <h1 className="text-5xl font-bold text-white">
-            Get enrolled in{" "}
-            <span className="text-secondary">HeyLearn2Code</span>
+            Let’s Get Started. We{" "}
+            <span className="text-secondary">Don’t Get Paid</span> If You Don’t
+            Get A Job
           </h1>
-          <p className="mt-6 text-xl text-gray-300">
-            Your Success Is Our Priority. You’ll Gain Real-World Coding
-            Experience And Build Projects That Matter. Join Today And Take The
-            First Step Towards A Thriving Tech Career!
-          </p>
-        </div>
-
-        {/* Additional Content */}
-        <div className="mt-8 text-white">
-          <h2 className="text-2xl font-bold">
-            Get a Sneak Peek at the Best Live Online Coding Bootcamp!
-          </h2>
-          <ul className="list-disc list-inside space-y-2">
-            <li>
-              <strong>Foundations of Coding Module:</strong> Get a 2-week free
-              access to the beginner module covering HTML, CSS, and JavaScript
-              fundamentals.
-            </li>
-            <li>
-              <strong>Engaging Video Tutorials:</strong> Easy-to-follow
-              explainer videos that make coding fun and accessible.
-            </li>
-            <li>
-              <strong>Supportive Learning Community:</strong> Connect with
-              peers, join discussions, and learn together with like-minded
-              individuals.
-            </li>
-          </ul>
         </div>
 
         {/* Enrollment Form Section */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mt-16">
           {/* Left Form Section */}
-          <div className="text-white p-8 rounded-lg">
+          <div className="bg-[#132647] p-8 rounded-lg">
             {/* Program Type */}
             <div className="mb-6">
-              <label className="block text-lg font-semibold">
+              <label className="block text-lg font-semibold text-white">
                 Choose Program Type
               </label>
               <select className="w-full p-3 mt-2 rounded bg-gray-200 text-gray-900">
                 <option>Self Paced Bootcamp</option>
+                <option>Online Bootcamp (Fulltime)</option>
+                <option>Onsite Bootcamp (Fulltime)</option>
               </select>
             </div>
 
             {/* Tuition Options */}
             <div className="mb-6">
-              <label className="block text-lg font-semibold">
+              <label className="block text-lg font-semibold text-white">
                 Choose Tuition Options
               </label>
               <div className="flex space-x-4 mt-2">
@@ -77,10 +53,10 @@ const EnrollmentSection = () => {
                 ].map((option) => (
                   <button
                     key={option}
-                    className={`px-6 py-3 rounded-lg transition border border-secondary ${
+                    className={`px-6 py-3 rounded-lg transition border ${
                       selectedTuitionOption === option
                         ? "bg-blue-600 text-white"
-                        : "bg-transparent text-white"
+                        : "bg-transparent text-white border-white"
                     }`}
                     onClick={() => setSelectedTuitionOption(option)}
                   >
@@ -92,7 +68,7 @@ const EnrollmentSection = () => {
 
             {/* Money Back Guarantee */}
             <div className="mb-6">
-              <label className="block text-lg font-semibold">
+              <label className="block text-lg font-semibold text-white">
                 Money Back Guarantee
               </label>
               <div className="flex space-x-4 mt-2">
@@ -114,12 +90,13 @@ const EnrollmentSection = () => {
 
             {/* Registration Fees */}
             <div className="mb-6">
-              <label className="block text-lg font-semibold">
+              <label className="block text-lg font-semibold text-white">
                 Registration Fees
               </label>
               <input
                 type="text"
-                className="w-full p-3 mt-2 rounded text-black"
+                value="RM300"
+                className="w-full p-3 mt-2 rounded bg-gray-200 text-gray-900"
               />
             </div>
           </div>
@@ -139,7 +116,7 @@ const EnrollmentSection = () => {
               <span className="block text-primary mt-2">USD 250 Up-Front</span>
             </div>
             <div className="mt-4 flex items-center space-x-2">
-              <Image src="/active.svg" alt="active" width={15} height={15} />
+              <Image src="/activedot.svg" alt="active" width={15} height={15} />
               <span className="text-green-400">3 Slots Left</span>
             </div>
 
@@ -180,6 +157,7 @@ const EnrollmentSection = () => {
         </div>
       </div>
       <CurriculumTable />
+      <WatchMore />
     </div>
   );
 };

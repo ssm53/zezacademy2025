@@ -78,16 +78,14 @@ const Hero = () => {
 };
 
 const Popup = ({ togglePopup }) => {
-  const router = useRouter(); // Get router from the app router
+  const router = useRouter();
 
-  // Modal animation variants
   const modalVariants = {
     hidden: { opacity: 0, scale: 0.8 },
     visible: { opacity: 1, scale: 1, transition: { duration: 0.3 } },
     exit: { opacity: 0, scale: 0.8, transition: { duration: 0.2 } },
   };
 
-  // Lock scroll when the modal is open
   useEffect(() => {
     document.body.style.overflow = "hidden";
     return () => {
@@ -95,7 +93,6 @@ const Popup = ({ togglePopup }) => {
     };
   }, []);
 
-  // Form state
   const [formData, setFormData] = useState({
     firstName: "",
     lastName: "",
@@ -103,25 +100,21 @@ const Popup = ({ togglePopup }) => {
     phone: "",
   });
 
-  // Handle form submission
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    // Simple validation
     if (
       formData.firstName &&
       formData.lastName &&
       formData.email &&
       formData.phone
     ) {
-      // Navigate to the enrollment page
       router.push("/enrollment");
     } else {
       alert("Please fill in all fields.");
     }
   };
 
-  // Handle input changes
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData((prevData) => ({ ...prevData, [name]: value }));
@@ -130,13 +123,12 @@ const Popup = ({ togglePopup }) => {
   return (
     <div className="fixed inset-0 flex items-center justify-center z-50 bg-black bg-opacity-50 backdrop-blur-md">
       <motion.div
-        className="bg-white rounded-lg p-6 w-full max-w-md md:max-w-3xl relative mx-4 md:mx-auto"
+        className="bg-white rounded-lg p-6 w-full max-w-md md:max-w-4xl h-[600px] relative mx-4 md:mx-auto"
         initial="hidden"
         animate="visible"
         exit="exit"
         variants={modalVariants}
       >
-        {/* Close Button */}
         <button
           className="absolute top-3 right-3 text-black font-bold text-2xl"
           onClick={togglePopup}
@@ -144,21 +136,23 @@ const Popup = ({ togglePopup }) => {
           &times;
         </button>
 
-        <div className="flex flex-col md:flex-row">
+        <div className="flex flex-col md:flex-row h-full">
           {/* Left Side Content */}
-          <div className="md:w-1/2 p-4">
-            <h2 className="text-xl font-bold mb-4">
+          <div className="md:w-1/2 p-6 bg-gray-100 rounded-l-lg overflow-y-auto">
+            <h2 className="text-2xl font-bold mb-6">
               Get a Sneak Peek at the Best Live Online Coding Bootcamp!
             </h2>
-            <ul className="list-disc list-inside space-y-2">
+            <ul className="list-disc list-inside space-y-4 text-gray-700">
               <li>
                 <strong>Foundations of Coding Module:</strong> Get a 2-week free
                 access to the beginner module covering HTML, CSS, and JavaScript
-                fundamentals.
+                fundamentals. Start building projects and develop job-ready
+                skills.
               </li>
               <li>
                 <strong>Engaging Video Tutorials:</strong> Easy-to-follow
-                explainer videos that make coding fun and accessible.
+                explainer videos that make coding fun and accessible. Perfect
+                for beginners!
               </li>
               <li>
                 <strong>Supportive Learning Community:</strong> Connect with
@@ -169,17 +163,18 @@ const Popup = ({ togglePopup }) => {
           </div>
 
           {/* Right Side Form */}
-          <div className="md:w-1/2 p-4">
-            <h2 className="text-xl font-bold mb-4">
+          <div className="md:w-1/2 p-6 bg-white rounded-r-lg overflow-y-auto">
+            <h2 className="text-2xl font-bold mb-6">
               Get Free Access To Our Bootcamp Materials
             </h2>
+            <p className="mb-4 text-gray-600">You can reach us any time</p>
             <form className="space-y-4" onSubmit={handleSubmit}>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <input
                   type="text"
                   name="firstName"
                   placeholder="First name"
-                  className="p-2 border rounded w-full"
+                  className="p-3 border rounded-lg w-full"
                   onChange={handleChange}
                   required
                 />
@@ -187,7 +182,7 @@ const Popup = ({ togglePopup }) => {
                   type="text"
                   name="lastName"
                   placeholder="Last name"
-                  className="p-2 border rounded w-full"
+                  className="p-3 border rounded-lg w-full"
                   onChange={handleChange}
                   required
                 />
@@ -196,7 +191,7 @@ const Popup = ({ togglePopup }) => {
                 type="email"
                 name="email"
                 placeholder="Your email"
-                className="w-full p-2 border rounded"
+                className="w-full p-3 border rounded-lg"
                 onChange={handleChange}
                 required
               />
@@ -204,13 +199,13 @@ const Popup = ({ togglePopup }) => {
                 type="tel"
                 name="phone"
                 placeholder="+123 Phone number"
-                className="w-full p-2 border rounded"
+                className="w-full p-3 border rounded-lg"
                 onChange={handleChange}
                 required
               />
               <button
                 type="submit"
-                className="w-full bg-blue-600 text-white p-3 rounded hover:bg-blue-700"
+                className="w-full bg-blue-600 text-white p-4 rounded-lg hover:bg-blue-700 transition-colors"
               >
                 Get Free Access
               </button>
