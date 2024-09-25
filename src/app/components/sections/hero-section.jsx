@@ -39,7 +39,7 @@ const Hero = () => {
             </button>
             <button
               onClick={togglePopup}
-              className="w-[120px] sm:w-[193px] h-[50px] bg-white text-sm  hover:bg-blue-100 px-6 py-3 rounded-[5px] whitespace-nowrap flex justify-center"
+              className="w-[120px]  sm:w-[193px] h-[50px] bg-white text-sm  hover:bg-blue-100 px-6 py-3 rounded-[5px] whitespace-nowrap flex justify-center text-center"
             >
               Get Free Access
             </button>

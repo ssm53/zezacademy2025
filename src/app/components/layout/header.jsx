@@ -1,23 +1,49 @@
 "use client";
 import React, { useState } from "react";
-import Link from "next/link"; // Import Next.js Link
+import Link from "next/link";
 import { FiMenu } from "react-icons/fi"; // Hamburger icon
-import { FiArrowDown } from "react-icons/fi"; // Down arrow icon for mobile drawer
-import {
-  Drawer,
-  DrawerTrigger,
-  DrawerContent,
-  DrawerHeader,
-  DrawerFooter,
-  DrawerClose,
-} from "@/components/ui/drawer"; // Importing ShadCN drawer components
+import { FaLinkedin, FaTwitter, FaYoutube, FaInstagram } from "react-icons/fa"; // Social Icons
+
+// Hook to detect screen size
+const useMediaQuery = (width) => {
+  const [isScreenSize, setIsScreenSize] = useState(false);
+
+  React.useEffect(() => {
+    const updateScreenSize = () => {
+      setIsScreenSize(window.innerWidth >= width);
+    };
+    updateScreenSize();
+    window.addEventListener("resize", updateScreenSize);
+    return () => window.removeEventListener("resize", updateScreenSize);
+  }, [width]);
+
+  return isScreenSize;
+};
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const isDesktop = useMediaQuery(1024); // Detect if the screen is larger than 1024px (lg: breakpoint)
 
   const toggleDrawer = () => {
     setIsOpen(!isOpen);
   };
+
+  // Function to close the drawer if clicking outside of it
+  const handleOutsideClick = (e) => {
+    if (isOpen && !e.target.closest(".drawer-content")) {
+      setIsOpen(false);
+    }
+  };
+
+  React.useEffect(() => {
+    if (isOpen) {
+      document.addEventListener("click", handleOutsideClick);
+    } else {
+      document.removeEventListener("click", handleOutsideClick);
+    }
+
+    return () => document.removeEventListener("click", handleOutsideClick);
+  }, [isOpen]);
 
   return (
     <div className="relative border-b border-[#243548]">
@@ -39,114 +65,115 @@ const Header = () => {
               Apply Now
             </button>
 
-            <Drawer open={isOpen} onOpenChange={setIsOpen}>
-              <DrawerTrigger asChild>
-                <button
-                  type="button"
-                  onClick={toggleDrawer}
-                  className="bg-lightGray text-[#FFFFFF] inline-flex items-center p-2 w-10 h-10 justify-center"
-                >
-                  <FiMenu className="w-6 h-6" aria-hidden="true" />
-                </button>
-              </DrawerTrigger>
+            {/* Custom Drawer Trigger - Hamburger Icon */}
+            <button
+              type="button"
+              onClick={toggleDrawer}
+              className="bg-lightGray text-[#FFFFFF] inline-flex items-center p-2 w-10 h-10 justify-center"
+            >
+              <FiMenu className="w-6 h-6" aria-hidden="true" />
+            </button>
 
-              <DrawerContent
-                className={`
-                  transition-transform duration-300 
-                  ${isOpen ? "translate-x-0" : "-translate-x-full"}
-                  fixed top-0 left-0 md:w-[300px] h-full md:h-auto bg-white shadow-lg transform
-                  md:translate-x-0 md:fixed md:top-0 md:left-0 
-                  sm:translate-y-0 sm:fixed sm:bottom-0 sm:left-0 w-full sm:h-[50%]`}
+            {/* Backdrop Effect */}
+            <div
+              className={`fixed inset-0 bg-black bg-opacity-50 z-10 transition-opacity duration-300 ${
+                isOpen ? "opacity-100 visible" : "opacity-0 invisible"
+              }`}
+              onClick={toggleDrawer} // Close drawer when clicking on backdrop
+            />
+
+            {/* Custom Drawer Component */}
+            <div
+              className={`fixed ${
+                isDesktop ? "right-0 top-0" : "bottom-0 left-0"
+              } w-full ${
+                isDesktop ? "sm:w-2/5 lg:w-1/2" : "h-[90%]"
+              } h-full bg-[#FFFFFF] rounded-[12px] shadow-lg z-20 transform transition-transform duration-300 ease-in-out ${
+                isOpen
+                  ? isDesktop
+                    ? "translate-x-0"
+                    : "translate-y-0"
+                  : isDesktop
+                  ? "translate-x-full"
+                  : "translate-y-full"
+              } drawer-content`}
+            >
+              {/* Drawer Close Button */}
+              <button
+                className="absolute top-5 right-5 text-2xl font-bold hover:text-secondary transition-all duration-300"
+                onClick={toggleDrawer}
+                style={{
+                  width: "40px",
+                  height: "40px",
+                  borderRadius: "50%",
+                  background: "rgba(34, 34, 34, 0.1)",
+                }}
               >
-                <DrawerHeader>
-                  <DrawerClose>
-                    <button
-                      onClick={toggleDrawer}
-                      className="absolute top-4 right-4 text-xl"
-                    >
-                      &times;
-                    </button>
-                  </DrawerClose>
-                  <div className="md:hidden flex justify-center mt-2">
-                    <FiArrowDown className="text-2xl text-gray-500" />
-                  </div>
-                </DrawerHeader>
-                <div className="p-4">
-                  <ul className="flex flex-col space-y-4">
-                    <li>
-                      <Link href="#home" scroll={true} onClick={toggleDrawer}>
-                        <span className="hover:text-secondary-700">Home</span>
-                      </Link>
-                    </li>
-                    <li>
+                &times;
+              </button>
+
+              {/* Drawer Links with Arrow SVG */}
+              <div className="p-8 mt-12">
+                <ul
+                  className={`flex flex-col ${
+                    isDesktop ? "space-y-1" : "space-y-3"
+                  } text-xl`}
+                >
+                  {[
+                    "Home",
+                    "Free Materials",
+                    "Our Founder",
+                    "Our Cohorts",
+                    "Why Us",
+                    "Our Teaching Methods",
+                    "Our Curriculum",
+                    "How to Get Started",
+                    "Pricing",
+                    "Our Students",
+                    "FAQs",
+                  ].map((link, index) => (
+                    <li key={index} className="border-b border-gray-200 pb-3">
                       <Link
-                        href="#free-materials"
-                        scroll={true}
+                        href={`#${link.toLowerCase().replace(/ /g, "-")}`}
                         onClick={toggleDrawer}
                       >
-                        <span className="hover:text-secondary-700">
-                          Free Materials
+                        <span className="flex justify-between items-center text-gray-800 hover:text-secondary">
+                          {link}
+                          <img
+                            src="/arrrow.svg" // Arrow SVG in the public folder
+                            alt="arrow"
+                            className="w-5 h-5" // Adjust the arrow size
+                          />
                         </span>
                       </Link>
                     </li>
-                    <li>
-                      <Link
-                        href="#our-founder"
-                        scroll={true}
-                        onClick={toggleDrawer}
-                      >
-                        <span className="hover:text-secondary-700">
-                          Our Founder
-                        </span>
-                      </Link>
-                    </li>
-                    <li>
-                      <Link
-                        href="#our-cohorts"
-                        scroll={true}
-                        onClick={toggleDrawer}
-                      >
-                        <span className="hover:text-secondary-700">
-                          Our Cohorts
-                        </span>
-                      </Link>
-                    </li>
-                    <li>
-                      <Link href="#why-us" scroll={true} onClick={toggleDrawer}>
-                        <span className="hover:text-secondary-700">Why Us</span>
-                      </Link>
-                    </li>
-                    <li>
-                      <Link
-                        href="#pricing"
-                        scroll={true}
-                        onClick={toggleDrawer}
-                      >
-                        <span className="hover:text-secondary-700">
-                          Pricing
-                        </span>
-                      </Link>
-                    </li>
-                    <li>
-                      <Link
-                        href="#contact"
-                        scroll={true}
-                        onClick={toggleDrawer}
-                      >
-                        <span className="hover:text-secondary-700">
-                          Contact
-                        </span>
-                      </Link>
-                    </li>
-                  </ul>
+                  ))}
+                </ul>
+              </div>
+
+              {/* Drawer Footer - Always visible on desktop and mobile */}
+              <div className="absolute bottom-8 left-8 right-8 border-t border-gray-200 pt-4 flex justify-between items-center">
+                <p className="text-sm text-gray-500">
+                  © 2024 HeyLearn2Code. All Rights Reserved.
+                </p>
+
+                {/* Social Icons - Bottom Right */}
+                <div className="flex space-x-4">
+                  <Link href="https://linkedin.com">
+                    <FaLinkedin className="w-6 h-6 text-gray-800 hover:text-secondary" />
+                  </Link>
+                  <Link href="https://twitter.com">
+                    <FaTwitter className="w-6 h-6 text-gray-800 hover:text-secondary" />
+                  </Link>
+                  <Link href="https://youtube.com">
+                    <FaYoutube className="w-6 h-6 text-gray-800 hover:text-secondary" />
+                  </Link>
+                  <Link href="https://instagram.com">
+                    <FaInstagram className="w-6 h-6 text-gray-800 hover:text-secondary" />
+                  </Link>
                 </div>
-                <DrawerFooter className="text-center border-t border-gray-200">
-                  <p className="py-4 text-sm text-gray-500">
-                    © 2024 HeyLearn2Code. All Rights Reserved.
-                  </p>
-                </DrawerFooter>
-              </DrawerContent>
-            </Drawer>
+              </div>
+            </div>
           </div>
         </div>
       </nav>
