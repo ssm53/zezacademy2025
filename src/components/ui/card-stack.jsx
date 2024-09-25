@@ -1,9 +1,10 @@
 "use client";
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 export const CardStack = ({ items, offset, scaleFactor }) => {
-  const CARD_OFFSET = offset || 32; // Offset for right shift
+  const CARD_OFFSET = offset || 23; // Offset for right shift
   const TOP_OFFSET = 17; // Adjust for slight upward stacking
   const SCALE_FACTOR = scaleFactor || 0.06; // Scale for the smaller card effect
   const [cards, setCards] = useState(items);
@@ -32,12 +33,12 @@ export const CardStack = ({ items, offset, scaleFactor }) => {
   };
 
   return (
-    <div className="relative h-[434px] w-[385px] sm:h-[444px] sm:w-[385px] flex justify-start">
+    <div className=" relative h-[434px] w-[300px] sm:h-[444px] sm:w-[385px]  flex justify-start">
       {/* Card Stack */}
       {cards.map((card, index) => (
         <motion.div
           key={card.id}
-          className="absolute bg-white h-[434px] w-[330px] sm:mx-auto sm:w-[385px] rounded-3xl p-4 shadow-xl border border-neutral-200 flex flex-col justify-between"
+          className="absolute bg-white h-[434px] w-full sm:mx-auto sm:w-[385px] rounded-3xl p-4 shadow-xl border border-neutral-200 flex flex-col justify-between"
           style={{
             transformOrigin: "top center",
             left: index * CARD_OFFSET, // Shift cards to the right side
@@ -83,10 +84,12 @@ export const CardStack = ({ items, offset, scaleFactor }) => {
 
           {/* User Info and Rating */}
           <div className="flex items-center space-x-3">
-            <img
+            <Image
               src="/videoavatar.svg"
               alt="Avatar"
-              className="w-10 h-10 rounded-full"
+              width={40}
+              height={40}
+              className="rounded-full"
             />
             <div>
               <p className="text-gray-900 font-medium">{card.name}</p>

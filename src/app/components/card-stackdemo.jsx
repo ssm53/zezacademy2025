@@ -30,7 +30,7 @@ export function CardStackDemo() {
   ];
 
   return (
-    <div className="h-auto flex items-center justify-center w-full ">
+    <div className="h-auto flex items-center justify-center  ">
       <CardStack items={CARDS} />
     </div>
   );

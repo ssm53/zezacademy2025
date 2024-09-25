@@ -24,7 +24,7 @@ export default function BootcampSection() {
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
         {/* Card 1 */}
-        <div className="bg-white shadow-lg p-6 rounded-lg w-[390px] h-[252px] sm:w-auto sm:h-auto">
+        <div className="bg-white shadow-lg p-6 rounded-lg w-full h-[252px] sm:w-auto sm:h-auto">
           <div className="flex justify-start mb-4">
             <div className="h-[50px] w-[50px] sm:h-16 sm:w-16 flex items-center justify-center">
               {/* Adjust the image here */}
@@ -47,7 +47,7 @@ export default function BootcampSection() {
         </div>
 
         {/* Card 2 */}
-        <div className="bg-white shadow-lg p-6 rounded-lg w-[390px] h-[252px] sm:w-auto sm:h-auto">
+        <div className="bg-white shadow-lg p-6 rounded-lg w-full h-[252px] sm:w-auto sm:h-auto">
           <div className="flex justify-start mb-4">
             <div className="h-[50px] w-[50px] sm:h-16 sm:w-16 flex items-center justify-center">
               {/* Adjust the image here */}
@@ -70,7 +70,7 @@ export default function BootcampSection() {
         </div>
 
         {/* Card 3 */}
-        <div className="bg-white shadow-lg p-6 rounded-lg w-[390px] h-[252px] sm:w-auto sm:h-auto">
+        <div className="bg-white shadow-lg p-6 rounded-lg w-full h-[252px] sm:w-auto sm:h-auto">
           <div className="flex justify-start mb-4">
             <div className="h-[50px] w-[50px] sm:h-16 sm:w-16 flex items-center justify-center">
               {/* Adjust the image here */}

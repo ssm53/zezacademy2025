@@ -25,7 +25,7 @@ const SixHundred = () => {
           </button>
         </div>
 
-        <div className="lg:w-[39%] mt-10 lg:mt-0 flex flex-wrap justify-center lg:justify-start gap-[8px] lg:gap-[12px] bg-[#F3F5F7] p-[14px] md-p-[22px] lg:p-[22px] rounded-[15px] sm:flex-wrap xs:flex-nowrap">
+        <div className="lg:w-[39%] mt-10 lg:mt-0 flex flex-wrap justify-center lg:justify-start gap-[8px] lg:gap-[12px] bg-[#F3F5F7] p-[14px] md-p-[22px] lg:p-[22px] rounded-[15px] sm:flex-wrap xs:flex-wrap">
           <div className="bg-white rounded-[20px] md-rounded-[32px] py-[1.5rem] md:py-[3rem] px-0 text-center w-[31%] sm:w-1/2 md:w-[43%] flex-shrink-0">
             <h3 className="text-[26px] md:text-4xl font-bold text-secondary">
               600+

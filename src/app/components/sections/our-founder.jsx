@@ -37,15 +37,16 @@ const OurFounder = () => {
           </h4>
           <h2 className="text-[25px] sm:text-[48px] font-bold">Our Founder</h2>
           <p className="text-lg font-medium mb-4">
-            Hey peeps, I'm Shaun, Founder of
-            <span className="font-bold">"HeyLearn2Code"</span>
+            Hey peeps, I&apos;m Shaun, Founder of
+            <span className="font-bold">&quot;HeyLearn2Code&quot;</span>
           </p>
           <p className="mb-4 text-[#E9EAEB]">
             I started learning to code in April 2023, and by the end of the
             year, I had four software developer job offers. Without a degree.
-            Now, I’m building AI products, including EZLA, an AI SaaS launching
-            Q4 2024.
+            Now, I&apos;m building AI products, including EZLA, an AI SaaS
+            launching Q4 2024.
           </p>
+
           <p className="mb-6 text-[#E9EAEB]">
             Emphasize your switch from accounting to coding, showcasing the
             value of learning tech skills even without formal education.

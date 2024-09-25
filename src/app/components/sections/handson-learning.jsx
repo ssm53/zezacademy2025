@@ -1,4 +1,5 @@
 import Marquee from "react-fast-marquee";
+import Image from "next/image"; // Import the Next.js Image component
 
 const logos = [
   "/css3.svg",
@@ -39,8 +40,8 @@ const HandsOnLearning = () => {
       <div className="text-center text-white mb-8 px-4">
         <h2 className="text-4xl font-bold">A Hands-On Approach To Learning</h2>
         <p className="text-lg mt-4 max-w-xl mx-auto">
-          This is not another theory-heavy course. We focus on doing. You'll
-          build real projects, get feedback, and learn by doing.
+          This is not another theory-heavy course. We focus on doing.
+          You&apos;ll build real projects, get feedback, and learn by doing.
         </p>
       </div>
 
@@ -53,10 +54,12 @@ const HandsOnLearning = () => {
                 className="flex items-center justify-center bg-white rounded-lg p-4 shadow-lg"
                 style={{ width: "100px", height: "100px" }}
               >
-                <img
+                <Image
                   src={logo}
                   alt={`Logo ${index}`}
                   className="h-full w-full object-contain"
+                  width={100} // Specify width and height for optimization
+                  height={100}
                 />
               </div>
             ))}

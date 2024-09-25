@@ -14,32 +14,32 @@ const Hero = () => {
   return (
     <section
       id="home"
-      className="bg-[#0F243D] py-12 pb-16 px-6 sm:h-[40rem] h-auto flex items-center"
+      className="bg-[#0F243D] py-12 pb-16 px-6 w-auto sm:w-full sm:h-[40rem] h-auto flex items-center"
     >
-      <div className="max-w-[1300px] mx-auto grid md:grid-cols-2 gap-8 items-center md:gap-[14rem]">
+      <div className="w-full   sm:max-w-[1300px] mx-auto grid md:grid-cols-2 gap-8 items-center md:gap-[14rem]">
         {/* Left Side - Heading and Text */}
-        <div>
-          <h1 className="text-4xl sm:text-6xl font-bold text-white text-center md:text-left">
+        <div className="w-full">
+          <h1 className="text-2xl sm:text-6xl font-bold text-white text-center md:text-left">
             <span className="text-secondary">Hey</span>
             <span className="text-white">Learn</span>
             <span className="text-secondary">2</span>
-            <span className="text-white">Code's</span>
+            <span className="text-white">Code&apos;s</span>
             <br className="hidden md:block" />
             Full Stack Coding <br /> Bootcamp
           </h1>
 
-          <p className="mt-6 text-base md:text-lg text-gray-300 text-center md:text-left">
+          <p className="mt-6 text-sm md:text-lg text-gray-300 text-center md:text-left">
             Become a Full-Stack Developer in 4 Months and get a developer job.
             If not, it is 100% FREE.
           </p>
 
           <div className="mt-6 flex justify-center md:justify-start space-x-4">
-            <button className="w-[142px] sm:w-[193px] h-[50px] bg-secondary hover:bg-secondary text-white px-6 py-3 rounded-[5px]">
+            <button className="w-[120px] sm:w-[193px] h-[50px] text-sm bg-secondary hover:bg-secondary text-white px-6 py-3 rounded-[5px]">
               Apply Now
             </button>
             <button
               onClick={togglePopup}
-              className="w-[142px] sm:w-[193px] h-[50px] bg-white  hover:bg-blue-100 px-6 py-3 rounded-[5px] whitespace-nowrap flex justify-center"
+              className="w-[120px] sm:w-[193px] h-[50px] bg-white text-sm  hover:bg-blue-100 px-6 py-3 rounded-[5px] whitespace-nowrap flex justify-center"
             >
               Get Free Access
             </button>
@@ -123,7 +123,7 @@ const Popup = ({ togglePopup }) => {
   return (
     <div className="fixed inset-0 flex items-center justify-center z-50 bg-black bg-opacity-50 backdrop-blur-md">
       <motion.div
-        className="bg-white rounded-lg p-6 w-full max-w-md md:max-w-4xl h-[600px] relative mx-4 md:mx-auto"
+        className="bg-white rounded-lg p-6 w-full max-w-md md:max-w-4xl relative mx-4 md:mx-auto"
         initial="hidden"
         animate="visible"
         exit="exit"
@@ -136,9 +136,9 @@ const Popup = ({ togglePopup }) => {
           &times;
         </button>
 
-        <div className="flex flex-col md:flex-row h-full">
+        <div className="flex flex-col md:flex-row">
           {/* Left Side Content */}
-          <div className="md:w-1/2 p-6 bg-gray-100 rounded-l-lg overflow-y-auto">
+          <div className="md:w-1/2 p-6 bg-gray-100 rounded-l-lg">
             <h2 className="text-2xl font-bold mb-6">
               Get a Sneak Peek at the Best Live Online Coding Bootcamp!
             </h2>
@@ -163,7 +163,7 @@ const Popup = ({ togglePopup }) => {
           </div>
 
           {/* Right Side Form */}
-          <div className="md:w-1/2 p-6 bg-white rounded-r-lg overflow-y-auto">
+          <div className="md:w-1/2 p-6 bg-white rounded-r-lg">
             <h2 className="text-2xl font-bold mb-6">
               Get Free Access To Our Bootcamp Materials
             </h2>

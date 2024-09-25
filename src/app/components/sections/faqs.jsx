@@ -54,10 +54,11 @@ export default function FaqAccordian() {
           Frequently Asked Questions
         </h2>
         <p className="text-lg text-center text-gray-600 mb-12">
-          Got questions? We’ve got answers! Here's everything you need to know{" "}
-          <br />
+          Got questions? We&rsquo;ve got answers! Here&apos;s everything you
+          need to know <br />
           before joining.
         </p>
+
         <div className="space-y-4">
           {faqs.map((faq, index) => (
             <div

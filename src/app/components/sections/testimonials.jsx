@@ -1,5 +1,6 @@
 import { BiSolidQuoteLeft } from "react-icons/bi";
 import Marquee from "react-fast-marquee";
+import Image from "next/image";
 
 const testimonials = [
   {
@@ -49,7 +50,7 @@ const testimonials = [
 export default function Testimonials() {
   return (
     <div className="bg-[#F7F8F9]">
-      <section className=" max-w-[1300px] mx-auto px-4 py-16">
+      <section className="max-w-[1300px] mx-auto px-4 py-16">
         <h2 className="text-primary text-2xl sm:text-4xl font-bold text-center mb-6">
           What Our Students <br /> Are Saying
         </h2>
@@ -79,9 +80,12 @@ export default function Testimonials() {
                     {testimonial.feedback}
                   </p>
                   <div className="flex items-start justify-start mb-2">
-                    <img
+                    {/* Inside the map function for mobile view */}
+                    <Image
                       src={testimonial.image}
                       alt={testimonial.name}
+                      width={32} // Set the width and height according to the image size you need
+                      height={32}
                       className="w-8 h-8 rounded-full mr-2"
                     />
                     <div>
@@ -134,9 +138,12 @@ export default function Testimonials() {
                 {testimonial.feedback}
               </p>
               <div className="flex items-start justify-start mb-4">
-                <img
+                {/* Inside the map function for desktop view */}
+                <Image
                   src={testimonial.image}
                   alt={testimonial.name}
+                  width={48} // Set the width and height according to the image size you need
+                  height={48}
                   className="w-12 h-12 rounded-full mr-4"
                 />
                 <div>
