@@ -1,13 +1,40 @@
-// components/BootcampSection.jsx
-
+"use client";
 import Image from "next/image";
+import { motion, useInView } from "framer-motion";
 import clock from "/public/clock.svg";
 import idea from "/public/idea.svg";
 import search from "/public/search.svg";
+import { useRef } from "react";
 
 export default function BootcampSection() {
+  const sectionRef = useRef(null);
+  const isInView = useInView(sectionRef, { triggerOnce: false }); // Ensure it animates every time in view
+
+  // Variants for container to control the stagger and transition
+  const containerVariants = {
+    hidden: {},
+    visible: {
+      transition: {
+        staggerChildren: 0.2, // Delay between the animations of each card
+      },
+    },
+  };
+
+  // Variants for each card, animating from bottom to top
+  const cardVariants = {
+    hidden: { opacity: 0, y: 50 }, // Start below the viewport
+    visible: {
+      opacity: 1,
+      y: 0, // Move to natural position
+      transition: { duration: 0.8, ease: "easeInOut" }, // Smooth transition
+    },
+  };
+
   return (
-    <section className="max-w-[1300px] mx-auto py-16 px-4 lg:px-0">
+    <section
+      className="max-w-[1300px] mx-auto py-16 px-4 lg:px-0"
+      ref={sectionRef}
+    >
       <div className="text-start mb-8">
         <h2 className="leading-[30px] sm:leading-[50px] text-[20px] sm:text-[48px] font-bold text-primary">
           Who Is This <br className="hidden sm:block" />
@@ -18,16 +45,24 @@ export default function BootcampSection() {
           Feeling stuck in your current career? Whether you’re new to coding{" "}
           <br /> or just need a real-world project push, this bootcamp is for
           you. With <br /> personalized support and a community of learners,
-          you’ll reach your <br /> goals faster than you think
+          you’ll reach your <br /> goals faster than you think.
         </p>
       </div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+      {/* Animated Cards Section */}
+      <motion.div
+        className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8"
+        variants={containerVariants}
+        initial="hidden"
+        animate={isInView ? "visible" : "hidden"} // Trigger animation based on visibility
+      >
         {/* Card 1 */}
-        <div className="bg-white shadow-lg p-6 rounded-lg w-full h-[252px] sm:w-auto sm:h-auto">
+        <motion.div
+          className="bg-white shadow-lg p-6 rounded-lg w-full h-[252px] sm:w-auto sm:h-auto"
+          variants={cardVariants}
+        >
           <div className="flex justify-start mb-4">
             <div className="h-[50px] w-[50px] sm:h-16 sm:w-16 flex items-center justify-center">
-              {/* Adjust the image here */}
               <Image
                 src={clock}
                 alt="Icon"
@@ -44,13 +79,15 @@ export default function BootcampSection() {
             Jumpstart your coding journey with hands-on learning and guidance,
             perfect for complete beginners.
           </p>
-        </div>
+        </motion.div>
 
         {/* Card 2 */}
-        <div className="bg-white shadow-lg p-6 rounded-lg w-full h-[252px] sm:w-auto sm:h-auto">
+        <motion.div
+          className="bg-white shadow-lg p-6 rounded-lg w-full h-[252px] sm:w-auto sm:h-auto"
+          variants={cardVariants}
+        >
           <div className="flex justify-start mb-4">
             <div className="h-[50px] w-[50px] sm:h-16 sm:w-16 flex items-center justify-center">
-              {/* Adjust the image here */}
               <Image
                 src={idea}
                 alt="Icon"
@@ -67,13 +104,15 @@ export default function BootcampSection() {
             Turn your ideas into real-world applications by learning to code and
             create your own solutions.
           </p>
-        </div>
+        </motion.div>
 
         {/* Card 3 */}
-        <div className="bg-white shadow-lg p-6 rounded-lg w-full h-[252px] sm:w-auto sm:h-auto">
+        <motion.div
+          className="bg-white shadow-lg p-6 rounded-lg w-full h-[252px] sm:w-auto sm:h-auto"
+          variants={cardVariants}
+        >
           <div className="flex justify-start mb-4">
             <div className="h-[50px] w-[50px] sm:h-16 sm:w-16 flex items-center justify-center">
-              {/* Adjust the image here */}
               <Image
                 src={search}
                 alt="Icon"
@@ -90,8 +129,8 @@ export default function BootcampSection() {
             Transition into the tech industry with the skills and confidence
             needed to land a developer job.
           </p>
-        </div>
-      </div>
+        </motion.div>
+      </motion.div>
     </section>
   );
 }

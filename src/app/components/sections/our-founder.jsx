@@ -1,11 +1,48 @@
-import React from "react";
+"use client";
+import React, { useState, useEffect, useRef } from "react";
 import Image from "next/image";
+import { motion } from "framer-motion"; // Optional for more complex animations
 
 const OurFounder = () => {
+  const [isInView, setIsInView] = useState(false);
+  const sectionRef = useRef(null);
+
+  // Using Intersection Observer to detect when the section is in view
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setIsInView(true); // Trigger animation
+        } else {
+          setIsInView(false); // Optionally remove animation when out of view
+        }
+      },
+      { threshold: 0.3 } // Adjust threshold for when the animation should trigger
+    );
+
+    if (sectionRef.current) {
+      observer.observe(sectionRef.current);
+    }
+
+    return () => {
+      if (sectionRef.current) {
+        observer.unobserve(sectionRef.current);
+      }
+    };
+  }, []);
+
   return (
-    <section id="our-founder" className="bg-primary py-16 px-4 lg:px-0">
-      <div className=" max-w-[1300px] mx-auto  lg:flex lg:items-center">
-        <div className="lg:w-1/2 mb-8 lg:mb-0">
+    <section
+      id="our-founder"
+      ref={sectionRef}
+      className="bg-primary py-16 px-4 lg:px-0"
+    >
+      <div className="max-w-[1300px] mx-auto lg:flex lg:items-center">
+        <motion.div
+          className={`lg:w-1/2 mb-8 lg:mb-0 transform transition-all duration-1000 ${
+            isInView ? "translate-y-0 opacity-100" : "translate-y-12 opacity-0"
+          }`}
+        >
           <div className="relative rounded-lg overflow-hidden shadow-lg">
             <Image
               src="/founder.svg"
@@ -29,9 +66,13 @@ const OurFounder = () => {
               </svg>
             </a>
           </div>
-        </div>
+        </motion.div>
 
-        <div className="lg:w-1/2 lg:pl-12 text-white">
+        <motion.div
+          className={`lg:w-1/2 lg:pl-12 text-white transform transition-all duration-1000 ${
+            isInView ? "translate-x-0 opacity-100" : "translate-x-12 opacity-0"
+          }`}
+        >
           <h4 className="text-[15px] sm:text-[25px] font-semibold text-white uppercase mb-1">
             About Founder
           </h4>
@@ -46,7 +87,6 @@ const OurFounder = () => {
             Now, I&apos;m building AI products, including EZLA, an AI SaaS
             launching Q4 2024.
           </p>
-
           <p className="mb-6 text-[#E9EAEB]">
             Emphasize your switch from accounting to coding, showcasing the
             value of learning tech skills even without formal education.
@@ -68,12 +108,12 @@ const OurFounder = () => {
             </a>
             <a
               href="/founder-details"
-              className=" text-secondary border border-secondary font-medium py-2 px-4 rounded-lg hover:bg-secondary hover:text-white transition"
+              className="text-secondary border border-secondary font-medium py-2 px-4 rounded-lg hover:bg-secondary hover:text-white transition"
             >
               Learn More
             </a>
           </div>
-        </div>
+        </motion.div>
       </div>
     </section>
   );

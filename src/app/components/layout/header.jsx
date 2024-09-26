@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import { FiMenu } from "react-icons/fi"; // Hamburger icon
 import { FaLinkedin, FaTwitter, FaYoutube, FaInstagram } from "react-icons/fa"; // Social Icons
@@ -8,7 +8,7 @@ import { FaLinkedin, FaTwitter, FaYoutube, FaInstagram } from "react-icons/fa"; 
 const useMediaQuery = (width) => {
   const [isScreenSize, setIsScreenSize] = useState(false);
 
-  React.useEffect(() => {
+  useEffect(() => {
     const updateScreenSize = () => {
       setIsScreenSize(window.innerWidth >= width);
     };
@@ -22,7 +22,12 @@ const useMediaQuery = (width) => {
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [isHydrated, setIsHydrated] = useState(false); // New hydration flag
   const isDesktop = useMediaQuery(1024); // Detect if the screen is larger than 1024px (lg: breakpoint)
+
+  useEffect(() => {
+    setIsHydrated(true); // Set hydrated to true once the client-side is loaded
+  }, []);
 
   const toggleDrawer = () => {
     setIsOpen(!isOpen);
@@ -35,7 +40,7 @@ const Header = () => {
     }
   };
 
-  React.useEffect(() => {
+  useEffect(() => {
     if (isOpen) {
       document.addEventListener("click", handleOutsideClick);
     } else {
@@ -44,6 +49,11 @@ const Header = () => {
 
     return () => document.removeEventListener("click", handleOutsideClick);
   }, [isOpen]);
+
+  if (!isHydrated) {
+    // Prevents rendering until hydration is complete
+    return null;
+  }
 
   return (
     <div className="relative border-b border-[#243548]">

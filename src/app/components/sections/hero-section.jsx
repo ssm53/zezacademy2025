@@ -2,8 +2,8 @@
 import { motion, AnimatePresence } from "framer-motion";
 import React, { useState, useEffect } from "react";
 import { CardStackDemo } from "../card-stackdemo";
-import { useRouter } from "next/navigation"; // Use the new app router
-
+import { useRouter } from "next/navigation";
+import Typical from "react-typical";
 const Hero = () => {
   const [showPopup, setShowPopup] = useState(false);
 
@@ -11,46 +11,97 @@ const Hero = () => {
     setShowPopup(!showPopup);
   };
 
+  // Define animation variants
+  const textVariants = {
+    hidden: { opacity: 0, x: -50 },
+    visible: {
+      opacity: 1,
+      x: 0,
+      transition: { duration: 1, ease: "easeOut" },
+    },
+  };
+
+  const buttonVariants = {
+    hover: {
+      scale: 1.1,
+      transition: { duration: 0.3, yoyo: Infinity }, // Infinite scaling on hover
+    },
+  };
   return (
     <section
       id="home"
       className="bg-[#0F243D] py-12 pb-16 px-6 w-auto sm:w-full sm:h-[40rem] h-auto flex items-center"
     >
-      <div className="w-full   sm:max-w-[1300px] mx-auto grid md:grid-cols-2 gap-8 items-center md:gap-[14rem]">
+      <div className="w-full sm:max-w-[1300px] mx-auto grid md:grid-cols-2 gap-8 items-center md:gap-[14rem]">
         {/* Left Side - Heading and Text */}
         <div className="w-full">
-          <h1 className="text-2xl sm:text-6xl font-bold text-white text-center md:text-left">
-            <span className="text-secondary">Hey</span>
-            <span className="text-white">Learn</span>
-            <span className="text-secondary">2</span>
-            <span className="text-white">Code&apos;s</span>
+          <motion.h1
+            className="text-2xl sm:text-6xl font-bold text-white text-center md:text-left"
+            initial="hidden"
+            animate="visible"
+            variants={textVariants}
+          >
+            <span className="text-secondary">Hey </span>
+            <Typical
+              className="inline-block"
+              steps={["Learn", 1000, "Learn2", 1000, "Learn2Code", 1000]}
+              loop={Infinity}
+              wrapper="span"
+            />
             <br className="hidden md:block" />
             Full Stack Coding <br /> Bootcamp
-          </h1>
+          </motion.h1>
 
-          <p className="mt-6 text-sm md:text-lg text-gray-300 text-center md:text-left">
+          <motion.p
+            className="mt-6 text-sm md:text-lg text-gray-300 text-center md:text-left"
+            initial="hidden"
+            animate="visible"
+            variants={textVariants}
+          >
             Become a Full-Stack Developer in 4 Months and get a developer job.
             If not, it is 100% FREE.
-          </p>
+          </motion.p>
 
-          <div className="mt-6 flex justify-center md:justify-start space-x-4">
-            <button className="w-[150px]  sm:w-[193px] h-[50px] text-sm bg-secondary hover:bg-secondary text-white px-6 py-3 rounded-[5px]">
+          <motion.div
+            className="mt-6 flex justify-center md:justify-start space-x-4"
+            initial={{ opacity: 0, y: 50 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.2, duration: 0.3 }}
+          >
+            <motion.button
+              className="w-[150px] sm:w-[193px] h-[50px] text-sm bg-secondary hover:bg-secondary text-white px-6 py-3 rounded-[5px]"
+              variants={buttonVariants}
+              whileHover="hover"
+            >
               Apply Now
-            </button>
-            <button
+            </motion.button>
+            <motion.button
               onClick={togglePopup}
-              className="w-[150px]  sm:w-[193px] h-[50px] bg-white text-sm  hover:bg-blue-100 px-6 py-3 rounded-[5px] whitespace-nowrap flex justify-center text-center"
+              className="w-[150px] sm:w-[193px] h-[50px] bg-white text-sm hover:bg-blue-100 px-6 py-3 rounded-[5px] whitespace-nowrap flex justify-center text-center"
+              variants={buttonVariants}
+              whileHover="hover"
             >
               Get Free Access
-            </button>
-          </div>
+            </motion.button>
+          </motion.div>
 
-          <p className="mt-4 text-xs text-white text-center md:text-left">
+          <motion.p
+            className="mt-4 text-xs text-white text-center md:text-left"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 1 }}
+          >
             ONLY FOR THOSE WHO GRADUATED LESS THAN 6 YEARS AGO
-          </p>
-          {/* Grid with Vertical and Horizontal Lines */}
-          <div className="w-auto sm:w-[571px] wh-auto ">
-            <div className=" grid grid-cols-2 sm:grid-cols-4  mt-6 text-sm text-white  sm:divide-y-0 sm:divide-x border border-[#1D436F] rounded-[8px] lg:py-4">
+          </motion.p>
+
+          {/* Animating the Info Boxes */}
+          <motion.div
+            className="w-auto sm:w-[571px] wh-auto"
+            initial={{ opacity: 0, y: 50 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.7, duration: 0.8 }}
+          >
+            <div className="grid grid-cols-2 sm:grid-cols-4 mt-6 text-sm text-white sm:divide-y-0 sm:divide-x border border-[#1D436F] rounded-[8px] lg:py-4">
               <div className="relative p-[20px] lg:py-0 text-start border-r border-[#1D436F] text-[14px] lg:text-[12px] font-[400] leading-[18px]">
                 Get developer job or it’s 100% free
               </div>
@@ -64,12 +115,18 @@ const Hero = () => {
                 Flexible payment methods
               </div>
             </div>
-          </div>
+          </motion.div>
         </div>
-        <CardStackDemo />
+        {/* Animating the Card Stack */}
+        <motion.div
+          initial={{ opacity: 0, x: 100 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ delay: 0.8, duration: 1 }}
+        >
+          <CardStackDemo />
+        </motion.div>
       </div>
 
-      {/* Popup Modal with Animation */}
       <AnimatePresence>
         {showPopup && <Popup togglePopup={togglePopup} />}
       </AnimatePresence>
@@ -137,7 +194,6 @@ const Popup = ({ togglePopup }) => {
         </button>
 
         <div className="flex flex-col md:flex-row">
-          {/* Left Side Content */}
           <div className="md:w-1/2 p-6 bg-gray-100 rounded-l-lg">
             <h2 className="text-2xl font-bold mb-6">
               Get a Sneak Peek at the Best Live Online Coding Bootcamp!
@@ -162,12 +218,10 @@ const Popup = ({ togglePopup }) => {
             </ul>
           </div>
 
-          {/* Right Side Form */}
           <div className="md:w-1/2 p-6 bg-white rounded-r-lg">
             <h2 className="text-2xl font-bold mb-6">
               Get Free Access To Our Bootcamp Materials
             </h2>
-            <p className="mb-4 text-gray-600">You can reach us any time</p>
             <form className="space-y-4" onSubmit={handleSubmit}>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <input
@@ -205,7 +259,7 @@ const Popup = ({ togglePopup }) => {
               />
               <button
                 type="submit"
-                className="w-full bg-blue-600 text-white p-4 rounded-lg hover:bg-blue-700 transition-colors"
+                className="w-full bg-blue-600 text-white p-4 rounded-lg hover:bg-blue-700"
               >
                 Get Free Access
               </button>

@@ -1,10 +1,55 @@
-import React from "react";
+"use client";
+import React, { useRef, useState, useEffect } from "react";
+import CountUp from "react-countup";
+import { motion } from "framer-motion";
 
 const SixHundred = () => {
+  const [isInView, setIsInView] = useState(false);
+  const ref = useRef(null);
+
+  // IntersectionObserver to check if component is in view
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        const entry = entries[0];
+        setIsInView(entry.isIntersecting);
+      },
+      { threshold: 0.3 }
+    );
+    if (ref.current) {
+      observer.observe(ref.current);
+    }
+    return () => {
+      if (ref.current) {
+        observer.unobserve(ref.current);
+      }
+    };
+  }, []);
+
+  // Animation variants for the left side
+  const leftSectionVariants = {
+    hidden: { opacity: 0, x: -50 }, // Start hidden, slightly off-screen to the left
+    visible: {
+      opacity: 1,
+      x: 0,
+      transition: { duration: 0.8, ease: "easeInOut" },
+    },
+  };
+
   return (
-    <section id="free-materials" className=" bg-gray-50 py-16  px-4 lg:px-0">
-      <div className="  lg:flex lg:justify-between lg:items-center max-w-[1300px] mx-auto">
-        <div className="lg:w-1/2">
+    <section
+      id="free-materials"
+      className="bg-gray-50 py-16 px-4 lg:px-0"
+      ref={ref}
+    >
+      <div className="lg:flex lg:justify-between lg:items-center max-w-[1300px] mx-auto">
+        {/* Left Section */}
+        <motion.div
+          className="lg:w-1/2"
+          initial="hidden"
+          animate={isInView ? "visible" : "hidden"}
+          variants={leftSectionVariants}
+        >
           <h3 className="text-sm font-semibold text-[#0F243DCC] uppercase mb-2">
             600+ HOURS OF MATERIAL
           </h3>
@@ -26,12 +71,13 @@ const SixHundred = () => {
           >
             Get Free Access
           </button>
-        </div>
+        </motion.div>
 
+        {/* Right Section */}
         <div className="lg:w-[39%] mt-10 lg:mt-0 flex flex-wrap justify-center lg:justify-start gap-[8px] lg:gap-[12px] bg-[#F3F5F7] p-[14px] md-p-[22px] lg:p-[22px] rounded-[15px] sm:flex-wrap xs:flex-wrap">
           <div className="bg-white rounded-[20px] md-rounded-[32px] py-[1.5rem] md:py-[3rem] px-0 text-center w-[31%] sm:w-1/2 md:w-[43%] flex-shrink-0">
             <h3 className="text-[26px] md:text-4xl font-bold text-secondary">
-              600+
+              {isInView ? <CountUp start={0} end={600} duration={3} /> : 0}+
             </h3>
             <p className="text-[#0F243DCC] mt-2 text-[12px] sm:text-base">
               Hours of material
@@ -40,7 +86,7 @@ const SixHundred = () => {
 
           <div className="bg-white rounded-[20px] md-rounded-[32px] py-[1.5rem] md:py-[3rem] px-0 text-center w-[31%] sm:w-1/2 md:w-[43%] flex-shrink-0 p-4">
             <h3 className="text-[26px] md:text-4xl font-bold text-secondary">
-              07
+              {isInView ? <CountUp start={0} end={7} duration={3} /> : 0}
             </h3>
             <p className="text-[#0F243DCC] mt-2 text-[12px] sm:text-base">
               Projects
@@ -49,7 +95,7 @@ const SixHundred = () => {
 
           <div className="bg-white rounded-[20px] md-rounded-[32px] py-[1.5rem] md:py-[3rem] px-0 text-center w-[31%] sm:w-1/2 md:w-[43%] flex-shrink-0 p-4">
             <h3 className="text-[26px] md:text-4xl font-bold text-secondary">
-              20
+              {isInView ? <CountUp start={0} end={20} duration={3} /> : 0}
             </h3>
             <p className="text-[#0F243DCC] mt-2 text-[12px] sm:text-base">
               Challenges
