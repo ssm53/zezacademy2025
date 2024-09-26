@@ -4,7 +4,7 @@ const WatchMore = () => {
   return (
     <section className="bg-[#132647] py-12 px-4">
       <div className="max-w-[1200px] mx-auto text-center">
-        <h2 className=" text-3xl font-bold text-white mb-6">
+        <h2 className=" sm:text-4xl text-lg font-bold text-white mb-6">
           Watch and Discover More <br />
           <span className="text-white">
             About <span className="text-secondary">Hey</span>
@@ -17,7 +17,7 @@ const WatchMore = () => {
         {/* Embedded YouTube Video */}
         <div className="  relative flex justify-center">
           <iframe
-            className="rounded-lg w-full max-w-[997px] h-[689px]"
+            className="rounded-lg sm:w-[997px] w-auto sm:h-[689px] h-[231px]"
             src="https://www.youtube.com/embed/HF0iqQ2ZzFU"
             title="HeyLearn2Code Video"
             frameBorder="0"

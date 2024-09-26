@@ -108,8 +108,12 @@ const EnrollmentSection = () => {
                 12,432
               </h2>
               <div className="">
-                <span className="block text-gray-500">USD 250</span>
-                <span className="block text-gray-500 ">Up-Front</span>
+                <span className="block text-gray-500 sm:text-[16px] text-[13px]">
+                  USD 250
+                </span>
+                <span className="block text-gray-500 sm:text-[16px] text-[13px]">
+                  Up-Front
+                </span>
               </div>
             </div>
             <div className="mt-4 flex items-center space-x-2">
@@ -141,7 +145,7 @@ const EnrollmentSection = () => {
             <div className="mt-8">
               <label className="flex items-center space-x-2">
                 <input type="checkbox" className="form-checkbox" />
-                <span className="text-[#4F5051]">
+                <span className="text-[#4F5051] sm:text-2xl text-15px">
                   I have read and agreed to the{" "}
                   <a href="#" className="text-blue-400 underline">
                     Terms & Conditions
