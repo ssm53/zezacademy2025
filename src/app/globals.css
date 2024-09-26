@@ -2,8 +2,21 @@
 @tailwind components;
 @tailwind utilities;
 
-html {
+/* styles/globals.css or global.css */
+html,
+body {
+  margin: 0;
+  padding: 0;
   overflow-x: hidden;
+  width: 100vw; /* ensures consistent width across different devices */
+  box-sizing: border-box; /* include padding and borders in element's width */
+}
+
+/* Ensure all elements follow the box-sizing rule */
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
 }
 ::-webkit-scrollbar {
   display: none;
