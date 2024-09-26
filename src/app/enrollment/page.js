@@ -6,7 +6,6 @@ import CurriculumTable from "../components/sections/curriculum-table";
 import WatchMore from "../components/sections/watch-more";
 
 const EnrollmentSection = () => {
-  // State for selected options
   const [selectedTuitionOption, setSelectedTuitionOption] =
     useState("Up-Front");
   const [selectedMBGOption, setSelectedMBGOption] = useState("MBG");
@@ -14,71 +13,66 @@ const EnrollmentSection = () => {
   return (
     <div id="get-free-access" className="bg-primary min-h-screen">
       <LowerHeader />
-      <div className="max-w-[1200px] mx-auto px-4 py-12">
+      <div className="max-w-[1300px] mx-auto py-12">
         {/* Header */}
         <div className="text-center">
-          <h1 className="text-5xl font-bold text-white">
-            Let’s Get Started. We{" "}
-            <span className="text-secondary">Don’t Get Paid</span> If You Don’t
-            Get A Job
+          <h1 className="sm:mx-0 mx-1 text-[23px] sm:text-[2.5rem] leading-[1.5rem] sm:leading-10 font-bold text-white">
+            Let’s Get Started.
+            <span className="text-secondary"> We Don’t Get</span>
+            <br />
+            Paid If You Don’t Get A Job
           </h1>
         </div>
 
         {/* Enrollment Form Section */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mt-16">
-          {/* Left Form Section */}
-          <div className="bg-[#132647] p-8 rounded-lg">
-            {/* Program Type */}
+          <div className="sm:p-0 p-4">
             <div className="mb-6">
               <label className="block text-lg font-semibold text-white">
                 Choose Program Type
               </label>
-              <select className="w-full p-3 mt-2 rounded bg-gray-200 text-gray-900">
+              <select className="outline-none w-full p-3 mt-2 rounded bg-gray-200 text-gray-900">
                 <option>Self Paced Bootcamp</option>
                 <option>Online Bootcamp (Fulltime)</option>
                 <option>Onsite Bootcamp (Fulltime)</option>
               </select>
             </div>
 
-            {/* Tuition Options */}
             <div className="mb-6">
               <label className="block text-lg font-semibold text-white">
                 Choose Tuition Options
               </label>
-              <div className="flex space-x-4 mt-2">
-                {[
-                  "Up-Front",
-                  "3 Month Installment",
-                  "12 Month Installment",
-                ].map((option) => (
-                  <button
-                    key={option}
-                    className={`px-6 py-3 rounded-lg transition border ${
-                      selectedTuitionOption === option
-                        ? "bg-blue-600 text-white"
-                        : "bg-transparent text-white border-white"
-                    }`}
-                    onClick={() => setSelectedTuitionOption(option)}
-                  >
-                    {option}
-                  </button>
-                ))}
+              <div className="flex flex-wrap gap-4 mt-2">
+                {["Up-Front", "3  Installment", "12  Installment"].map(
+                  (option) => (
+                    <button
+                      key={option}
+                      className={` flex justify-center text-center items-center px-6  rounded-lg transition border sm:w-[250px] w-[121px] h-[45px]  whitespace-nowrap ${
+                        selectedTuitionOption === option
+                          ? "bg-blue-600 text-white"
+                          : "bg-transparent text-white border-gray-500"
+                      }`}
+                      onClick={() => setSelectedTuitionOption(option)}
+                    >
+                      {option}
+                    </button>
+                  )
+                )}
               </div>
             </div>
 
-            {/* Money Back Guarantee */}
             <div className="mb-6">
-              <label className="block text-lg font-semibold text-white">
+              <label className=" block text-lg font-semibold text-white">
                 Money Back Guarantee
               </label>
-              <div className="flex space-x-4 mt-2">
+              <div className="flex  flex-wrap gap-4 mt-2">
                 {["MBG", "No MBG"].map((option) => (
                   <button
                     key={option}
-                    className={`px-6 py-3 rounded-lg transition ${
+                    className={`flex justify-center items-center  w-[129px] h-[44px] px-6 py-3 rounded-lg border-gray-500 border transition text-center whitespace-nowrap ${
                       selectedMBGOption === option
                         ? "bg-blue-600 text-white"
-                        : "bg-gray-700 text-white"
+                        : "bg-primary text-white"
                     }`}
                     onClick={() => setSelectedMBGOption(option)}
                   >
@@ -88,44 +82,46 @@ const EnrollmentSection = () => {
               </div>
             </div>
 
-            {/* Registration Fees */}
             <div className="mb-6">
-              <label className="block text-lg font-semibold text-white">
+              <label className="block text-lg font-semibold text-white ">
                 Registration Fees
               </label>
               <input
                 type="text"
-                value="RM300"
-                className="w-full p-3 mt-2 rounded bg-gray-200 text-gray-900"
+                className="w-full p-3 mt-2 rounded bg-[#8B8B8B40] text-white outline-none"
               />
             </div>
           </div>
 
-          {/* Right Pricing Section */}
-          <div className="bg-white p-8 rounded-lg shadow-md">
+          <div className="bg-white p-8 rounded-lg shadow-md sm:mx-2 mx-4 border-solid border-[6px] border-[#3C82F6]">
+            <span className="bg-secondary relative bottom-8 text-white px-3 py-1 rounded-bl-lg rounded-br-lg text-sm">
+              Most Popular
+            </span>
             <div className="flex justify-between items-center">
-              <span className="bg-blue-600 text-white px-3 py-1 rounded-full text-sm">
-                Most Popular
-              </span>
-              <span className="text-primary text-xl font-semibold">
+              <span className=" text-primary text-xl font-semibold">
                 Self Paced, Online
               </span>
             </div>
-            <div className="mt-8">
-              <h2 className="text-5xl font-bold text-primary">RM 12,432</h2>
-              <span className="block text-primary mt-2">USD 250 Up-Front</span>
+            <div className="mt-8 flex space-x-2">
+              <span>RM</span>
+              <h2 className="sm:text-5xl text-[25px] font-bold text-primary">
+                12,432
+              </h2>
+              <div className="">
+                <span className="block text-gray-500">USD 250</span>
+                <span className="block text-gray-500 ">Up-Front</span>
+              </div>
             </div>
             <div className="mt-4 flex items-center space-x-2">
               <Image src="/activedot.svg" alt="active" width={15} height={15} />
-              <span className="text-green-400">3 Slots Left</span>
+              <span className="">3 Slots Left</span>
             </div>
 
-            {/* Payment Options */}
             <div className="mt-6 p-4 rounded-xl bg-[#F4F4F4]">
               <h3 className="text-lg font-semibold text-primary">
-                Debit / Credit Card
+                Visa / Credit Card
               </h3>
-              <div className="flex space-x-4 mt-4">
+              <div className="flex  space-x-4 mt-4">
                 <Image src="/visa.svg" alt="Visa" width={50} height={30} />
                 <Image
                   src="/mastercard.svg"
@@ -133,10 +129,15 @@ const EnrollmentSection = () => {
                   width={50}
                   height={30}
                 />
+                <Image
+                  src="/activedot.svg"
+                  alt="active"
+                  width={15}
+                  height={15}
+                />
               </div>
             </div>
 
-            {/* Terms and Conditions */}
             <div className="mt-8">
               <label className="flex items-center space-x-2">
                 <input type="checkbox" className="form-checkbox" />
@@ -149,7 +150,6 @@ const EnrollmentSection = () => {
               </label>
             </div>
 
-            {/* Pay Now Button */}
             <button className="mt-6 bg-blue-600 text-white w-full py-3 rounded-lg">
               Pay Now
             </button>

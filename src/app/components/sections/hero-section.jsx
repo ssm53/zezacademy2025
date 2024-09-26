@@ -34,12 +34,12 @@ const Hero = () => {
           </p>
 
           <div className="mt-6 flex justify-center md:justify-start space-x-4">
-            <button className="w-[120px] sm:w-[193px] h-[50px] text-sm bg-secondary hover:bg-secondary text-white px-6 py-3 rounded-[5px]">
+            <button className="w-[150px]  sm:w-[193px] h-[50px] text-sm bg-secondary hover:bg-secondary text-white px-6 py-3 rounded-[5px]">
               Apply Now
             </button>
             <button
               onClick={togglePopup}
-              className="w-[120px]  sm:w-[193px] h-[50px] bg-white text-sm  hover:bg-blue-100 px-6 py-3 rounded-[5px] whitespace-nowrap flex justify-center text-center"
+              className="w-[150px]  sm:w-[193px] h-[50px] bg-white text-sm  hover:bg-blue-100 px-6 py-3 rounded-[5px] whitespace-nowrap flex justify-center text-center"
             >
               Get Free Access
             </button>

@@ -4,9 +4,12 @@ import Link from "next/link";
 
 const LowerHeader = () => {
   return (
-    <header className="bg-[#0a2540]">
+    <header className="bg-primary">
       <div className="max-w-[1300px] mx-auto px-6 lg:px-0 h-[80px] flex justify-between items-center">
-        <Link href="/" className="text-3xl md:text-4xl font-bold">
+        <Link
+          href="/"
+          className="sm:text-3xl text-[1.5rem] leading-[1.5rem] font-bold"
+        >
           <span className="text-[#0099FF]">Hey</span>
           <span className="text-white">Learn</span>
           <span className="text-[#0099FF]">2</span>

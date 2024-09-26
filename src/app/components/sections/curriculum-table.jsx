@@ -44,8 +44,8 @@ const data = [
 export function TableDemo() {
   return (
     <section className="max-w-[1280px] mx-auto py-2 lg:px-0 sm:px-4">
-      <div className="border overflow-auto bg-white rounded-[15px] shadow-lg">
-        <table className="w-full text-center table-auto border-collapse rounded-lg overflow-hidden">
+      <div className="sm:mx-0 mx-3 border overflow-auto bg-white rounded-[15px] shadow-lg">
+        <table className=" w-full text-center table-auto border-collapse rounded-lg overflow-hidden">
           <thead className="bg-[white]">
             <tr>
               <th className="py-4 px-6"></th>
@@ -89,7 +89,7 @@ const CurriculumTable = () => {
     <div id="curriculum-table" className=" bg-[#F7F8F9]">
       <section className="max-w-[1300px] mx-auto py-12 ">
         <div className="px-4 lg:px-0 text-start mb-8">
-          <h2 className=" text-4xl font-bold text-primary">
+          <h2 className=" sm:text-4xl text-[1.5rem] leading-[1.5rem] font-bold text-primary">
             Full-Time vs Part-Time <br /> Curriculum
           </h2>
           <p className="text-gray-500 mt-2">

@@ -40,9 +40,9 @@ const TeachingMethod = () => {
         </div>
 
         {/* Career Support Section */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-start mt-16  ">
+        <div className="grid grid-cols-1  md:grid-cols-2 gap-8 items-start mt-16  ">
           {/* Left Section - Image */}
-          <div className="flex justify-center md:justify-start">
+          <div className="flex justify-center md:justify-start order-2 md:order-1">
             <Image
               src="/meeting.svg"
               alt="Career Support"
@@ -53,7 +53,7 @@ const TeachingMethod = () => {
           </div>
 
           {/* Right Section - Career Support Content */}
-          <div className="space-y-6">
+          <div className="space-y-6 order-1 md:order-2">
             <h2 className="text-2xl sm:text-4xl font-bold text-primary">
               Career Support
             </h2>
