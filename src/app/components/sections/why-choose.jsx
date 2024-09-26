@@ -105,7 +105,11 @@ const WhyChoose = () => {
               variants={cardVariants}
               initial="hidden"
               whileInView="visible"
-              transition={{ duration: 0.5, ease: "easeOut" }}
+              transition={{
+                duration: 0.5,
+                ease: "easeOut",
+                delay: index * 0.2,
+              }} // Increase delay for each card
               className="bg-[#0E2644] p-6 rounded-lg text-start"
             >
               <Image
@@ -128,7 +132,11 @@ const WhyChoose = () => {
               variants={cardVariants}
               initial="hidden"
               whileInView="visible"
-              transition={{ duration: 0.5, ease: "easeOut" }}
+              transition={{
+                duration: 0.5,
+                ease: "easeOut",
+                delay: (index + 3) * 0.2,
+              }} // Increase delay for each card
               className="bg-[#0E2644] p-6 rounded-lg text-start"
             >
               <Image

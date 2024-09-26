@@ -2,7 +2,7 @@ import React from "react";
 
 const GetStarted = () => {
   return (
-    <section className="bg-[#F7F8F9]">
+    <section id="how-to-get-started" className="bg-[#F7F8F9]">
       <div className="   max-w-[1300px] mx-auto py-16 px-4 lg:px-0">
         {/* Button and Heading Section */}
         <div className="flex flex-col md:flex-row justify-between items-center mb-8">

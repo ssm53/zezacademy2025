@@ -3,7 +3,10 @@ import Image from "next/image";
 
 const TeachingMethod = () => {
   return (
-    <section className="bg-white max-w-[1300px] mx-auto py-16 px-4 lg:px-0">
+    <section
+      id="our-teaching-methods"
+      className=" bg-white max-w-[1300px] mx-auto py-16 px-4 lg:px-0"
+    >
       <div className="max-w-[1300px] mx-auto">
         {/* Upper Section - Teaching Method and Career Support */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-start justify-between">

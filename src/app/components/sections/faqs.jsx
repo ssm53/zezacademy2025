@@ -48,7 +48,7 @@ export default function FaqAccordian() {
   };
 
   return (
-    <div className="bg-[#F7F8F9]">
+    <div id="faqs" className="bg-[#F7F8F9]">
       <section className=" max-w-[1300px] mx-auto px-6 md:px-16 lg:px-32 py-16">
         <h2 className="text-4xl font-bold text-center mb-6 text-primary">
           Frequently Asked Questions
