@@ -9,6 +9,7 @@ const SixHundred = () => {
 
   // IntersectionObserver to check if component is in view
   useEffect(() => {
+    const currentRef = ref.current; // Store ref.current in a variable
     const observer = new IntersectionObserver(
       (entries) => {
         const entry = entries[0];
@@ -16,15 +17,15 @@ const SixHundred = () => {
       },
       { threshold: 0.3 }
     );
-    if (ref.current) {
-      observer.observe(ref.current);
+    if (currentRef) {
+      observer.observe(currentRef);
     }
     return () => {
-      if (ref.current) {
-        observer.unobserve(ref.current);
+      if (currentRef) {
+        observer.unobserve(currentRef);
       }
     };
-  }, []);
+  }, []); // Empty dependency array to run the effect only once
 
   // Animation variants for the left side
   const leftSectionVariants = {

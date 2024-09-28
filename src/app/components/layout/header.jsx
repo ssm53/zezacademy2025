@@ -1,6 +1,7 @@
 "use client";
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
+import Image from "next/image"; // Import Image from next/image
 import { FiMenu } from "react-icons/fi"; // Hamburger icon
 import { FaLinkedin, FaTwitter, FaYoutube, FaInstagram } from "react-icons/fa"; // Social Icons
 
@@ -20,6 +21,13 @@ const useMediaQuery = (width) => {
   return isScreenSize;
 };
 
+// Move handleOutsideClick outside to prevent redefinition on each render
+const handleOutsideClick = (e, setIsOpen) => {
+  if (!e.target.closest(".drawer-content")) {
+    setIsOpen(false);
+  }
+};
+
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isHydrated, setIsHydrated] = useState(false); // New hydration flag
@@ -33,22 +41,13 @@ const Header = () => {
     setIsOpen(!isOpen);
   };
 
-  // Function to close the drawer if clicking outside of it
-  const handleOutsideClick = (e) => {
-    if (isOpen && !e.target.closest(".drawer-content")) {
-      setIsOpen(false);
-    }
-  };
-
   useEffect(() => {
     if (isOpen) {
-      document.addEventListener("click", handleOutsideClick);
-    } else {
-      document.removeEventListener("click", handleOutsideClick);
+      const clickHandler = (e) => handleOutsideClick(e, setIsOpen);
+      document.addEventListener("click", clickHandler);
+      return () => document.removeEventListener("click", clickHandler);
     }
-
-    return () => document.removeEventListener("click", handleOutsideClick);
-  }, [isOpen]);
+  }, [isOpen]); // `handleOutsideClick` moved out, now no need to include it here
 
   if (!isHydrated) {
     // Prevents rendering until hydration is complete
@@ -149,10 +148,11 @@ const Header = () => {
                       >
                         <span className="flex justify-between items-center text-gray-800 hover:text-secondary">
                           {link}
-                          <img
+                          <Image
                             src="/arrrow.svg" // Arrow SVG in the public folder
                             alt="arrow"
-                            className="w-5 h-5" // Adjust the arrow size
+                            width={20}
+                            height={20} // Replaced <img> with <Image /> component
                           />
                         </span>
                       </Link>

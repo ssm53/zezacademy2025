@@ -56,8 +56,8 @@ const TeachingMethod = () => {
               <li>100% theory, 20% practical.</li>
               <li>We dive deep into building projects very fast.</li>
               <li>
-                This is not your high school or university… There won't be any
-                lectures. We have 700+ hours of material.
+                This is not your high school or university… There won&apos;t be
+                any lectures. We have 700+ hours of material.
               </li>
             </ul>
           </motion.div>
@@ -141,8 +141,8 @@ const TeachingMethod = () => {
             100% Money-back <br /> Guarantee
           </h2>
           <p className="mt-4 text-[16px] sm:text-[#FFFFFFCC]">
-            We're confident in our program, which is why we offer a money-back
-            guarantee:
+            We&apos;re confident in our program, which is why we offer a
+            money-back guarantee:
           </p>
           <ul className="w-full sm:w-1/2 text-[16px] sm:text-[#FFFFFFCC] list-disc ml-[-1px] mt-4 space-y-2 border border-[#19395F] p-8 rounded-[15px]">
             <p>
@@ -154,11 +154,11 @@ const TeachingMethod = () => {
               You apply to tech jobs, get interviews, and do your part for six
               months.
             </li>
-            <li>If you don't get a job, get your money back!</li>
+            <li>If you don&apos;t get a job, get your money back!</li>
           </ul>
           <p className="pt-[12px] text-[16px] sm:text-[#FFFFFFCC]">
-            *If you follow those steps above, but still don't get a tech job,
-            you get a full-refund!
+            *If you follow those steps above, but still don&apos;t get a tech
+            job, you get a full-refund!
           </p>
           <Image
             src="/Rectangle.svg"
