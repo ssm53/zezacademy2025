@@ -9,6 +9,8 @@ const OurFounder = () => {
 
   // Using Intersection Observer to detect when the section is in view
   useEffect(() => {
+    const currentSectionRef = sectionRef.current; // Store the current ref value
+
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
@@ -20,13 +22,13 @@ const OurFounder = () => {
       { threshold: 0.3 } // Adjust threshold for when the animation should trigger
     );
 
-    if (sectionRef.current) {
-      observer.observe(sectionRef.current);
+    if (currentSectionRef) {
+      observer.observe(currentSectionRef);
     }
 
     return () => {
-      if (sectionRef.current) {
-        observer.unobserve(sectionRef.current);
+      if (currentSectionRef) {
+        observer.unobserve(currentSectionRef); // Use the stored ref value
       }
     };
   }, []);

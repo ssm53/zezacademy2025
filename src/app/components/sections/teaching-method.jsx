@@ -1,37 +1,74 @@
-import React from "react";
+"use client";
+import React, { useRef } from "react";
 import Image from "next/image";
+import { motion, useInView } from "framer-motion";
 
 const TeachingMethod = () => {
+  // Hook to check if the elements are in view without 'once' to trigger on every view
+  const firstSectionRef = useRef(null);
+  const firstSectionInView = useInView(firstSectionRef, { triggerOnce: false });
+
+  const secondSectionRef = useRef(null);
+  const secondSectionInView = useInView(secondSectionRef, {
+    triggerOnce: false,
+  });
+
+  const guaranteeRef = useRef(null);
+  const guaranteeInView = useInView(guaranteeRef, { triggerOnce: false });
+
+  // Animation variants
+  const leftToRightVariant = {
+    hidden: { opacity: 0, x: -100 },
+    visible: { opacity: 1, x: 0, transition: { duration: 0.6 } },
+  };
+
+  const rightToLeftVariant = {
+    hidden: { opacity: 0, x: 100 },
+    visible: { opacity: 1, x: 0, transition: { duration: 0.6 } },
+  };
+
   return (
     <section
       id="our-teaching-methods"
-      className=" bg-white max-w-[1300px] mx-auto py-16 px-4 lg:px-0"
+      className="bg-white max-w-[1300px] mx-auto py-16 px-4 lg:px-0"
     >
       <div className="max-w-[1300px] mx-auto">
         {/* Upper Section - Teaching Method and Career Support */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-start justify-between">
+        <div
+          ref={firstSectionRef}
+          className="grid grid-cols-1 md:grid-cols-2 gap-8 items-start justify-between"
+        >
           {/* Left Section - Our Teaching Method */}
-          <div className="space-y-6">
+          <motion.div
+            className="space-y-6"
+            variants={rightToLeftVariant}
+            initial="hidden"
+            animate={firstSectionInView ? "visible" : "hidden"}
+          >
             <h2 className="text-2xl sm:text-4xl font-bold text-primary">
               Our Teaching Method
             </h2>
             <p className="text-[16px] text-gray-600">
-              Unlock full access to our bootcamp resources for a limited time
-              —absolutely free!
+              Unlock full access to our bootcamp resources for a limited time —
+              absolutely free!
             </p>
             <ul className="list-disc ml-6 space-y-2 text-[16px] text-gray-600">
-              <li>100% theory 20% practical.</li>
+              <li>100% theory, 20% practical.</li>
               <li>We dive deep into building projects very fast.</li>
               <li>
-                This is not your high school or university… It is easy to read
-                material or listen to a lecture. So there won&apos;t be any
-                lectures. We have 700+ hours worth of material.
+                This is not your high school or university… There won&apos;t be
+                any lectures. We have 700+ hours of material.
               </li>
             </ul>
-          </div>
+          </motion.div>
 
           {/* Right Section - Image */}
-          <div className="flex justify-center md:justify-end">
+          <motion.div
+            className="flex justify-center md:justify-end"
+            variants={leftToRightVariant}
+            initial="hidden"
+            animate={firstSectionInView ? "visible" : "hidden"}
+          >
             <Image
               src="/teaching.svg"
               alt="Teaching Method"
@@ -39,13 +76,21 @@ const TeachingMethod = () => {
               height={300}
               className="w-[450px] h-auto object-cover rounded-[15px]"
             />
-          </div>
+          </motion.div>
         </div>
 
         {/* Career Support Section */}
-        <div className="grid grid-cols-1  md:grid-cols-2 gap-8 items-start mt-16  ">
+        <div
+          ref={secondSectionRef}
+          className="grid grid-cols-1 md:grid-cols-2 gap-8 items-start mt-16"
+        >
           {/* Left Section - Image */}
-          <div className="flex justify-center md:justify-start order-2 md:order-1">
+          <motion.div
+            className="flex justify-center md:justify-start order-2 md:order-1"
+            variants={leftToRightVariant}
+            initial="hidden"
+            animate={secondSectionInView ? "visible" : "hidden"}
+          >
             <Image
               src="/meeting.svg"
               alt="Career Support"
@@ -53,10 +98,15 @@ const TeachingMethod = () => {
               height={300}
               className="w-[450px] h-auto object-cover rounded-[15px]"
             />
-          </div>
+          </motion.div>
 
           {/* Right Section - Career Support Content */}
-          <div className="space-y-6 order-1 md:order-2">
+          <motion.div
+            className="space-y-6 order-1 md:order-2"
+            variants={rightToLeftVariant}
+            initial="hidden"
+            animate={secondSectionInView ? "visible" : "hidden"}
+          >
             <h2 className="text-2xl sm:text-4xl font-bold text-primary">
               Career Support
             </h2>
@@ -76,11 +126,17 @@ const TeachingMethod = () => {
                 <li>Guidance on how to get your first job.</li>
               </div>
             </ul>
-          </div>
+          </motion.div>
         </div>
 
         {/* Money Back Guarantee Section */}
-        <div className="mt-16 bg-primary text-white rounded-[23px] p-8 relative">
+        <motion.div
+          ref={guaranteeRef}
+          className="mt-16 bg-primary text-white rounded-[23px] p-8 relative"
+          variants={rightToLeftVariant}
+          initial="hidden"
+          animate={guaranteeInView ? "visible" : "hidden"}
+        >
           <h2 className="text-[32px] sm:text-4xl font-bold">
             100% Money-back <br /> Guarantee
           </h2>
@@ -111,7 +167,7 @@ const TeachingMethod = () => {
             height={300}
             className="hidden sm:block absolute bottom-0 right-0 object-contain"
           />
-        </div>
+        </motion.div>
       </div>
     </section>
   );
