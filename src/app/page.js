@@ -1,5 +1,5 @@
 import Footer from "./components/layout/footer";
-import Header from "./components/layout/header";
+// import Header from "./components/layout/header";
 import BootcampSection from "./components/sections/boot-camp";
 import ContactUs from "./components/sections/contact-us";
 import CurriculumTable from "./components/sections/curriculum-table";
@@ -17,6 +17,11 @@ import TeachingMethod from "./components/sections/teaching-method";
 import Testimonials from "./components/sections/testimonials";
 import WhatLearn from "./components/sections/what-learn";
 import WhyChoose from "./components/sections/why-choose";
+import dynamic from "next/dynamic";
+
+const Header = dynamic(() => import("./components/layout/header"), {
+  ssr: false,
+});
 
 export default function Home() {
   return (

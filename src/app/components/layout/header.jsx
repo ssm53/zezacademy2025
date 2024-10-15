@@ -50,8 +50,13 @@ const Header = () => {
     return () => document.removeEventListener("click", handleOutsideClick);
   }, [isOpen]);
 
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      setIsHydrated(true);
+    }
+  }, []);
+
   if (!isHydrated) {
-    // Prevents rendering until hydration is complete
     return null;
   }
 
