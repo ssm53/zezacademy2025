@@ -118,13 +118,24 @@ const Hero = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2, duration: 0.3 }}
           >
-            <motion.button
+            {/* <motion.button
               className="w-[150px] sm:w-[193px] h-[50px] text-sm bg-secondary hover:bg-secondary text-white px-6 py-3 rounded-[5px]"
               variants={buttonVariants}
               whileHover="hover"
             >
               Apply Now
-            </motion.button>
+            </motion.button> */}
+            <motion.a
+              href="https://docs.google.com/forms/d/e/1FAIpQLSdZbUvC0vVXuVLHg5UxAQ11wJSJeVoxtWP_EoIsfZRRUNMo5w/viewform?usp=sf_link"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-[150px] sm:w-[193px] h-[50px] text-sm bg-secondary hover:bg-secondary text-white px-6 py-3 rounded-[5px] text-center"
+              variants={buttonVariants}
+              whileHover="hover"
+            >
+              Apply Now
+            </motion.a>
+
             {/* <motion.button
               onClick={togglePopup}
               className="w-[150px] sm:w-[193px] h-[50px] bg-white text-sm hover:bg-blue-100 px-6 py-3 rounded-[5px] whitespace-nowrap flex justify-center text-center"

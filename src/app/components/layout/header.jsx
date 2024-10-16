@@ -66,12 +66,20 @@ const Header = () => {
             </h1>
           </Link>
           <div className="flex items-center space-x-3">
-            <button
+            {/* <button
               type="button"
               className="text-[#FFFFFF] bg-secondary focus:ring-4 font-medium rounded-[3px] text-sm px-4 py-2 text-center hidden md:block"
             >
               Apply Now
-            </button>
+            </button> */}
+            <a
+              href="https://docs.google.com/forms/d/e/1FAIpQLSdZbUvC0vVXuVLHg5UxAQ11wJSJeVoxtWP_EoIsfZRRUNMo5w/viewform?usp=sf_link"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-[#FFFFFF] bg-secondary focus:ring-4 font-medium rounded-[3px] text-sm px-4 py-2 text-center hidden md:block"
+            >
+              Apply Now
+            </a>
 
             {/* Custom Drawer Trigger - Hamburger Icon */}
             <button

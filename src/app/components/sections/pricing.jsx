@@ -52,7 +52,9 @@ const Pricing = () => {
 
             {/* Apply Now Button */}
             <a
-              href="#"
+              href="https://docs.google.com/forms/d/e/1FAIpQLSdZbUvC0vVXuVLHg5UxAQ11wJSJeVoxtWP_EoIsfZRRUNMo5w/viewform?usp=sf_link"
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-block mt-4 bg-secondary hover:bg-primary-dark text-white font-semibold text-center rounded-lg px-6 py-3"
             >
               Apply Now
