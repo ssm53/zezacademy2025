@@ -102,7 +102,7 @@ const OurFounder = () => {
           <p className="mb-6 text-[#E9EAEB]">
             You can find more of what I do{" "}
             <a
-              href="https://www.ravewavedigital.com"
+              href="https://www.ravewavedigital.com/personal-page"
               target="_blank"
               rel="noopener noreferrer"
               className="text-blue-500 hover:underline"
