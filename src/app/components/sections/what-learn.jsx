@@ -10,16 +10,15 @@ const WhatLearn = () => {
         </h2>
         <h3 className="text-4xl font-bold text-secondary">This Course?</h3>
         <p className="text-[#0F243DCC] mt-4">
-          This is not another theory-heavy course. We focus on doing. <br />{" "}
-          You&rsquo;ll build real projects, get feedback, and learn by doing.
+          Learn the tech-stack by used by most companies
         </p>
 
         {/* Apply Now Button */}
-        <div className="flex text-center mt-4">
+        {/* <div className="flex text-center mt-4">
           <button className="bg-secondary text-white font-semibold px-6 py-3 rounded-lg hover:bg-secondary-dark">
             Apply Now
           </button>
-        </div>
+        </div> */}
       </div>
 
       {/* Content Section */}
@@ -30,10 +29,13 @@ const WhatLearn = () => {
             Technical Skills
           </h4>
           <ul className="list-disc list-inside text-[#0F243DCC] space-y-2">
-            <li>Fundamentals (HTML, CSS, JS)</li>
-            <li>Frontend (SvelteKit, NextJS, DaisyUI, shadcn-ui)</li>
-            <li>Backend (NodeJS, SQL, AWS, Docker)</li>
-            <li>Algorithms & Data Structures</li>
+            <li>Fundamentals (HTML, CSS, Javascript)</li>
+            <li>Frontend (NextJS, RESTful API&lsquo;s, SvelteKit)</li>
+            <li>
+              Backend (NodeJS, RESTful API&lsquo;s Express, Prisma, AWS, SQL,
+              Docker, Langchain)
+            </li>
+            <li>Design (TailwindCSS, DaisyUI, v0, shadcn-ui)</li>
           </ul>
         </div>
 
@@ -57,11 +59,13 @@ const WhatLearn = () => {
           Admission Requirements
         </h3>
         <p className="max-w-3xl text-center lg:text-start text-lg">
-          The only admission requirement for our bootcamp is
           <strong>
-            proven motivation to learn <br />
+            Proven Motivation to Learn <br />
           </strong>{" "}
-          that&apos;s it... but take it seriously.
+          that&apos;s it... but we take this seriously.
+        </p>
+        <p className="max-w-3xl text-center lg:text-start text-lg">
+          Complete beginners are welcome
         </p>
       </div>
     </section>

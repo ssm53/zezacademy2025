@@ -10,15 +10,13 @@ const Footer = () => {
 
           <div>
             <a className="text-2xl font-bold">
-              <span className="text-secondary">Hey</span>
-              <span className="text-white">Learn</span>
-              <span className="text-secondary">2</span>
-              <span className="text-white">Code</span>
+              <span className="text-secondary">Zez</span>
+              <span className="text-white">Academy</span>
             </a>
-            <p className="mt-4 text-sm">
+            {/* <p className="mt-4 text-sm">
               Lorem ipsum dolor sit amet lorem <br /> consectetur pretium neque
               l
-            </p>
+            </p> */}
             <p className="mt-4 flex items-center justify-center md:justify-start">
               <Image
                 src="/mailbox.svg"
@@ -27,7 +25,7 @@ const Footer = () => {
                 height={20} // Set appropriate height
                 className="w-6 h-6 mr-2"
               />
-              shaun@heylearn2code.com
+              shaun@zezacademy.com
             </p>
             <p className="mt-2 flex items-center justify-center md:justify-start">
               <Image
@@ -100,7 +98,7 @@ const Footer = () => {
 
         {/* Copyright */}
         <div className="text-center text-sm mt-8 text-gray-400">
-          © 2024 HeyLearn2Code. All rights reserved.
+          © 2024 Zez Academy. All rights reserved.
         </div>
       </footer>
     </div>

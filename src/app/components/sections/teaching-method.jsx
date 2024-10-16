@@ -46,18 +46,20 @@ const TeachingMethod = () => {
             animate={firstSectionInView ? "visible" : "hidden"}
           >
             <h2 className="text-2xl sm:text-4xl font-bold text-primary">
-              Our Teaching Method
+              The Zez Method
             </h2>
             <p className="text-[16px] text-gray-600">
-              Unlock full access to our bootcamp resources for a limited time —
-              absolutely free!
+              This is not your high school or university There won&apos;t be any
+              lectures. We have already prepared 700+ hours of material for you.
+              Its easy to listen/read. Its not easy to apply what you learnt.
+              That&lsquo;s what we help you with.
             </p>
             <ul className="list-disc ml-6 space-y-2 text-[16px] text-gray-600">
-              <li>100% theory, 20% practical.</li>
+              <li>80% practical, 20% theory.</li>
               <li>We dive deep into building projects very fast.</li>
               <li>
-                This is not your high school or university… There won&apos;t be
-                any lectures. We have 700+ hours of material.
+                Personalied help when you get stuck (trust me you will get
+                stuck)
               </li>
             </ul>
           </motion.div>
@@ -115,15 +117,15 @@ const TeachingMethod = () => {
             </p>
             <ul className="flex gap-[2rem] list-disc ml-6 space-y-2 text-[16px] text-gray-600">
               <div>
-                <li>A certificate</li>
-                <li>A great recommendation letter</li>
+                <li>Graduation certificate</li>
                 <li>Resume templates</li>
                 <li>Cover letter templates</li>
                 <li>Portfolio templates</li>
               </div>
               <div>
-                <li>Real interview practice</li>
-                <li>Guidance on how to get your first job.</li>
+                <li>A great recommendation letter</li>
+                <li>Real-life interview practice</li>
+                <li>Step by step process of getting a job FAST.</li>
               </div>
             </ul>
           </motion.div>
@@ -141,25 +143,21 @@ const TeachingMethod = () => {
             100% Money-back <br /> Guarantee
           </h2>
           <p className="mt-4 text-[16px] sm:text-[#FFFFFFCC]">
-            We&apos;re confident in our program, which is why we offer a
-            money-back guarantee:
+            We wil only if you win
           </p>
           <ul className="w-full sm:w-1/2 text-[16px] sm:text-[#FFFFFFCC] list-disc ml-[-1px] mt-4 space-y-2 border border-[#19395F] p-8 rounded-[15px]">
             <p>
-              To qualify, students must meet and maintain eligibility as
-              outlined below:
+              Students must meet and maintain eligibility as outlined below:
             </p>
             <li>You graduate from the bootcamp and receive our certificate.</li>
             <li>
-              You apply to tech jobs, get interviews, and do your part for six
-              months.
+              You continue with your application process as set by our team.
             </li>
-            <li>If you don&apos;t get a job, get your money back!</li>
           </ul>
-          <p className="pt-[12px] text-[16px] sm:text-[#FFFFFFCC]">
+          {/* <p className="pt-[12px] text-[16px] sm:text-[#FFFFFFCC]">
             *If you follow those steps above, but still don&apos;t get a tech
             job, you get a full-refund!
-          </p>
+          </p> */}
           <Image
             src="/Rectangle.svg"
             alt="rectangle"

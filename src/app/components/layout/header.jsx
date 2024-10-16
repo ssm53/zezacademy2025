@@ -61,10 +61,8 @@ const Header = () => {
         <div className="max-w-[1300px] h-[80px] flex flex-wrap items-center justify-between mx-auto p-6 lg:p-0">
           <Link href="#home" scroll={false}>
             <h1 className="text-3xl md:text-4xl font-bold text-white text-center md:text-left">
-              <span className="text-secondary">Hey</span>
-              <span className="text-white">Learn</span>
-              <span className="text-secondary">2</span>
-              <span className="text-white">Code</span>
+              <span className="text-secondary">Zez</span>{" "}
+              <span className="text-white">Academy</span>
             </h1>
           </Link>
           <div className="flex items-center space-x-3">
@@ -131,15 +129,15 @@ const Header = () => {
                 >
                   {[
                     "Home",
-                    "Free Materials",
+                    // "Free Materials",
                     "Our Founder",
-                    "Our Cohorts",
+                    // "Our Cohorts",
                     "Why Us",
                     "Our Teaching Methods",
                     "Our Curriculum",
                     "How to Get Started",
                     "Pricing",
-                    "Our Students",
+                    // "Our Students",
                     "FAQs",
                   ].map((link, index) => (
                     <li key={index} className="border-b border-gray-200 pb-3">

@@ -46,10 +46,11 @@ const GetStarted = () => {
               </div>
             </div>
             <h4 className=" text-xl font-semibold text-gray-700">
-              Fill out the application form
+              Fill out the short application form
             </h4>
             <p className="text-gray-600">
-              No experience? No problem. We’ll get back to you within 5 days.
+              It should take you less than 10 minutes. We will get back to you
+              within 5 days.
             </p>
           </motion.div>
 
@@ -64,8 +65,8 @@ const GetStarted = () => {
             </div>
             <h4 className=" text-xl font-semibold text-gray-700">Interview</h4>
             <p className="text-gray-600">
-              We’ll have a quick chat to understand your goals and ensure the
-              bootcamp is a good fit.
+              A 20-minute interview to understand your goals and ensure you are
+              a good fit for our bootcamp.
             </p>
           </motion.div>
 
@@ -80,8 +81,8 @@ const GetStarted = () => {
             </div>
             <h4 className=" text-xl font-semibold text-gray-700">Acceptance</h4>
             <p className="text-gray-600">
-              If selected, you’ll get immediate access to pre-bootcamp materials
-              and a setup guide.
+              If selected, sit back and relax as we onboard you. You will get
+              our free pre-bootcamp material.
             </p>
           </motion.div>
         </motion.div>

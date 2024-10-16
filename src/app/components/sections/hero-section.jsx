@@ -41,18 +41,19 @@ const Hero = () => {
             animate="visible"
             variants={textVariants}
           >
-            <span className="text-secondary">Hey </span>
+            {/* <span className="text-secondary">Zez </span> */}
             <Typical
               className="inline-block"
-              steps={["Learn", 1000, "Learn2", 1000, "Learn2Code", 1000]}
+              steps={["Z", 1000, "Ze", 1000, "Zez", 1000]}
               loop={Infinity}
               wrapper="span"
             />
+            <span className="text-secondary">Academy </span>
             <br className="hidden md:block" />
-            Full Stack Coding <br /> Bootcamp
+            Full Stack Coding <br /> Program
           </motion.h1>
 
-          <motion.p
+          {/* <motion.p
             className="mt-6 text-sm md:text-lg text-gray-300 text-center md:text-left"
             initial="hidden"
             animate="visible"
@@ -60,7 +61,56 @@ const Hero = () => {
           >
             Become a Full-Stack Developer in 4 Months and get a developer job.
             If not, it is 100% FREE.
-          </motion.p>
+          </motion.p> */}
+          <motion.div className="flex items-center mt-6 justify-center md:justify-start">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="h-5 w-5 text-green-500 flex-shrink-0"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M5 13l4 4L19 7"
+              />
+            </svg>
+            <motion.p
+              className="ml-2 text-sm md:text-lg text-gray-300 text-center md:text-left"
+              initial="hidden"
+              animate="visible"
+              variants={textVariants}
+            >
+              Become a Full-Stack Developer in 4 Months
+            </motion.p>
+          </motion.div>
+
+          <motion.div className="flex items-center mt-6 justify-center md:justify-start">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="h-5 w-5 text-green-500 flex-shrink-0"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M5 13l4 4L19 7"
+              />
+            </svg>
+            <motion.p
+              className="ml-2 text-sm md:text-lg text-gray-300 text-center md:text-left font-bold"
+              initial="hidden"
+              animate="visible"
+              variants={textVariants}
+            >
+              Get a tech job or it is 100% FREE
+            </motion.p>
+          </motion.div>
 
           <motion.div
             className="mt-6 flex justify-center md:justify-start space-x-4"
@@ -75,24 +125,24 @@ const Hero = () => {
             >
               Apply Now
             </motion.button>
-            <motion.button
+            {/* <motion.button
               onClick={togglePopup}
               className="w-[150px] sm:w-[193px] h-[50px] bg-white text-sm hover:bg-blue-100 px-6 py-3 rounded-[5px] whitespace-nowrap flex justify-center text-center"
               variants={buttonVariants}
               whileHover="hover"
             >
               Get Free Access
-            </motion.button>
+            </motion.button> */}
           </motion.div>
 
-          <motion.p
+          {/* <motion.p
             className="mt-4 text-xs text-white text-center md:text-left"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 1 }}
           >
             ONLY FOR THOSE WHO GRADUATED LESS THAN 6 YEARS AGO
-          </motion.p>
+          </motion.p> */}
 
           {/* Animating the Info Boxes */}
           <motion.div
@@ -103,13 +153,13 @@ const Hero = () => {
           >
             <div className="grid grid-cols-2 sm:grid-cols-4 mt-6 text-sm text-white sm:divide-y-0 sm:divide-x border border-[#1D436F] rounded-[8px] lg:py-4">
               <div className="relative p-[20px] lg:py-0 text-start border-r border-[#1D436F] text-[14px] lg:text-[12px] font-[400] leading-[18px]">
-                Get developer job or it’s 100% free
+                Get a tech job or it’s 100% free
               </div>
               <div className="relative p-[20px] lg:py-0 text-start border-r border-[#1D436F] text-[14px] lg:text-[12px] font-[400] leading-[18px]">
-                Proper career support after
+                Remote/on-site options
               </div>
               <div className="relative p-[20px] lg:py-0 text-start border-r border-[#1D436F] border-t text-[14px] lg:text-[12px] font-[400] leading-[18px]">
-                Only 6 Students per cohort
+                No need to quit your job
               </div>
               <div className="relative p-[20px] lg:py-0 text-start border-t border-[#1D436F] text-[14px] lg:text-[12px] font-[400] leading-[18px]">
                 Flexible payment methods
@@ -118,13 +168,13 @@ const Hero = () => {
           </motion.div>
         </div>
         {/* Animating the Card Stack */}
-        <motion.div
+        {/* <motion.div
           initial={{ opacity: 0, x: 100 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ delay: 0.8, duration: 1 }}
         >
           <CardStackDemo />
-        </motion.div>
+        </motion.div> */}
       </div>
 
       <AnimatePresence>

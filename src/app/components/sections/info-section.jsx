@@ -14,7 +14,7 @@ const InfoSection = () => {
             own pace. No need to quit your job.
           </p>
           <a
-            href="#curriculum-table"
+            href="#our-curriculum"
             className="inline-block bg-blue-500 text-white py-2 px-6 rounded hover:bg-blue-600 transition"
           >
             Tell Me More →
@@ -24,12 +24,11 @@ const InfoSection = () => {
         {/* Second Card */}
         <div className=" rounded-lg ">
           <h3 className="sm:text-4xl text-primary  text-2xl font-bold mb-2">
-            Cant Choose Right Path?
+            Zez Academy vs Master&lsquo;s/Degree
           </h3>
           <p className="text-gray-600 mb-6">
-            Are you thinking of pursuing a degree or master’s, or are you
-            considering our bootcamp? Let’s explore which option is best for
-            you!
+            We offer an alternative to the long and expensive process of
+            universities
           </p>
           <a
             href="#comparison-section"

@@ -38,15 +38,15 @@ export default function BootcampSection() {
       <div className="text-start mb-8">
         <h2 className="leading-[30px] sm:leading-[50px] text-[20px] sm:text-[48px] font-bold text-primary">
           Who Is This <br className="hidden sm:block" />
-          <span className="text-secondary">Bootcamp For?</span>
+          <span className="text-secondary">For?</span>
         </h2>
 
-        <p className="mt-4 text-gray-600">
+        {/* <p className="mt-4 text-gray-600">
           Feeling stuck in your current career? Whether you’re new to coding{" "}
           <br /> or just need a real-world project push, this bootcamp is for
           you. With <br /> personalized support and a community of learners,
           you’ll reach your <br /> goals faster than you think.
-        </p>
+        </p> */}
       </div>
 
       {/* Animated Cards Section */}
@@ -73,11 +73,10 @@ export default function BootcampSection() {
             </div>
           </div>
           <h3 className="text-[18px] sm:text-lg font-semibold text-primary mb-2">
-            Have never Coded before <br /> but want to Learn
+            You want to get a developer job
           </h3>
           <p className="text-[16px] sm:text-gray-600">
-            Jumpstart your coding journey with hands-on learning and guidance,
-            perfect for complete beginners.
+            You will build projects that will impress recruiters
           </p>
         </motion.div>
 
@@ -98,11 +97,13 @@ export default function BootcampSection() {
             </div>
           </div>
           <h3 className="text-[18px] sm:text-lg font-semibold text-primary mb-2">
-            Tried online Tutorials but <br /> feel Stuck
+            You want to pick up a valuable skill as a side hustle OR build an
+            app
           </h3>
           <p className="text-[16px] sm:text-gray-600">
-            Turn your ideas into real-world applications by learning to code and
-            create your own solutions.
+            Turn your ideas & dreams into reality. If you have an app idea, you
+            can build the MVP yourself. This saves wasting RM40-60K per paying
+            other developers.
           </p>
         </motion.div>
 
@@ -123,11 +124,11 @@ export default function BootcampSection() {
             </div>
           </div>
           <h3 className="text-[18px] sm:text-lg font-semibold text-primary mb-2">
-            Looking for a career switch <br /> or start-up Builder
+            Bored of your career <br /> and just need a change
           </h3>
           <p className="text-[16px] sm:text-gray-600">
-            Transition into the tech industry with the skills and confidence
-            needed to land a developer job.
+            Change your career to an in-demand industry. Especially in Malaysia,
+            there are very few developers. There&lsquo;s huge room for growth.
           </p>
         </motion.div>
       </motion.div>

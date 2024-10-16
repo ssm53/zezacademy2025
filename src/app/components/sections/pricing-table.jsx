@@ -21,8 +21,8 @@ const data = [
   {
     label: "Time Commitment",
     degree: "4 years",
-    ourBootcamp: "3 months",
-    otherBootcamp: "3 months",
+    ourBootcamp: "3-4 months",
+    otherBootcamp: "3-4 months",
   },
   {
     label: "Total Cost",
@@ -33,12 +33,12 @@ const data = [
   {
     label: "Number of Students per Cohort",
     degree: "100+",
-    ourBootcamp: "Max of 6",
+    ourBootcamp: "Max of 10",
     otherBootcamp: "15-40",
   },
   {
     label: "Practical Skills",
-    degree: "✔️",
+    degree: "",
     ourBootcamp: "✔️",
     otherBootcamp: "✔️",
   },
@@ -50,11 +50,12 @@ const data = [
   },
   {
     label: "Real-life Project for a real business",
-    degree: "✔️",
+    degree: "",
     ourBootcamp: "✔️",
-    otherBootcamp: "✔️",
+    otherBootcamp: "",
   },
 ];
+
 export function TableDemo() {
   return (
     <section className="max-w-[1280px] mx-auto py-2 lg:px-0 sm:px-4">

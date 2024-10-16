@@ -5,15 +5,36 @@ const data = [
     partTime: "6-8 months",
   },
   {
-    label: "Access to All Projects",
-    fullTime: "✔️",
-    partTime: "✔️",
+    label: "Study Hours",
+    fullTime: "6-7 hrs a day",
+    partTime: "Up To You",
+  },
+  {
+    label: "Class Hours",
+    fullTime: "Mon - Fri: 10am - 5pm",
+    partTime: "Mon - Fri: 7pm - 10pm",
   },
   {
     label: "Cost",
     fullTime: "USD 1.15-1.6K",
     partTime: "USD 1.15-1.6K",
   },
+  {
+    label: "Remote",
+    fullTime: "✔️",
+    partTime: "✔️",
+  },
+  {
+    label: "On-site",
+    fullTime: "✔️ (KL, Malaysia)",
+    partTime: "X",
+  },
+  {
+    label: "Access to All Projects",
+    fullTime: "✔️",
+    partTime: "✔️",
+  },
+
   {
     label: "Career Coaching",
     fullTime: "✔️",
@@ -90,13 +111,13 @@ const CurriculumTable = () => {
       <section className="max-w-[1300px] mx-auto py-12 ">
         <div className="px-4 lg:px-0 text-start mb-8">
           <h2 className=" sm:text-4xl text-[1.5rem] leading-[1.5rem] font-bold text-primary">
-            Full-Time vs Part-Time <br /> Curriculum
+            Full-Time vs Self-Paced <br /> Curriculum
           </h2>
-          <p className="text-gray-500 mt-2">
+          {/* <p className="text-gray-500 mt-2">
             Our bootcamp is only $500, a 90% discount from the regular price of
             $5,000. <br /> And, if you don’t land a job after completing our
             program, you get a full refund. <br /> 100% risk-free.
-          </p>
+          </p> */}
         </div>
         <TableDemo /> {/* Use TableDemo here instead of CurriculumTable */}
       </section>

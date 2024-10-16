@@ -28,9 +28,9 @@ export default function Home() {
     <>
       <Header />
       <Hero />
-      <SixHundred />
+      {/* <SixHundred /> */}
       <OurFounder />
-      <OurCohorts />
+      {/* <OurCohorts /> */}
       <BootcampSection />
       <WhyChoose />
       <InfoSection />
@@ -41,8 +41,8 @@ export default function Home() {
       <PricingTable />
       <CurriculumTable />
       <Pricing />
-      <Testimonials />
-      {/* <ContactUs /> */}
+      {/* <Testimonials /> */}
+      <ContactUs />
       <FaqAccordian />
       <Footer />
     </>

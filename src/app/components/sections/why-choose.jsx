@@ -56,7 +56,7 @@ const WhyChoose = () => {
     <div id="why-us" className="bg-primary text-white py-12">
       <div className="max-w-[1300px] mx-auto px-4 sm:px-6 lg:px-8">
         <h2 className="text-center text-3xl font-extrabold mb-8">
-          Why Choose <span className="text-secondary">HeyLearn2Code?</span>
+          Why Choose <span className="text-secondary">Zez Academy?</span>
         </h2>
 
         {/* Shadcn Carousel for mobile screens */}
@@ -160,12 +160,8 @@ const WhyChoose = () => {
             (which you can sell to businesses).
           </li>
           <li>
-            You will learn how to build a google review filtering system (which
-            you can sell to businesses).
-          </li>
-          <li>
-            Chat GPT is great. We teach you how to properly utilize it for
-            coding!
+            You will build a software for a real-life business. We connect you
+            to them, and get your first client!
           </li>
         </ul>
       </div>

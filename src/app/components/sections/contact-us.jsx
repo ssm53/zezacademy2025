@@ -39,10 +39,10 @@ const ContactUs = () => {
             <h2 className="text-2xl font-bold mb-4 text-[#0F243DCC]">
               Contact Us
             </h2>
-            <p className="text-[#0F243DCC] mb-4">
+            {/* <p className="text-[#0F243DCC] mb-4">
               Email, call or complete the form to learn how <br />
               <strong>HeyLearn2code</strong> can solve your messaging problem.
-            </p>
+            </p> */}
             <div className="space-y-4">
               <div className="flex items-center">
                 <Image
@@ -53,7 +53,7 @@ const ContactUs = () => {
                   className="mr-3"
                 />
                 <p className="text-lg font-medium text-[#0F243DCC]">
-                  shaun@heylearn2code.com
+                  shaun@zezacademy.com
                 </p>
               </div>
               <div className="flex items-center">
@@ -71,7 +71,10 @@ const ContactUs = () => {
             </div>
           </div>
           <div className="flex space-x-3 mt-4">
-            <a href="#" className="text-gray-600 hover:text-primary">
+            <a
+              href="https://www.linkedin.com/in/shaun-shanil-menezes/"
+              className="text-gray-600 hover:text-primary"
+            >
               <Image src={linkedInIcon} alt="LinkedIn" width={20} height={20} />
             </a>
             <a href="#" className="text-gray-600 hover:text-primary">
@@ -92,7 +95,7 @@ const ContactUs = () => {
         </div>
 
         {/* Expected Study Hours Section */}
-        <div className="bg-[#F7F8F9] p-8 rounded-lg shadow-md">
+        {/* <div className="bg-[#F7F8F9] p-8 rounded-lg shadow-md">
           <h2 className="text-2xl font-bold mb-4 text-[#0F243DCC]">
             Expected Study Hours
           </h2>
@@ -110,10 +113,10 @@ const ContactUs = () => {
               <p className="text-gray-600">7 hours per day</p>
             </div>
           </div>
-        </div>
+        </div> */}
 
         {/* Further Details of Bootcamp Section */}
-        <div className="bg-white p-8 rounded-lg shadow-md">
+        {/* <div className="bg-white p-8 rounded-lg shadow-md">
           <h2 className="text-xl font-bold mb-4 text-[#0F243DCC]">
             Further Details of Bootcamp
           </h2>
@@ -133,10 +136,10 @@ const ContactUs = () => {
               Malaysia.
             </p>
           </div>
-        </div>
+        </div> */}
 
         {/* Location Map Section */}
-        <div className="bg-white p-8 rounded-lg shadow-md">
+        {/* <div className="bg-white p-8 rounded-lg shadow-md">
           <h2 className="text-xl font-bold mb-4 text-[#0F243DCC]">
             Location Map
           </h2>
@@ -157,7 +160,7 @@ const ContactUs = () => {
               </Popup>
             </Marker>
           </MapContainer>
-        </div>
+        </div> */}
       </div>
     </section>
   );

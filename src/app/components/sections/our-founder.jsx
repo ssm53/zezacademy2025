@@ -75,23 +75,41 @@ const OurFounder = () => {
             isInView ? "translate-x-0 opacity-100" : "translate-x-12 opacity-0"
           }`}
         >
-          <h4 className="text-[15px] sm:text-[25px] font-semibold text-white uppercase mb-1">
+          {/* <h4 className="text-[15px] sm:text-[25px] font-semibold text-white uppercase mb-1">
             About Founder
           </h4>
-          <h2 className="text-[25px] sm:text-[48px] font-bold">Our Founder</h2>
+          <h2 className="text-[25px] sm:text-[48px] font-bold">Our Founder</h2> */}
           <p className="text-lg font-medium mb-4">
-            Hey peeps, I&apos;m Shaun, Founder of
-            <span className="font-bold">&quot;HeyLearn2Code&quot;</span>
+            Hey peeps, I&apos;m Shaun, founder of{" "}
+            <span className="font-bold">Zez Academy</span>
           </p>
           <p className="mb-4 text-[#E9EAEB]">
-            I started learning to code in April 2023, and by the end of the
-            year, I had four software developer job offers. Without a degree.
-            Now, I&apos;m building AI products, including EZLA, an AI SaaS
-            launching Q4 2024.
+            I was previously an accountant working in the UK but I got bored. I
+            started learning to code in April 2023, and by the end of the year,
+            I had four software developer job offers. This was done without a
+            Degree or a Master&lsquo;s. I mean, it takes too long!
+          </p>
+          <p className="mb-4 text-[#E9EAEB]">
+            I spent alot of time figuring out how to code. Now, that I have done
+            it, I&lsquo;d like to show you how you can do it too!
           </p>
           <p className="mb-6 text-[#E9EAEB]">
-            Emphasize your switch from accounting to coding, showcasing the
-            value of learning tech skills even without formal education.
+            I&lsquo;m currently run a tech agency. We primarily focued on B2B
+            products but at the moment, we&lsquo;re building EZLA, an AI
+            software that generates personalised job-specific cover letters &
+            resumes under 1 minute.
+          </p>
+          <p className="mb-6 text-[#E9EAEB]">
+            You can find more of what I do{" "}
+            <a
+              href="https://www.ravewavedigital.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-blue-500 hover:underline"
+            >
+              here
+            </a>
+            .
           </p>
           <div className="flex space-x-4">
             <a
@@ -108,12 +126,12 @@ const OurFounder = () => {
               </svg>
               <span>LinkedIn</span>
             </a>
-            <a
+            {/* <a
               href="/founder-details"
               className="text-secondary border border-secondary font-medium py-2 px-4 rounded-lg hover:bg-secondary hover:text-white transition"
             >
               Learn More
-            </a>
+            </a> */}
           </div>
         </motion.div>
       </div>

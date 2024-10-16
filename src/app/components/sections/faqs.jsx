@@ -4,39 +4,41 @@ import { FaChevronUp, FaChevronDown } from "react-icons/fa"; // Import the icons
 
 const faqs = [
   {
-    question: "Do I need any coding experience  bootcamp?",
-    answer:
-      "Lorem ipsum dolor sit amet lorem consectetur pretium neque lorem ipsum dolor sit amet consectetur pretium neque.",
+    question: "Do I need any coding experience to join?",
+    answer: "You really dont. Zez Academy is catered for complete beginners. ",
+  },
+  {
+    question: "its expensive. Do you have installment payment options?",
+    answer: "Yes yes, we do! Check our pricing section above.",
   },
   {
     question: "How long is the bootcamp?",
     answer:
-      "Lorem ipsum dolor sit amet lorem consectetur pretium neque lorem ipsum dolor sit amet consectetur pretium neque.",
+      "Out full-time option is 3-4 months. Our self-paced option has no timeline, but it should take you between 6-8 months.",
+  },
+  {
+    question: "Do I really get my money-back if I dont get a job?",
+    answer:
+      "Yes, if continue applying for jobs and you dont get a job upon graduation, you get all your money-back.",
   },
   {
     question: "What do I need to bring to the bootcamp?",
-    answer:
-      "Lorem ipsum dolor sit amet lorem consectetur pretium neque lorem ipsum dolor sit amet consectetur pretium neque.",
+    answer: "All you need is a laptop and the motivation to learn.",
   },
   {
     question: "Is the bootcamp remote or in-person?",
     answer:
-      "Lorem ipsum dolor sit amet lorem consectetur pretium neque lorem ipsum dolor sit amet consectetur pretium neque.",
+      "For full-time students, both options are available. On-site location is in Kinrara, Selangor, Malaysia. For self-paced students, out bootcamp is fully remote.",
   },
   {
-    question: "What projects will I build during the bootcamp?",
+    question: "How can you teach us so fast and get us a job?",
     answer:
-      "Lorem ipsum dolor sit amet lorem consectetur pretium neque lorem ipsum dolor sit amet consectetur pretium neque.",
-  },
-  {
-    question: "Are there any prerequisites to join?",
-    answer:
-      "Lorem ipsum dolor sit amet lorem consectetur pretium neque lorem ipsum dolor sit amet consectetur pretium neque.",
+      "I get rid of alot of unneccessary theory and throw you to the deep end of building projects. Thats where you learn. Too many courses focus on the theory, and not on the practical side of coding. I teach all that I have learnt so far.",
   },
   {
     question: "What happens after completing the bootcamp?",
     answer:
-      "Lorem ipsum dolor sit amet lorem consectetur pretium neque lorem ipsum dolor sit amet consectetur pretium neque.",
+      "It depends on your goal. If you want a developer job, we will support you with alot of material and weekly calls to keep you accountable.",
   },
 ];
 
