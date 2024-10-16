@@ -42,7 +42,7 @@ export default function Home() {
       <CurriculumTable />
       <Pricing />
       {/* <Testimonials /> */}
-      <ContactUs />
+      {/* <ContactUs /> */}
       <FaqAccordian />
       <Footer />
     </>
