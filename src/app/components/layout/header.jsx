@@ -20,6 +20,7 @@ const useMediaQuery = (width) => {
 
   return isScreenSize;
 };
+//
 
 // Move handleOutsideClick outside to prevent redefinition on each render
 const handleOutsideClick = (e, setIsOpen) => {
