@@ -171,7 +171,7 @@ const Header = () => {
               {/* Drawer Footer - Always visible on desktop and mobile */}
               <div className="absolute bottom-8 left-8 right-8 border-t border-gray-200 pt-4 flex justify-between items-center">
                 <p className="text-sm text-gray-500">
-                  © 2024 HeyLearn2Code. All Rights Reserved.
+                  © 2024 Zez Academy. All Rights Reserved.
                 </p>
 
                 {/* Social Icons - Bottom Right */}
