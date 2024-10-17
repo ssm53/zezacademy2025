@@ -6,7 +6,6 @@ import { useRouter } from "next/navigation";
 import Typical from "react-typical";
 const Hero = () => {
   const [showPopup, setShowPopup] = useState(false);
-  const [thankYouMessage, setThankYouMessage] = useState("");
 
   const togglePopup = () => {
     setShowPopup(!showPopup);
@@ -159,7 +158,7 @@ const Hero = () => {
               animate="visible"
               variants={textVariants}
             >
-              Get a tech job or it is 100% FREE
+              Get a developer job or it is 100% FREE
             </motion.p>
           </motion.div>
 
@@ -223,7 +222,7 @@ const Hero = () => {
           >
             <div className="grid grid-cols-2 sm:grid-cols-4 mt-6 text-sm text-white sm:divide-y-0 sm:divide-x border border-[#1D436F] rounded-[8px] lg:py-4">
               <div className="relative p-[20px] lg:py-0 text-start border-r border-[#1D436F] text-[14px] lg:text-[12px] font-[400] leading-[18px]">
-                Get a tech job or it’s 100% free
+                Get a developer job or it’s 100% free
               </div>
               <div className="relative p-[20px] lg:py-0 text-start border-r border-[#1D436F] text-[14px] lg:text-[12px] font-[400] leading-[18px]">
                 Remote/on-site options
@@ -270,12 +269,6 @@ const Popup = ({ togglePopup }) => {
     };
   }, []);
 
-  // const [formData, setFormData] = useState({
-  //   firstName: "",
-  //   lastName: "",
-  //   email: "",
-  //   phone: "",
-  // });
   const [formData, setFormData] = useState({
     fullname: "",
     email: "",
@@ -288,20 +281,6 @@ const Popup = ({ togglePopup }) => {
   });
   const [thankYouMessage, setThankYouMessage] = useState("");
 
-  // const handleSubmit = (e) => {
-  //   e.preventDefault();
-
-  //   if (
-  //     formData.firstName &&
-  //     formData.lastName &&
-  //     formData.email &&
-  //     formData.phone
-  //   ) {
-  //     router.push("/enrollment");
-  //   } else {
-  //     alert("Please fill in all fields.");
-  //   }
-  // };
   const handleSubmit = async (e) => {
     e.preventDefault();
 

@@ -45,10 +45,10 @@ const WhatLearn = () => {
             Course Breakdown
           </h4>
           <ul className="list-disc list-inside text-[#0F243DCC] space-y-2">
-            <li>Weeks 1-3: Fundamentals</li>
-            <li>Weeks 4-6: Frontend</li>
-            <li>Weeks 7-9: Backend</li>
-            <li>Weeks 10-12: Self-paced</li>
+            <li>Weeks 1-4: Fundamentals</li>
+            <li>Weeks 5-8: Frontend</li>
+            <li>Weeks 9-12: Backend</li>
+            <li>Weeks 13-16: Self-paced</li>
           </ul>
         </div>
       </div>

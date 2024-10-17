@@ -35,13 +35,14 @@ const WhyChoose = () => {
       icon: "/chatbot.svg",
     },
     {
-      title: "Build and Sell AI Products",
+      title: "Build AI Products",
       description: "Learn how to create AI-driven solutions.",
       icon: "/ai.svg",
     },
     {
       title: "Work with Real Clients",
-      description: "Build real products and get paid for it.",
+      description:
+        "We connect you to real businesses for you to build a product for them",
       icon: "/multiuser.svg",
     },
     {
@@ -154,6 +155,10 @@ const WhyChoose = () => {
         {/* Bonuses Section */}
         <ul className="w-full text-[#FFFFFFCC] list-disc ml-[-1px] mt-4 space-y-2 border border-[#19395F] p-8 rounded-[15px]">
           <strong>Bonuses</strong>
+          <li>
+            You will build an actual product for an actual company. We connect
+            you to them.
+          </li>
           <li>You will learn how to build AI products.</li>
           <li>
             You will learn how to create a website in less than 30 minutes

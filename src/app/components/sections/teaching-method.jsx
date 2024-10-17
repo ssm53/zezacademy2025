@@ -57,10 +57,7 @@ const TeachingMethod = () => {
             <ul className="list-disc ml-6 space-y-2 text-[16px] text-gray-600">
               <li>80% practical, 20% theory.</li>
               <li>We dive deep into building projects very fast.</li>
-              <li>
-                Personalied help when you get stuck (trust me you will get
-                stuck)
-              </li>
+              <li>Personalised help when you get stuck (you will get stuck)</li>
             </ul>
           </motion.div>
 

@@ -86,13 +86,15 @@ const SixHundred = () => {
             Our <span className="text-secondary">Syllabus</span>
           </h2>
           <p className="text-[#0F243DCC] mb-6">
-            We have created a comprehensive syllabus that takes you from a
-            complete beginner to a job-ready level coder.
+            Our expertly crafted syllabus is designed to take you from a
+            complete beginner to a job-ready coder, step by step.
           </p>
           <p className="text-[#0F243DCC] mb-8">
-            This is not like learning to code using Youtube or Udemy. In here,
-            we learn it the proper way.
+            This isn&lsquo;t your typical YouTube or Udemy experience—here,
+            you&lsquo;ll master coding the right way, with structure and
+            real-world applications.
           </p>
+
           {/* <button
             href="#enrollement-section"
             className="bg-primary text-white py-3 px-6 rounded-[5px] hover:bg-secondary transition w-full sm:w-auto"

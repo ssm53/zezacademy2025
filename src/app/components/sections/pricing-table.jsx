@@ -8,7 +8,7 @@ const data = [
   {
     label: "Total Cost",
     degree: "USD 80-150K",
-    ourBootcamp: "USD 1.15-1.6K",
+    ourBootcamp: "USD 1.6K",
     otherBootcamp: "USD 3-20K",
   },
 
@@ -24,16 +24,11 @@ const data = [
     ourBootcamp: "3-4 months",
     otherBootcamp: "3-4 months",
   },
-  {
-    label: "Total Cost",
-    degree: "USD 80-150K",
-    ourBootcamp: "USD 1.15-1.6K",
-    otherBootcamp: "USD 3-20K",
-  },
+
   {
     label: "Number of Students per Cohort",
     degree: "100+",
-    ourBootcamp: "Max of 10",
+    ourBootcamp: "Max of 6",
     otherBootcamp: "15-40",
   },
   {
@@ -113,7 +108,7 @@ const PricingTable = () => {
         <h2 className="text-primary text-4xl font-bold">
           Why It Makes Sense <br /> To Join Us?
         </h2>
-        <p className="text-gray-500 mt-2">Compare the difference by yourself</p>
+        <p className="text-gray-500 mt-2">Compare the differences yourself</p>
       </div>
 
       <TableDemo />

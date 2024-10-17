@@ -87,7 +87,7 @@ const OurFounder = () => {
             I was an accountant working at Deloitte, UK and it was great, but I
             was bored and unsatisfied. So, I left my job to start a crypto
             startup which did 7-figure profits in 2021, but it ultimately failed
-            in 2022/2023. I was abit lost as I did not want to go back to
+            in 2022/2023. I was abit lost and I did not want to go back to
             accounting, but that was the only skill I had!
           </p>
           <p className="mb-4 text-[#E9EAEB]">
@@ -97,7 +97,7 @@ const OurFounder = () => {
             need structure.
           </p>
           <p className="mb-4 text-[#E9EAEB]">
-            I spent alot of time figuring out how to code from a complete
+            I spent alot of time figuring out how to code as a complete
             beginner. Now, that I have done it, I&lsquo;d like to show you how
             you can do it too!
           </p>
@@ -105,12 +105,12 @@ const OurFounder = () => {
             I believe the key aspect of learning code is for you to have an actual person available to give you personalised help when you get confused and stuck. 
           </p> */}
           <p className="mb-6 text-[#E9EAEB]">
-            I&lsquo;m currently run a tech agency, called RaveWave Digital.
-            Initially, we primarily focued on B2B products in the GP medical
-            space, but we&lsquo;re venturing to bigger projects now. Currently
-            building EZLA, an AI powered software that generates personalised
-            job specific cover letters and resumes under 1 minute. It has 100
-            invite-only-users at the moment, and is launching in Q4 2024.
+            I currently run a tech agency, called RaveWave Digital. Initially,
+            we focused on B2B products in the GP medical space, but we&lsquo;re
+            venturing to bigger projects now. Currently building EZLA, an AI
+            powered software that generates personalised job specific cover
+            letters and resumes under 1 minute. It is in beta mode and is
+            launching in Q4 2024.
           </p>
           <p className="mb-6 text-[#E9EAEB]">
             You can find more of what I do{" "}

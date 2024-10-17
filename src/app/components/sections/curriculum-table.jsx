@@ -16,8 +16,8 @@ const data = [
   },
   {
     label: "Cost",
-    fullTime: "USD 1.15-1.6K",
-    partTime: "USD 1.15-1.6K",
+    fullTime: "USD 1.6K",
+    partTime: "USD 1.6K",
   },
   {
     label: "Remote",
@@ -51,12 +51,7 @@ const data = [
     partTime: "✔️",
   },
   {
-    label: "Build capstone projects (AI chatbot, e-commerce marketplace)",
-    fullTime: "✔️",
-    partTime: "✔️",
-  },
-  {
-    label: "Build AI projects",
+    label: "Build capstone projects (AI chatbot, e-commerce marketplace etc.)",
     fullTime: "✔️",
     partTime: "✔️",
   },

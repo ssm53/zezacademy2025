@@ -92,7 +92,7 @@ export default function BootcampSection() {
             You will get a developer job
           </h3>
           <p className="text-[16px] sm:text-gray-600">
-            You transform from a complete beginner to a job-ready level
+            You will transform from a complete beginner to a job-ready level
             developer
           </p>
         </motion.div>
@@ -147,8 +147,8 @@ export default function BootcampSection() {
           </h3>
           <p className="text-[16px] sm:text-gray-600">
             Tech is booming. Unlike the USA, there are very few developers in
-            Malaysia. There&lsquo;s huge room for growth and opportunities. Act
-            now!
+            Malaysia. So, there&lsquo;s huge room for growth and opportunities.
+            Act now!
           </p>
         </motion.div>
       </motion.div>
