@@ -1,0 +1,13 @@
+{
+  "sqltools.connections": [
+    {
+      "previewLimit": 50,
+      "server": "localhost",
+      "port": 5443,
+      "driver": "PostgreSQL",
+      "name": "final-bootcamp-website",
+      "database": "final-bootcamp-website-db",
+      "username": "final-bootcamp-website"
+    }
+  ]
+}

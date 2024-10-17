@@ -6,6 +6,7 @@ import { useRouter } from "next/navigation";
 import Typical from "react-typical";
 const Hero = () => {
   const [showPopup, setShowPopup] = useState(false);
+  const [thankYouMessage, setThankYouMessage] = useState("");
 
   const togglePopup = () => {
     setShowPopup(!showPopup);
@@ -175,7 +176,7 @@ const Hero = () => {
             >
               Apply Now
             </motion.button> */}
-            <motion.a
+            {/* <motion.a
               href="https://docs.google.com/forms/d/e/1FAIpQLSdZbUvC0vVXuVLHg5UxAQ11wJSJeVoxtWP_EoIsfZRRUNMo5w/viewform?usp=sf_link"
               target="_blank"
               rel="noopener noreferrer"
@@ -184,7 +185,15 @@ const Hero = () => {
               whileHover="hover"
             >
               Apply Now
-            </motion.a>
+            </motion.a> */}
+            <motion.button
+              onClick={togglePopup}
+              className="w-[150px] sm:w-[193px] h-[50px] text-sm bg-secondary hover:bg-secondary text-white px-6 py-3 rounded-[5px] text-center"
+              variants={buttonVariants}
+              whileHover="hover"
+            >
+              Apply Now
+            </motion.button>
 
             {/* <motion.button
               onClick={togglePopup}
@@ -261,28 +270,78 @@ const Popup = ({ togglePopup }) => {
     };
   }, []);
 
+  // const [formData, setFormData] = useState({
+  //   firstName: "",
+  //   lastName: "",
+  //   email: "",
+  //   phone: "",
+  // });
   const [formData, setFormData] = useState({
-    firstName: "",
-    lastName: "",
+    fullname: "",
     email: "",
-    phone: "",
+    whatsapp: "",
+    reason: "",
+    codingexperience: "I have not written a single line of code",
+    stageofcareer: "I am still in school/college/university",
+    fullorpart: "Self-Paced",
+    remoteoronsite: "Remote",
   });
+  const [thankYouMessage, setThankYouMessage] = useState("");
 
-  const handleSubmit = (e) => {
+  // const handleSubmit = (e) => {
+  //   e.preventDefault();
+
+  //   if (
+  //     formData.firstName &&
+  //     formData.lastName &&
+  //     formData.email &&
+  //     formData.phone
+  //   ) {
+  //     router.push("/enrollment");
+  //   } else {
+  //     alert("Please fill in all fields.");
+  //   }
+  // };
+  const handleSubmit = async (e) => {
     e.preventDefault();
 
+    // Make sure all required fields are filled
     if (
-      formData.firstName &&
-      formData.lastName &&
+      formData.fullname &&
       formData.email &&
-      formData.phone
+      formData.whatsapp &&
+      formData.reason
     ) {
-      router.push("/enrollment");
+      try {
+        const response = await fetch("/api/new-applicant", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(formData),
+        });
+
+        if (response.ok) {
+          // Set the thank-you message
+          setThankYouMessage(
+            "Thanks for your application. We will notify you within 5 days if you made it to the next stage."
+          );
+        } else {
+          alert("Error submitting the form. Please try again.");
+        }
+      } catch (error) {
+        console.error("Error:", error);
+        alert("Error submitting the form. Please try again.");
+      }
     } else {
       alert("Please fill in all fields.");
     }
   };
 
+  // const handleChange = (e) => {
+  //   const { name, value } = e.target;
+  //   setFormData((prevData) => ({ ...prevData, [name]: value }));
+  // };
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData((prevData) => ({ ...prevData, [name]: value }));
@@ -306,15 +365,10 @@ const Popup = ({ togglePopup }) => {
 
         <div className="flex flex-col md:flex-row">
           <div className="md:w-1/2 p-6 bg-gray-100 rounded-l-lg">
-            <h2 className="text-2xl font-bold mb-6">
-              Get a Sneak Peek at the Best Live Online Coding Bootcamp!
-            </h2>
-            <ul className="list-disc list-inside space-y-4 text-gray-700">
+            <h2 className="text-2xl font-bold mb-6">We win only if you win</h2>
+            {/* <ul className="list-disc list-inside space-y-4 text-gray-700">
               <li>
-                <strong>Foundations of Coding Module:</strong> Get a 2-week free
-                access to the beginner module covering HTML, CSS, and JavaScript
-                fundamentals. Start building projects and develop job-ready
-                skills.
+                <strong>Job Guarantee</strong> or you get your money-back
               </li>
               <li>
                 <strong>Engaging Video Tutorials:</strong> Easy-to-follow
@@ -326,55 +380,122 @@ const Popup = ({ togglePopup }) => {
                 peers, join discussions, and learn together with like-minded
                 individuals.
               </li>
-            </ul>
+            </ul> */}
           </div>
 
           <div className="md:w-1/2 p-6 bg-white rounded-r-lg">
             <h2 className="text-2xl font-bold mb-6">
-              Get Free Access To Our Bootcamp Materials
+              Start your coding journey
             </h2>
-            <form className="space-y-4" onSubmit={handleSubmit}>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                <input
-                  type="text"
-                  name="firstName"
-                  placeholder="First name"
-                  className="p-3 border rounded-lg w-full"
-                  onChange={handleChange}
-                  required
-                />
-                <input
-                  type="text"
-                  name="lastName"
-                  placeholder="Last name"
-                  className="p-3 border rounded-lg w-full"
-                  onChange={handleChange}
-                  required
-                />
+            {thankYouMessage !== "" ? (
+              <div className="p-4 text-center">
+                <p>{thankYouMessage}</p>
+                {/* <button 
+      onClick={() => {
+        setThankYouMessage(""); // Reset the message when closing
+        // Close the modal here if you have a modal close handler
+      }} 
+      className="mt-4 bg-blue-600 text-white p-2 rounded-lg"
+    >
+      Close
+    </button> */}
               </div>
-              <input
-                type="email"
-                name="email"
-                placeholder="Your email"
-                className="w-full p-3 border rounded-lg"
-                onChange={handleChange}
-                required
-              />
-              <input
-                type="tel"
-                name="phone"
-                placeholder="+123 Phone number"
-                className="w-full p-3 border rounded-lg"
-                onChange={handleChange}
-                required
-              />
-              <button
-                type="submit"
-                className="w-full bg-blue-600 text-white p-4 rounded-lg hover:bg-blue-700"
-              >
-                Get Free Access
-              </button>
-            </form>
+            ) : (
+              <form className="space-y-4" onSubmit={handleSubmit}>
+                <input
+                  type="text"
+                  name="fullname"
+                  placeholder="Full Name"
+                  className="p-3 border rounded-lg w-full"
+                  onChange={handleChange}
+                  required
+                />
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="Your email"
+                  className="w-full p-3 border rounded-lg"
+                  onChange={handleChange}
+                  required
+                />
+                <input
+                  type="text"
+                  name="whatsapp"
+                  placeholder="Whatsapp Number"
+                  className="w-full p-3 border rounded-lg"
+                  onChange={handleChange}
+                  required
+                />
+                <textarea
+                  name="reason"
+                  placeholder="Why do you want to learn to code?"
+                  className="w-full p-3 border rounded-lg"
+                  onChange={handleChange}
+                  required
+                />
+                <select
+                  name="codingexperience"
+                  className="w-full p-3 border rounded-lg"
+                  onChange={handleChange}
+                >
+                  <option value="I have not written a single line of code">
+                    I have not written a single line of code
+                  </option>
+                  <option value="I have done a little bit of coding (Youtube videos/short online course)">
+                    I have done a little bit of coding (Youtube videos/short
+                    online course)
+                  </option>
+                </select>
+                <select
+                  name="stageofcareer"
+                  className="w-full p-3 border rounded-lg"
+                  onChange={handleChange}
+                >
+                  <option value="I am still in school/college/university">
+                    I am still in school/college/university
+                  </option>
+                  <option value="I have been working for 1-3 years already">
+                    I have been working for 1-3 years already
+                  </option>
+                  <option value="I have been working for 4-10 years already">
+                    I have been working for 4-10 years already
+                  </option>
+                  <option value="I have been working for more than 10 years already">
+                    I have been working for more than 10 years already
+                  </option>
+                  <option value="I am an entrepreneur">
+                    I am an entrepreneur
+                  </option>
+                  <option value="I am currently unemployed">
+                    I am currently unemployed
+                  </option>
+                </select>
+                <select
+                  name="fullorpart"
+                  className="w-full p-3 border rounded-lg"
+                  onChange={handleChange}
+                >
+                  <option value="Self-Paced">Self-Paced</option>
+                  <option value="Full-Time">Full-Time</option>
+                  <option value="I am not sure yet">I am not sure yet</option>
+                </select>
+                <select
+                  name="remoteoronsite"
+                  className="w-full p-3 border rounded-lg"
+                  onChange={handleChange}
+                >
+                  <option value="Remote">Remote</option>
+                  <option value="On-site">On-site</option>
+                  <option value="I am not sure yet">I am not sure yet</option>
+                </select>
+                <button
+                  type="submit"
+                  className="w-full bg-blue-600 text-white p-4 rounded-lg hover:bg-blue-700"
+                >
+                  Apply Now
+                </button>
+              </form>
+            )}
           </div>
         </div>
       </motion.div>
