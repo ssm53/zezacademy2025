@@ -28,9 +28,9 @@ export default function Home() {
     <>
       <Header />
       <Hero />
-      {/* <SixHundred /> */}
+      <SixHundred />
       <OurFounder />
-      {/* <OurCohorts /> */}
+      <OurCohorts />
       <BootcampSection />
       <WhyChoose />
       <InfoSection />

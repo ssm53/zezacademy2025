@@ -84,20 +84,33 @@ const OurFounder = () => {
             <span className="font-bold">Zez Academy</span>
           </p>
           <p className="mb-4 text-[#E9EAEB]">
-            I was previously an accountant working in the UK but I got bored. I
-            started learning to code in April 2023, and by the end of the year,
-            I had four software developer job offers. This was done without a
-            Degree or a Master&lsquo;s. I mean, it takes too long!
+            I was an accountant working at Deloitte, UK and it was great, but I
+            was bored and unsatisfied. So, I left my job to start a crypto
+            startup which did 7-figure profits in 2021, but it ultimately failed
+            in 2022/2023. I was abit lost as I did not want to go back to
+            accounting, but that was the only skill I had!
           </p>
           <p className="mb-4 text-[#E9EAEB]">
-            I spent alot of time figuring out how to code. Now, that I have done
-            it, I&lsquo;d like to show you how you can do it too!
+            So, in 2023, I picked up coding seriously, and by the end of the
+            year, I had 4 software developer job offers. This was done without a
+            Degree or a Master&lsquo;s. Its not as hard as you think. You just
+            need structure.
           </p>
+          <p className="mb-4 text-[#E9EAEB]">
+            I spent alot of time figuring out how to code from a complete
+            beginner. Now, that I have done it, I&lsquo;d like to show you how
+            you can do it too!
+          </p>
+          {/* <p className="mb-4 text-[#E9EAEB]">
+            I believe the key aspect of learning code is for you to have an actual person available to give you personalised help when you get confused and stuck. 
+          </p> */}
           <p className="mb-6 text-[#E9EAEB]">
-            I&lsquo;m currently run a tech agency. We primarily focued on B2B
-            products but at the moment, we&lsquo;re building EZLA, an AI
-            software that generates personalised job-specific cover letters &
-            resumes under 1 minute.
+            I&lsquo;m currently run a tech agency, called RaveWave Digital.
+            Initially, we primarily focued on B2B products in the GP medical
+            space, but we&lsquo;re venturing to bigger projects now. Currently
+            building EZLA, an AI powered software that generates personalised
+            job specific cover letters and resumes under 1 minute. It has 100
+            invite-only-users at the moment, and is launching in Q4 2024.
           </p>
           <p className="mb-6 text-[#E9EAEB]">
             You can find more of what I do{" "}

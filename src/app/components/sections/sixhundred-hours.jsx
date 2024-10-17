@@ -45,7 +45,7 @@ const SixHundred = () => {
     >
       <div className="lg:flex lg:justify-between lg:items-center max-w-[1300px] mx-auto">
         {/* Left Section */}
-        <motion.div
+        {/* <motion.div
           className="lg:w-1/2"
           initial="hidden"
           animate={isInView ? "visible" : "hidden"}
@@ -72,6 +72,33 @@ const SixHundred = () => {
           >
             Get Free Access
           </button>
+        </motion.div> */}
+        <motion.div
+          className="lg:w-1/2"
+          initial="hidden"
+          animate={isInView ? "visible" : "hidden"}
+          variants={leftSectionVariants}
+        >
+          <h3 className="text-sm font-semibold text-[#0F243DCC] uppercase mb-2">
+            600+ HOURS OF MATERIAL
+          </h3>
+          <h2 className="text-4xl font-bold text-primary mb-4">
+            Our <span className="text-secondary">Syllabus</span>
+          </h2>
+          <p className="text-[#0F243DCC] mb-6">
+            We have created a comprehensive syllabus that takes you from a
+            complete beginner to a job-ready level coder.
+          </p>
+          <p className="text-[#0F243DCC] mb-8">
+            This is not like learning to code using Youtube or Udemy. In here,
+            we learn it the proper way.
+          </p>
+          {/* <button
+            href="#enrollement-section"
+            className="bg-primary text-white py-3 px-6 rounded-[5px] hover:bg-secondary transition w-full sm:w-auto"
+          >
+            Get Free Access
+          </button> */}
         </motion.div>
 
         {/* Right Section */}

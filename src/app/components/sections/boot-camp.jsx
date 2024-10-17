@@ -47,7 +47,23 @@ export default function BootcampSection() {
           you. With <br /> personalized support and a community of learners,
           you’ll reach your <br /> goals faster than you think.
         </p> */}
+        <ul className="mt-4 space-y-2 text-gray-600 list-disc pl-4">
+          <li className="text-base sm:text-lg leading-relaxed">
+            You are serious about learning to code and want to join a program
+            that guarantees results
+          </li>
+          <li className="text-base sm:text-lg leading-relaxed">
+            You are 40 years and below.
+          </li>
+          <li className="text-base sm:text-lg leading-relaxed">
+            You have never coded before or you are a beginner
+          </li>
+        </ul>
       </div>
+      <h2 className="leading-[30px] sm:leading-[50px] text-[20px] sm:text-[48px] font-bold text-primary">
+        What Will You <br className="hidden sm:block" />
+        <span className="text-secondary">Achieve?</span>
+      </h2>
 
       {/* Animated Cards Section */}
       <motion.div
@@ -73,10 +89,11 @@ export default function BootcampSection() {
             </div>
           </div>
           <h3 className="text-[18px] sm:text-lg font-semibold text-primary mb-2">
-            You want to get a developer job
+            You will get a developer job
           </h3>
           <p className="text-[16px] sm:text-gray-600">
-            You will build projects that will impress recruiters
+            You transform from a complete beginner to a job-ready level
+            developer
           </p>
         </motion.div>
 
@@ -97,13 +114,14 @@ export default function BootcampSection() {
             </div>
           </div>
           <h3 className="text-[18px] sm:text-lg font-semibold text-primary mb-2">
-            You want to pick up a valuable skill as a side hustle OR build an
-            app
+            You will be able to build apps yourself and pick up freelancing as a
+            side-hustle
           </h3>
           <p className="text-[16px] sm:text-gray-600">
-            Turn your ideas & dreams into reality. If you have an app idea, you
-            can build the MVP yourself. This saves wasting RM40-60K per paying
-            other developers.
+            Turn your ideas into reality. Remember that app idea you had? Well,
+            you&lsquo;ll have the skills to build it from scratch. This saves
+            you RM40,000 - RM60,000 as you dont need to pay a developer to do
+            it!
           </p>
         </motion.div>
 
@@ -124,11 +142,13 @@ export default function BootcampSection() {
             </div>
           </div>
           <h3 className="text-[18px] sm:text-lg font-semibold text-primary mb-2">
-            Bored of your career <br /> and just need a change
+            You will make a successful career change <br /> to an in-demand
+            industry
           </h3>
           <p className="text-[16px] sm:text-gray-600">
-            Change your career to an in-demand industry. Especially in Malaysia,
-            there are very few developers. There&lsquo;s huge room for growth.
+            Tech is booming. Unlike the USA, there are very few developers in
+            Malaysia. There&lsquo;s huge room for growth and opportunities. Act
+            now!
           </p>
         </motion.div>
       </motion.div>

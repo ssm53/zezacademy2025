@@ -41,16 +41,18 @@ const Hero = () => {
             animate="visible"
             variants={textVariants}
           >
-            {/* <span className="text-secondary">Zez </span> */}
-            <Typical
+            <span className="text-secondary">Zez </span>
+            {/* <Typical
               className="inline-block"
               steps={["Z", 1000, "Ze", 1000, "Zez", 1000]}
               loop={Infinity}
               wrapper="span"
-            />
-            <span className="text-secondary">Academy </span>
+            /> */}
+            <span>Academy&lsquo;s </span>
             <br className="hidden md:block" />
-            Full Stack Coding <br /> Program
+            Full Stack <span className="text-secondary">
+              Coding
+            </span> <br /> Program
           </motion.h1>
 
           {/* <motion.p
@@ -62,6 +64,54 @@ const Hero = () => {
             Become a Full-Stack Developer in 4 Months and get a developer job.
             If not, it is 100% FREE.
           </motion.p> */}
+          <motion.div className="flex items-center mt-6 justify-center md:justify-start">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="h-5 w-5 text-green-500 flex-shrink-0"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M5 13l4 4L19 7"
+              />
+            </svg>
+            <motion.p
+              className="ml-2 text-sm md:text-lg text-gray-300 text-center md:text-left"
+              initial="hidden"
+              animate="visible"
+              variants={textVariants}
+            >
+              For complete beginners
+            </motion.p>
+          </motion.div>
+          <motion.div className="flex items-center mt-6 justify-center md:justify-start">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="h-5 w-5 text-green-500 flex-shrink-0"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M5 13l4 4L19 7"
+              />
+            </svg>
+            <motion.p
+              className="ml-2 text-sm md:text-lg text-gray-300 text-center md:text-left"
+              initial="hidden"
+              animate="visible"
+              variants={textVariants}
+            >
+              Malaysian friendly pricing
+            </motion.p>
+          </motion.div>
           <motion.div className="flex items-center mt-6 justify-center md:justify-start">
             <svg
               xmlns="http://www.w3.org/2000/svg"
