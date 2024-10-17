@@ -118,10 +118,9 @@ export default function BootcampSection() {
             side-hustle
           </h3>
           <p className="text-[16px] sm:text-gray-600">
-            Turn your ideas into reality. Remember that app idea you had? Well,
-            you&lsquo;ll have the skills to build it from scratch. This saves
-            you RM40,000 - RM60,000 as you dont need to pay a developer to do
-            it!
+            Remember that app idea you had? Well, you&lsquo;ll have the skills
+            to build it from scratch. This saves you RM40,000 - RM60,000 as you
+            dont need to pay a developer to do it!
           </p>
         </motion.div>
 
@@ -142,13 +141,11 @@ export default function BootcampSection() {
             </div>
           </div>
           <h3 className="text-[18px] sm:text-lg font-semibold text-primary mb-2">
-            You will make a successful career change <br /> to an in-demand
-            industry
+            You will make a successful career change to an in-demand industry
           </h3>
           <p className="text-[16px] sm:text-gray-600">
-            Tech is booming. Unlike the USA, there are very few developers in
-            Malaysia. So, there&lsquo;s huge room for growth and opportunities.
-            Act now!
+            Tech is booming. There are very few developers in Malaysia. So,
+            there&lsquo;s huge room for growth and opportunities. Act now!
           </p>
         </motion.div>
       </motion.div>
