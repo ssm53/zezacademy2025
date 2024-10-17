@@ -46,15 +46,23 @@ const OurFounder = () => {
           }`}
         >
           <div className="relative rounded-lg overflow-hidden shadow-lg">
-            <Image
+            {/* <Image
               src="/founder.svg"
               alt="Founder presenting"
               width={800}
               height={450}
               className="object-cover w-full h-full"
               priority
+            /> */}
+            <img
+              src="https://res.cloudinary.com/ds2hlirwr/image/upload/v1729196914/bootcamp-website/images/g1rounbqbfvvxil84ec0.jpg"
+              alt="Founder presenting"
+              width={800}
+              height={450}
+              className="object-cover w-full h-full"
+              priority
             />
-            <a
+            {/* <a
               href="https://www.youtube.com/watch?v=HF0iqQ2ZzFU&t=2s"
               className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-30"
               aria-label="Play video"
@@ -66,7 +74,7 @@ const OurFounder = () => {
               >
                 <path d="M8 5v14l11-7L8 5z" />
               </svg>
-            </a>
+            </a> */}
           </div>
         </motion.div>
 

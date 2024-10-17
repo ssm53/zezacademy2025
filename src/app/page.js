@@ -28,10 +28,9 @@ export default function Home() {
     <>
       <Header />
       <Hero />
-      <SixHundred />
-      <OurFounder />
-      <OurCohorts />
       <BootcampSection />
+      <SixHundred />
+      <OurCohorts />
       <WhyChoose />
       <InfoSection />
       <TeachingMethod />
@@ -40,6 +39,7 @@ export default function Home() {
       <GetStarted />
       <PricingTable />
       <CurriculumTable />
+      <OurFounder />
       <Pricing />
       {/* <Testimonials /> */}
       {/* <ContactUs /> */}
