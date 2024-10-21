@@ -54,7 +54,10 @@ const WhatLearn = () => {
       </div>
 
       {/* Admission Requirements Section */}
-      <div className="px-6 mt-6 bg-secondary text-white py-8 rounded-2xl">
+      <div
+        className="px-6 mt-6 bg-secondary text-white py-8 rounded-2xl"
+        id="admission-requirements"
+      >
         <h3 className="sm:text-4xl text-2xl font-semibold mb-4 text-center lg:text-start">
           Admission Requirements
         </h3>
@@ -62,7 +65,7 @@ const WhatLearn = () => {
           <strong>
             Proven Motivation to Learn <br />
           </strong>{" "}
-          that&apos;s it... but we take this seriously.
+          There is only one requirement, but we take this very seriously.
         </p>
         <p className="max-w-3xl text-center lg:text-start text-lg">
           Complete beginners are welcome

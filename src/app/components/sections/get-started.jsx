@@ -26,16 +26,17 @@ const GetStarted = () => {
               How to Get Started?
             </h2>
             <p className="text-gray-600 mt-2">
-              Start Your Coding Journey in 3 Simple Steps
+              Start Your Coding Journey in 1 simple step
             </p>
           </div>
           <div className="mt-4 md:mt-0">
-            <button
+            <a
               className="bg-secondary sm:w-[190px] w-[160px] h-[50px] text-white font-semibold px-6 py-3 rounded-[5px] hover:bg-secondary"
-              onClick={togglePopup}
+              href="/apply-now"
+              target="_blank"
             >
               Apply Now
-            </button>
+            </a>
           </div>
         </div>
 
@@ -55,11 +56,18 @@ const GetStarted = () => {
               </div>
             </div>
             <h4 className=" text-xl font-semibold text-gray-700">
-              Fill out the short application form
+              Fill out the short application form{" "}
+              <a
+                className="underline text-xl font-semibold text-gray-700"
+                href="/apply-now"
+                target="_blank"
+              >
+                here
+              </a>
             </h4>
             <p className="text-gray-600">
               It should take you less than 10 minutes. We will get back to you
-              within 5 days.
+              within 3 days if you qualify for the final interview
             </p>
           </motion.div>
 

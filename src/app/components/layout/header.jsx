@@ -72,21 +72,21 @@ const Header = () => {
             </h1>
           </Link>
           <div className="flex items-center space-x-3">
-            <button
+            {/* <button
               onClick={togglePopup}
               type="button"
               className="text-[#FFFFFF] bg-secondary focus:ring-4 font-medium rounded-[3px] text-sm px-4 py-2 text-center hidden md:block"
             >
               Apply Now
-            </button>
-            {/* <a
-              href="https://docs.google.com/forms/d/e/1FAIpQLSdZbUvC0vVXuVLHg5UxAQ11wJSJeVoxtWP_EoIsfZRRUNMo5w/viewform?usp=sf_link"
+            </button> */}
+            <a
+              href="/apply-now"
               target="_blank"
               rel="noopener noreferrer"
               className="text-[#FFFFFF] bg-secondary focus:ring-4 font-medium rounded-[3px] text-sm px-4 py-2 text-center hidden md:block"
             >
               Apply Now
-            </a> */}
+            </a>
 
             {/* Custom Drawer Trigger - Hamburger Icon */}
             <button
@@ -146,10 +146,13 @@ const Header = () => {
                     "Home",
                     // "Free Materials",
                     "Our Founder",
-                    // "Our Cohorts",
+                    "Our Classes",
+                    "Contact Us",
+                    "Zez Academy vs University",
+                    "Fixed vs Flexible Option",
                     "Why Us",
                     "Our Teaching Methods",
-                    "Our Curriculum",
+                    "Admission Requirements",
                     "How to Get Started",
                     "Pricing",
                     // "Our Students",
@@ -183,7 +186,7 @@ const Header = () => {
 
                 {/* Social Icons - Bottom Right */}
                 <div className="flex space-x-4">
-                  <Link href="https://linkedin.com">
+                  <Link href="https://www.linkedin.com/in/shaun-shanil-menezes/">
                     <FaLinkedin className="w-6 h-6 text-gray-800 hover:text-secondary" />
                   </Link>
                   <Link href="https://twitter.com">
@@ -192,7 +195,7 @@ const Header = () => {
                   <Link href="https://youtube.com">
                     <FaYoutube className="w-6 h-6 text-gray-800 hover:text-secondary" />
                   </Link>
-                  <Link href="https://instagram.com">
+                  <Link href="https://www.instagram.com/zezacademy/">
                     <FaInstagram className="w-6 h-6 text-gray-800 hover:text-secondary" />
                   </Link>
                 </div>

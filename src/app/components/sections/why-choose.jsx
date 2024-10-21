@@ -19,26 +19,24 @@ const WhyChoose = () => {
   const features = [
     {
       title: "Job Guarantee or It’s Free",
-      description:
-        "Get a job after completion of the course, or your money back.",
+      description: "Get a job or its 100% FREE.",
       icon: "/100.svg",
     },
-    {
-      title: "Exclusive Cohorts",
-      description:
-        "Get more one-on-one time and personal guidance from your instructor.",
-      icon: "/user.svg",
-    },
-    {
-      title: "Instant Help",
-      description: "Get the help you need within 15 minutes.",
-      icon: "/chatbot.svg",
-    },
-    {
-      title: "Build AI Products",
-      description: "Learn how to create AI-driven solutions.",
-      icon: "/ai.svg",
-    },
+    // {
+    //   title: "Exclusive Cohorts",
+    //   description: "We do not accept many students at one time.",
+    //   icon: "/user.svg",
+    // },
+    // {
+    //   title: "Instant Help",
+    //   description: "Get the help you need within 15 minutes.",
+    //   icon: "/chatbot.svg",
+    // },
+    // {
+    //   title: "Build AI Products",
+    //   description: "Learn how to create AI-driven solutions.",
+    //   icon: "/ai.svg",
+    // },
     {
       title: "Work with Real Clients",
       description:
@@ -48,7 +46,7 @@ const WhyChoose = () => {
     {
       title: "Career Support",
       description:
-        "We help you with job applications, resumes, and interview tips.",
+        "We help you with job applications, resumes, and interview. We also make sure you stay accountable. You wont like it but it will be good for you",
       icon: "/people.svg",
     },
   ];
@@ -153,7 +151,7 @@ const WhyChoose = () => {
         </div>
 
         {/* Bonuses Section */}
-        <ul className="w-full text-[#FFFFFFCC] list-disc ml-[-1px] mt-4 space-y-2 border border-[#19395F] p-8 rounded-[15px]">
+        {/* <ul className="w-full text-[#FFFFFFCC] list-disc ml-[-1px] mt-4 space-y-2 border border-[#19395F] p-8 rounded-[15px]">
           <strong>Bonuses</strong>
           <li>
             You will build an actual product for an actual company. We connect
@@ -168,6 +166,19 @@ const WhyChoose = () => {
             You will build a software for a real-life business. We connect you
             to them, and get your first client!
           </li>
+        </ul> */}
+        <ul className="w-full text-[#FFFFFFCC] list-disc ml-[-1px] mt-4 space-y-2 border border-[#19395F] p-8 rounded-[15px]">
+          <strong>Bonuses</strong>
+          <li>
+            You will build an actual product for an actual company. We connect
+            you to them.
+          </li>
+          <li>You will learn to build AI products.</li>
+          <li>
+            You will learn how to create a website in less than 30 minutes
+            (which you can sell to businesses).
+          </li>
+          <li>You will get proper career support, so you are accountable</li>
         </ul>
       </div>
     </div>

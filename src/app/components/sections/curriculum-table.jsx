@@ -2,17 +2,19 @@ const data = [
   {
     label: "Duration",
     fullTime: "3-4 months",
-    partTime: "6-8 months",
+    partTime: "4-6 months",
   },
   {
     label: "Study Hours",
     fullTime: "6-7 hrs a day",
-    partTime: "Up To You",
+    partTime:
+      "Up to You! Regardless, we are available between 10am-5pm & 7pm-10pm mon-fri to teach you.",
   },
   {
     label: "Class Hours",
     fullTime: "Mon - Fri: 10am - 5pm",
-    partTime: "Mon - Fri: 7pm - 10pm",
+    partTime:
+      "Up to You! Regardless, we are available between 10am-5pm & 7pm-10pm mon-fri to teach you.",
   },
   {
     label: "Cost",
@@ -20,38 +22,23 @@ const data = [
     partTime: "USD 1.6K",
   },
   {
-    label: "Remote",
-    fullTime: "✔️",
-    partTime: "✔️",
-  },
-  {
     label: "On-site",
     fullTime: "✔️ (KL, Malaysia)",
     partTime: "X",
   },
   {
-    label: "Access to All Projects",
+    label: "Full Curricullum (AI projects, e-commerce marketplace etc.)",
+    fullTime: "✔️",
+    partTime: "✔️",
+  },
+  {
+    label: "Build App for Real Business (we connect you to them)",
     fullTime: "✔️",
     partTime: "✔️",
   },
 
   {
-    label: "Career Coaching",
-    fullTime: "✔️",
-    partTime: "✔️",
-  },
-  {
-    label: "Career Prep",
-    fullTime: "✔️",
-    partTime: "✔️",
-  },
-  {
-    label: "Real-life Project for Business",
-    fullTime: "✔️",
-    partTime: "✔️",
-  },
-  {
-    label: "Build capstone projects (AI chatbot, e-commerce marketplace etc.)",
+    label: "Career Support",
     fullTime: "✔️",
     partTime: "✔️",
   },
@@ -66,10 +53,13 @@ export function TableDemo() {
             <tr>
               <th className="py-4 px-6"></th>
               <th className="py-4 px-6 bg-primary text-white font-bold">
-                Full-Time
+                Fixed
+                <br />
+                (Full-TIme)
               </th>
               <th className="py-4 px-6 bg-secondary text-white font-bold">
-                Part-Time
+                Flexible <br />
+                (Part-Time)
               </th>
             </tr>
           </thead>
@@ -102,11 +92,11 @@ export function TableDemo() {
 
 const CurriculumTable = () => {
   return (
-    <div id="our-curriculum" className=" bg-[#F7F8F9]">
+    <div id="fixed-vs-flexible-option" className=" bg-[#F7F8F9]">
       <section className="max-w-[1300px] mx-auto py-12 ">
         <div className="px-4 lg:px-0 text-start mb-8">
           <h2 className=" sm:text-4xl text-[1.5rem] leading-[1.5rem] font-bold text-primary">
-            Full-Time vs Self-Paced <br /> Curriculum
+            Fixed vs Flexible <br /> Option
           </h2>
           {/* <p className="text-gray-500 mt-2">
             Our bootcamp is only $500, a 90% discount from the regular price of

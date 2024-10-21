@@ -1,4 +1,11 @@
-import { FaLinkedin, FaInstagram, FaTwitter, FaYoutube } from "react-icons/fa";
+import {
+  FaLinkedin,
+  FaInstagram,
+  FaTwitter,
+  FaYoutube,
+  FaWhatsapp,
+  FaEnvelope,
+} from "react-icons/fa";
 import Image from "next/image";
 
 const Footer = () => {
@@ -17,30 +24,23 @@ const Footer = () => {
               Lorem ipsum dolor sit amet lorem <br /> consectetur pretium neque
               l
             </p> */}
-            <p className="mt-4 flex items-center justify-center md:justify-start">
-              <Image
-                src="/mailbox.svg"
-                alt="mail icon"
-                width={20} // Set appropriate width
-                height={20} // Set appropriate height
-                className="w-6 h-6 mr-2"
-              />
-              shaun@zezacademy.com
-            </p>
-            <p className="mt-2 flex items-center justify-center md:justify-start">
-              <Image
-                src="/phone.svg"
-                alt="phone icon"
-                width={20} // Set appropriate width
-                height={20} // Set appropriate height
-                className="w-6 h-6 mr-2"
-              />
-              +6 012 339 7028
-            </p>
+            <a
+              href="https://wa.me/60123397028"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center"
+            >
+              <FaWhatsapp className="text-xl mr-3" />
+              <p>+6 012 339 7028</p>
+            </a>
+            <a href="mailto:shaun@zezacademy.com" className="flex items-center">
+              <FaEnvelope className="text-xl mr-3" />
+              <p>shaun@zezacademy.com</p>
+            </a>
           </div>
 
           {/* Site Map */}
-          <div className="hidden md:block">
+          {/* <div className="hidden md:block">
             <h3 className="text-lg font-semibold">Site Map</h3>
             <ul className="mt-4 space-y-2">
               <li>
@@ -74,7 +74,7 @@ const Footer = () => {
                 </a>
               </li>
             </ul>
-          </div>
+          </div> */}
 
           {/* Social Media */}
           <div>
@@ -83,7 +83,10 @@ const Footer = () => {
               <a href="#" className="hover:text-secondary">
                 <FaLinkedin size={24} />
               </a>
-              <a href="#" className="hover:text-secondary">
+              <a
+                href="https://www.instagram.com/zezacademy/"
+                className="hover:text-secondary"
+              >
                 <FaInstagram size={24} />
               </a>
               <a href="#" className="hover:text-secondary">

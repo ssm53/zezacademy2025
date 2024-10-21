@@ -142,19 +142,22 @@ const Pricing = () => {
         {/* Right Section (Pricing Card) */}
         <div className="bg-[#F7F8F9] rounded-[15px] p-8 shadow-md">
           <h3 className="text-[22px] font-bold text-primary mb-2">Pricing</h3>
+          <h3 className="text-[22px] font-bold text-red-700 mb-2">
+            These pricings are only for 2024, and it will increase in 2025
+          </h3>
           <div className="bg-primary shadow-sm rounded-lg p-6 relative">
             {/* Pricing Box */}
             <h4 className="text-4xl font-extrabold text-white">{price}</h4>
             <p className="mt-2 text-sm text-white">{description}</p>
 
             {/* Apply Now Button */}
-            <button
-              href="https://docs.google.com/forms/d/e/1FAIpQLSdZbUvC0vVXuVLHg5UxAQ11wJSJeVoxtWP_EoIsfZRRUNMo5w/viewform?usp=sf_link"
+            <a
+              href="/apply-now"
+              target="_blank"
               className="inline-block mt-4 bg-secondary hover:bg-primary-dark text-white font-semibold text-center rounded-lg px-6 py-3"
-              onClick={togglePopup}
             >
               Apply Now
-            </button>
+            </a>
           </div>
         </div>
       </div>

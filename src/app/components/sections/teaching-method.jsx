@@ -49,10 +49,7 @@ const TeachingMethod = () => {
               The Zez Method
             </h2>
             <p className="text-[16px] text-gray-600">
-              This is not your high school or university There won&apos;t be any
-              lectures. We have already prepared 700+ hours of material for you.
-              Its easy to listen/read. Its not easy to apply what you learnt.
-              That&lsquo;s what we help you with.
+              We help you when you get stuck and we get you building apps fast.
             </p>
             <ul className="list-disc ml-6 space-y-2 text-[16px] text-gray-600">
               <li>80% practical, 20% theory.</li>

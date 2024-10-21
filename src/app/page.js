@@ -29,20 +29,20 @@ export default function Home() {
       <Header />
       <Hero />
       <BootcampSection />
-      <SixHundred />
+      <OurFounder />
       <OurCohorts />
-      <WhyChoose />
       <InfoSection />
+      <SixHundred />
+      <WhyChoose />
       <TeachingMethod />
       <HandsOnLearning />
       <WhatLearn />
       <GetStarted />
       <PricingTable />
       <CurriculumTable />
-      <OurFounder />
+      <ContactUs />
       <Pricing />
       {/* <Testimonials /> */}
-      {/* <ContactUs /> */}
       <FaqAccordian />
       <Footer />
     </>

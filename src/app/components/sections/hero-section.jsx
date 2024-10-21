@@ -35,24 +35,44 @@ const Hero = () => {
       <div className="w-full sm:max-w-[1300px] mx-auto grid md:grid-cols-2 gap-8 items-center md:gap-[14rem]">
         {/* Left Side - Heading and Text */}
         <div className="w-full">
+          {/* <motion.h1
+            className="text-2xl sm:text-6xl font-bold text-white text-center md:text-left"
+            initial="hidden"
+            animate="visible"
+            variants={textVariants}
+          > */}
+
+          {/* <Typical
+              className="inline-block"
+              steps={["Z", 1000, "Ze", 1000, "Zez", 1000]}
+              loop={Infinity}
+              wrapper="span"
+            /> */}
+          {/* <span className="text-secondary">Zez </span>
+            <span>Academy&lsquo;s </span>
+            <br className="hidden md:block" />
+            Full Stack <span className="text-secondary">
+              Coding
+            </span> <br /> Program
+          </motion.h1> */}
+
           <motion.h1
             className="text-2xl sm:text-6xl font-bold text-white text-center md:text-left"
             initial="hidden"
             animate="visible"
             variants={textVariants}
           >
-            <span className="text-secondary">Zez </span>
             {/* <Typical
               className="inline-block"
               steps={["Z", 1000, "Ze", 1000, "Zez", 1000]}
               loop={Infinity}
               wrapper="span"
             /> */}
-            <span>Academy&lsquo;s </span>
-            <br className="hidden md:block" />
-            Full Stack <span className="text-secondary">
-              Coding
-            </span> <br /> Program
+            <span>Be a</span>{" "}
+            <span className="text-secondary">Full-Stack Developer</span>{" "}
+            <span>in 4 months</span> <br className="hidden md:block" />
+            Get a tech job or its{" "}
+            <span className="text-secondary">100% FREE</span>
           </motion.h1>
 
           {/* <motion.p
@@ -109,7 +129,7 @@ const Hero = () => {
               animate="visible"
               variants={textVariants}
             >
-              Malaysian friendly pricing
+              Fully remote & need to quit your job
             </motion.p>
           </motion.div>
           <motion.div className="flex items-center mt-6 justify-center md:justify-start">
@@ -133,7 +153,7 @@ const Hero = () => {
               animate="visible"
               variants={textVariants}
             >
-              Become a Full-Stack Developer in 4 Months
+              Malaysian friendly pricing
             </motion.p>
           </motion.div>
 
@@ -153,12 +173,12 @@ const Hero = () => {
               />
             </svg>
             <motion.p
-              className="ml-2 text-sm md:text-lg text-gray-300 text-center md:text-left font-bold"
+              className="ml-2 text-sm md:text-lg text-gray-300 text-center md:text-left"
               initial="hidden"
               animate="visible"
               variants={textVariants}
             >
-              Get a developer job or it is 100% FREE
+              Career support after graduation
             </motion.p>
           </motion.div>
 
@@ -175,24 +195,23 @@ const Hero = () => {
             >
               Apply Now
             </motion.button> */}
-            {/* <motion.a
-              href="https://docs.google.com/forms/d/e/1FAIpQLSdZbUvC0vVXuVLHg5UxAQ11wJSJeVoxtWP_EoIsfZRRUNMo5w/viewform?usp=sf_link"
+            <motion.a
+              href="/apply-now"
               target="_blank"
-              rel="noopener noreferrer"
               className="w-[150px] sm:w-[193px] h-[50px] text-sm bg-secondary hover:bg-secondary text-white px-6 py-3 rounded-[5px] text-center"
               variants={buttonVariants}
               whileHover="hover"
             >
               Apply Now
-            </motion.a> */}
-            <motion.button
+            </motion.a>
+            {/* <motion.button
               onClick={togglePopup}
               className="w-[150px] sm:w-[193px] h-[50px] text-sm bg-secondary hover:bg-secondary text-white px-6 py-3 rounded-[5px] text-center"
               variants={buttonVariants}
               whileHover="hover"
             >
               Apply Now
-            </motion.button>
+            </motion.button> */}
 
             {/* <motion.button
               onClick={togglePopup}
@@ -214,7 +233,7 @@ const Hero = () => {
           </motion.p> */}
 
           {/* Animating the Info Boxes */}
-          <motion.div
+          {/* <motion.div
             className="w-auto sm:w-[571px] wh-auto"
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
@@ -234,7 +253,7 @@ const Hero = () => {
                 Flexible payment methods
               </div>
             </div>
-          </motion.div>
+          </motion.div> */}
         </div>
         {/* Animating the Card Stack */}
         {/* <motion.div

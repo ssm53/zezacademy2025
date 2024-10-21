@@ -8,27 +8,37 @@ const faqs = [
     answer: "You really dont. Zez Academy is catered for complete beginners. ",
   },
   {
-    question: "its expensive. Do you have installment payment options?",
-    answer: "Yes yes, we do! Check our pricing section above.",
+    question: "Do you have installment payment options?",
+    answer: "Yes, we do! Check our pricing section above.",
   },
   {
-    question: "How long is the bootcamp?",
+    question: "Its too expensive.",
     answer:
-      "Out full-time option is 3-4 months. Our self-paced option has no timeline, but it should take you between 6-8 months.",
+      "There are 0 programs out there offering a lower price, with a job guarantee and actual live support. If this is too expensive for you, even with the installment payment options, I then suggest that you learn through self-studying. Its possible, but its difficult.",
+  },
+  {
+    question: "What is the fixed and flexible option?",
+    answer:
+      "Our flexible option is where you can choose your own hours of study. This is suitable for students who can only do this part-time. We will be available to help you from 7-10pm mon-fri",
+  },
+  {
+    question: "Do you have a full-time option?",
+    answer:
+      "Yes, we do. This is only available for students who choose the fixed option. Our class hours are from 10am-5pm mon-fri",
   },
   {
     question: "Do I really get my money-back if I dont get a job?",
     answer:
-      "Yes, if continue applying for jobs and you dont get a job upon graduation, you get all your money-back.",
+      "Yes, if you continue applying for jobs and you dont get a job upon graduation, you get all your money-back.",
   },
   {
-    question: "What do I need to bring to the bootcamp?",
+    question: "What do I need to bring?",
     answer: "All you need is a laptop and the motivation to learn.",
   },
   {
-    question: "Is the bootcamp remote or in-person?",
+    question: "Is this remote or in-person?",
     answer:
-      "For full-time students, both options are available. On-site location is in Kinrara, Selangor, Malaysia. For self-paced students, out bootcamp is fully remote.",
+      "For full-time/fixed students, both options are available. On-site location is in Kinrara, Selangor, Malaysia. For students with the flexible option, it is fully remote.",
   },
   {
     question: "How can you teach us so fast and get us a job?",
