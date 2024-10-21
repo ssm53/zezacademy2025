@@ -151,7 +151,7 @@ const Header = () => {
                     "Zez Academy vs University",
                     "Fixed vs Flexible Option",
                     "Why Us",
-                    "Our Teaching Methods",
+                    // "Our Teaching Methods",
                     "Admission Requirements",
                     "How to Get Started",
                     "Pricing",
@@ -179,13 +179,13 @@ const Header = () => {
               </div>
 
               {/* Drawer Footer - Always visible on desktop and mobile */}
-              <div className="absolute bottom-8 left-8 right-8 border-t border-gray-200 pt-4 flex justify-between items-center">
-                <p className="text-sm text-gray-500">
+              {/* <div className="absolute bottom-8 left-8 right-8 border-t border-gray-200 pt-4 flex justify-between items-center"> */}
+              {/* <p className="text-sm text-gray-500">
                   © 2024 Zez Academy. All Rights Reserved.
-                </p>
+                </p> */}
 
-                {/* Social Icons - Bottom Right */}
-                <div className="flex space-x-4">
+              {/* Social Icons - Bottom Right */}
+              {/* <div className="flex space-x-4">
                   <Link href="https://www.linkedin.com/in/shaun-shanil-menezes/">
                     <FaLinkedin className="w-6 h-6 text-gray-800 hover:text-secondary" />
                   </Link>
@@ -198,8 +198,8 @@ const Header = () => {
                   <Link href="https://www.instagram.com/zezacademy/">
                     <FaInstagram className="w-6 h-6 text-gray-800 hover:text-secondary" />
                   </Link>
-                </div>
-              </div>
+                </div> */}
+              {/* </div> */}
             </div>
           </div>
         </div>
