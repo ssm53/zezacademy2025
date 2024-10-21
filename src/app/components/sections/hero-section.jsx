@@ -612,7 +612,7 @@ const Hero = () => {
             animate="visible"
             variants={textVariants}
           >
-            Fully remote & need to quit your job
+            Fully remote & no need to quit your job
           </motion.p>
         </motion.div>
         <motion.div className="flex items-center mt-6 justify-center">
