@@ -145,7 +145,7 @@ const OurCohorts = () => {
             Our Next Cohort
           </span>
           <h3 className="text-sm sm:text-xl font-semibold text-[#0D2138] leading-tight">
-            1st November 2024
+            4th November 2024
           </h3>
           <p className="text-red-600 mt-2 text-xs sm:text-base font-bold uppercase">
             ONLY 4 SPOTS LEFT
