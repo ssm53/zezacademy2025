@@ -421,7 +421,7 @@ const Pricing = () => {
   };
 
   const getPriceDetails = () => {
-    if (moneyBackGuarantee) {
+    if (!moneyBackGuarantee) {
       // Prices with money-back guarantee
       switch (paymentPlan) {
         case "one-time":
@@ -432,7 +432,7 @@ const Pricing = () => {
         case "6-months":
           return {
             price: "RM 1500/month for 6 months",
-            description: "6-month payment plan with money-back guarantee",
+            description: "9-month payment plan with money-back guarantee",
           };
         case "12-months":
           return {
@@ -455,7 +455,7 @@ const Pricing = () => {
           };
         case "6-months":
           return {
-            price: "RM 500/month for 6 months",
+            price: "RM 1000/month for 6 months",
             description: "6-month payment plan",
           };
         case "12-months":
@@ -494,13 +494,17 @@ const Pricing = () => {
             >
               <option value="one-time">One-time payment</option>
               <option value="6-months">Over 6 months</option>
-              <option value="12-months">Over 12 months</option>
+              {/* <option value="12-months">Over 12 months</option> */}
             </select>
           </div>
 
           {/* Money-back Guarantee Option */}
           <div className="mt-4 flex items-center">
-            <label className="text-gray-700 mr-2">Money-back guarantee?</label>
+            <label className="text-blue-700 mr-2 font-bold ">
+              Dont need a job? You want to go down the startup founder/freelance
+              route?
+            </label>
+
             <input
               type="checkbox"
               checked={moneyBackGuarantee}
