@@ -535,9 +535,9 @@ const Hero = () => {
   return (
     <section
       id="home"
-      className="bg-[#0F243D] py-12 pb-16 px-6 w-auto sm:w-full sm:h-[40rem] h-auto flex items-center justify-center"
+      className="bg-[#0F243D] py-12 pb-16 px-6 w-auto sm:w-full sm:h-[50rem] h-auto flex items-center justify-center"
     >
-      <div className="w-full sm:max-w-[1300px] mx-auto flex flex-col items-center">
+      <div className=" pt-[80px] w-full sm:max-w-[1300px] mx-auto flex flex-col items-center">
         <motion.h1
           className="text-2xl sm:text-6xl font-bold text-white text-center"
           initial="hidden"

@@ -33,7 +33,7 @@ const handleOutsideClick = (e, setIsOpen) => {
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isHydrated, setIsHydrated] = useState(false); // New hydration flag
-  const isDesktop = useMediaQuery(1024); // Detect if the screen is larger than 1024px (lg: breakpoint)
+  const isDesktop = useMediaQuery(1024);
   const [showPopup, setShowPopup] = useState(false);
 
   const togglePopup = () => {
@@ -54,23 +54,26 @@ const Header = () => {
       document.addEventListener("click", clickHandler);
       return () => document.removeEventListener("click", clickHandler);
     }
-  }, [isOpen]); // `handleOutsideClick` moved out, now no need to include it here
+  }, [isOpen]);
 
   if (!isHydrated) {
-    // Prevents rendering until hydration is complete
     return null;
   }
 
   return (
     <div className="relative border-b border-[#243548]">
-      <nav className="bg-primary">
+      <nav className="bg-primary  fixed top-0 w-full z-10">
         <div className="max-w-[1300px] h-[80px] flex flex-wrap items-center justify-between mx-auto p-6 lg:p-0">
-          <Link href="#home" scroll={false}>
-            <h1 className="text-3xl md:text-4xl font-bold text-white text-center md:text-left">
+          <Link href="/" passHref>
+            <h1
+              id="home"
+              className="text-3xl md:text-4xl font-bold text-white text-center md:text-left"
+            >
               <span className="text-secondary">Zez</span>{" "}
               <span className="text-white">Academy</span>
             </h1>
           </Link>
+
           <div className="flex items-center space-x-3">
             {/* <button
               onClick={togglePopup}
