@@ -18,8 +18,8 @@ const data = [
   },
   {
     label: "Cost",
-    fullTime: "USD 1.6K",
-    partTime: "USD 1.6K",
+    fullTime: "USD 900-1.6K",
+    partTime: "USD 900-1.6K",
   },
   {
     label: "On-site",

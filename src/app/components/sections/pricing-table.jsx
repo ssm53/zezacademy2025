@@ -1,8 +1,8 @@
 const data = [
   {
     label: "Total Cost",
-    degree: "USD 80-150K",
-    ourBootcamp: "USD 1.6K",
+    degree: "USD 80K-150K",
+    ourBootcamp: "USD 900-USD 1.6K",
   },
 
   {
