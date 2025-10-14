@@ -6,12 +6,12 @@ const WhatLearn = () => {
       {/* Heading Section */}
       <div className="text-start mb-8">
         <h2 className="text-4xl font-bold text-primary">
-          What You will Learn In
+          What Will You Learn In
         </h2>
         <h3 className="text-4xl font-bold text-secondary">This Course?</h3>
-        <p className="text-[#0F243DCC] mt-4">
+        {/* <p className="text-[#0F243DCC] mt-4">
           Learn the tech-stack by used by most companies
-        </p>
+        </p> */}
 
         {/* Apply Now Button */}
         {/* <div className="flex text-center mt-4">
@@ -65,11 +65,11 @@ const WhatLearn = () => {
           <strong>
             Proven Motivation to Learn <br />
           </strong>{" "}
-          There is only one requirement, but we take this very seriously.
+          That is only one requirement, but we take this very seriously. Complete beginners are welcome.
         </p>
-        <p className="max-w-3xl text-center lg:text-start text-lg">
+        {/* <p className="max-w-3xl text-center lg:text-start text-lg">
           Complete beginners are welcome
-        </p>
+        </p> */}
       </div>
     </section>
   );

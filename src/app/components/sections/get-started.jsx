@@ -25,9 +25,9 @@ const GetStarted = () => {
             <h2 className="sm:text-4xl text-2xl font-bold text-primary">
               How to Get Started?
             </h2>
-            <p className="text-gray-600 mt-2">
+            {/* <p className="text-gray-600 mt-2">
               Start Your Coding Journey in 1 simple step
-            </p>
+            </p> */}
           </div>
           <div className="mt-4 md:mt-0">
             <a
@@ -65,10 +65,10 @@ const GetStarted = () => {
                 here
               </a>
             </h4>
-            <p className="text-gray-600">
+            {/* <p className="text-gray-600">
               It should take you less than 10 minutes. We will get back to you
               within 3 days if you qualify for the final interview
-            </p>
+            </p> */}
           </motion.div>
 
           <motion.div
@@ -81,10 +81,10 @@ const GetStarted = () => {
               </div>
             </div>
             <h4 className=" text-xl font-semibold text-gray-700">Interview</h4>
-            <p className="text-gray-600">
+            {/* <p className="text-gray-600">
               A 20-minute interview to understand your goals and ensure you are
               a good fit for our bootcamp.
-            </p>
+            </p> */}
           </motion.div>
 
           <motion.div
@@ -97,10 +97,10 @@ const GetStarted = () => {
               </div>
             </div>
             <h4 className=" text-xl font-semibold text-gray-700">Acceptance</h4>
-            <p className="text-gray-600">
+            {/* <p className="text-gray-600">
               If selected, sit back and relax as we onboard you. You will get
               our free pre-bootcamp material.
-            </p>
+            </p> */}
           </motion.div>
         </motion.div>
       </div>

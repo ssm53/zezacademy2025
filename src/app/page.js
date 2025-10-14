@@ -33,7 +33,7 @@ export default function Home() {
       <OurCohorts />
       <InfoSection />
       <SixHundred />
-      <WhyChoose />
+      {/* <WhyChoose /> */}
       <TeachingMethod />
       <HandsOnLearning />
       <WhatLearn />

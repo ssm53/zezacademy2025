@@ -18,12 +18,12 @@ const data = [
   },
   {
     label: "Cost",
-    fullTime: "USD 900-1.6K",
-    partTime: "USD 900-1.6K",
+    fullTime: "USD 1.6K-USD 2.8K",
+    partTime: "USD 1.6K-USD 2.8K",
   },
   {
     label: "On-site",
-    fullTime: "✔️ (KL, Malaysia)",
+    fullTime: "✔️ (Selangor, Malaysia)",
     partTime: "X",
   },
   {
@@ -31,11 +31,11 @@ const data = [
     fullTime: "✔️",
     partTime: "✔️",
   },
-  {
-    label: "Build App for Real Business (we connect you to them)",
-    fullTime: "✔️",
-    partTime: "✔️",
-  },
+  // {
+  //   label: "Build App for Real Business (we connect you to them)",
+  //   fullTime: "✔️",
+  //   partTime: "✔️",
+  // },
 
   {
     label: "Career Support",
@@ -53,13 +53,11 @@ export function TableDemo() {
             <tr>
               <th className="py-4 px-6"></th>
               <th className="py-4 px-6 bg-primary text-white font-bold">
-                Fixed
-                <br />
-                (Full-TIme)
+                Full-Time
+               
               </th>
               <th className="py-4 px-6 bg-secondary text-white font-bold">
-                Flexible <br />
-                (Part-Time)
+                Part-Time 
               </th>
             </tr>
           </thead>
@@ -96,7 +94,7 @@ const CurriculumTable = () => {
       <section className="max-w-[1300px] mx-auto py-12 ">
         <div className="px-4 lg:px-0 text-start mb-8">
           <h2 className=" sm:text-4xl text-[1.5rem] leading-[1.5rem] font-bold text-primary">
-            Fixed vs Flexible <br /> Option
+            Full-TIme vs Part-Time <br /> Option
           </h2>
           {/* <p className="text-gray-500 mt-2">
             Our bootcamp is only $500, a 90% discount from the regular price of

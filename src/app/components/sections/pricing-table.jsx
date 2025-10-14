@@ -2,7 +2,7 @@ const data = [
   {
     label: "Total Cost",
     degree: "USD 80K-150K",
-    ourBootcamp: "USD 900-USD 1.6K",
+    ourBootcamp: "USD 1.6K-USD 2.8K",
   },
 
   {
@@ -31,11 +31,11 @@ const data = [
     degree: "X",
     ourBootcamp: "✔️",
   },
-  {
-    label: "Real-life Project for a real business",
-    degree: "X",
-    ourBootcamp: "✔️",
-  },
+  // {
+  //   label: "Real-life Project for a real business",
+  //   degree: "X",
+  //   ourBootcamp: "✔️",
+  // },
 ];
 
 export function TableDemo() {

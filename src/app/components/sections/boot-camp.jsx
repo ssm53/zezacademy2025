@@ -47,19 +47,19 @@ export default function BootcampSection() {
           you. With <br /> personalized support and a community of learners,
           you’ll reach your <br /> goals faster than you think.
         </p> */}
-        <p className="mt-4 text-lg sm:text-xl font-semibold text-primary">
+        {/* <p className="mt-4 text-lg sm:text-xl font-semibold text-primary">
           Only for those who are serious about changing their career into tech
           and coding. You also should be:
-        </p>
+        </p> */}
         <ul className="mt-4 space-y-2 text-gray-600 list-disc pl-4">
           <li className="text-base sm:text-lg leading-relaxed">
-            a beginner or you have never coded before.
+            a beginner at coding
           </li>
           <li className="text-base sm:text-lg leading-relaxed">
-            40 years and below.
+            serious about learning tech, AI and software development
           </li>
           <li className="text-base sm:text-lg leading-relaxed">
-            in university/working/entrepreneur/unemployed
+            want to get a tech job / build your own app / build apps for others
           </li>
         </ul>
       </div>
@@ -92,12 +92,12 @@ export default function BootcampSection() {
             </div>
           </div>
           <h3 className="text-[18px] sm:text-lg font-semibold text-primary mb-2">
-            Land a Developer Job
+            Land a Tech/Developer Job
           </h3>
-          <p className="text-[16px] sm:text-gray-600">
+          {/* <p className="text-[16px] sm:text-gray-600">
             Go from complete beginner to job-ready developer. Launch your career
             in the fast-growing tech industry
-          </p>
+          </p> */}
         </motion.div>
 
         {/* Card 2 */}
@@ -117,14 +117,14 @@ export default function BootcampSection() {
             </div>
           </div>
           <h3 className="text-[18px] sm:text-lg font-semibold text-primary mb-2">
-            Build Your Own App
+            Build Your Own Apps From Scratch
           </h3>
-          <p className="text-[16px] sm:text-gray-600">
+          {/* <p className="text-[16px] sm:text-gray-600">
             Remember that app idea you had? Well, you&lsquo;ll have the skills
             to build it from scratch yourself saving you RM40000- RM150,000 in
             developer fees. This is the beginning of yout startup founder
             journey.
-          </p>
+          </p> */}
         </motion.div>
 
         {/* Card 3 */}
@@ -144,12 +144,12 @@ export default function BootcampSection() {
             </div>
           </div>
           <h3 className="text-[18px] sm:text-lg font-semibold text-primary mb-2">
-            Become a freelancer
+            Be a Freelancer - Build Apps For Others
           </h3>
-          <p className="text-[16px] sm:text-gray-600">
+          {/* <p className="text-[16px] sm:text-gray-600">
             Enjoy the freedom & flexibility as a freelance developer. Work
             remotely from anywhere can get paid in USD
-          </p>
+          </p> */}
         </motion.div>
       </motion.div>
     </section>

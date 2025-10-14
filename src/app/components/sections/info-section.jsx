@@ -10,29 +10,29 @@ const InfoSection = () => {
         {/* First Card */}
         <div className=" rounded-lg ">
           <h3 className="sm:text-4xl text-primary  text-2xl font-bold mb-2">
-            Cant Commit To a Fixed Schedule and can only do part-time?
+            Can only do part-time?
           </h3>
-          <p className="text-gray-600 mb-6">
+          {/* <p className="text-gray-600 mb-6">
             Don’t worry, we have our flexible option where you learn at your own
             pace. No need to quit your job.
-          </p>
+          </p> */}
           <a
             href="#our-curriculum"
             className="inline-block bg-blue-500 text-white py-2 px-6 rounded hover:bg-blue-600 transition"
           >
-            Tell Me More →
+            Yes →
           </a>
         </div>
 
         {/* Second Card */}
         <div className=" rounded-lg ">
           <h3 className="sm:text-4xl text-primary  text-2xl font-bold mb-2">
-            Zez Academy vs Master&lsquo;s/Degree
+            Our Bootcamp vs Master&lsquo;s/Degree
           </h3>
-          <p className="text-gray-600 mb-6">
+          {/* <p className="text-gray-600 mb-6">
             We offer an alternative to the long and expensive process of
             universities
-          </p>
+          </p> */}
           <a
             href="#comparison-section"
             className="inline-block bg-blue-500 text-white py-2 px-6 rounded hover:bg-blue-600 transition"

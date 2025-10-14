@@ -38,11 +38,11 @@ const HandsOnLearning = () => {
   return (
     <section className="bg-lightBlue py-16">
       <div className="text-center text-white mb-8 px-4">
-        <h2 className="text-4xl font-bold">A Hands-On Approach To Learning</h2>
-        <p className="text-lg mt-4 max-w-xl mx-auto">
+        <h2 className="text-4xl font-bold">Tech You Will Learn</h2>
+        {/* <p className="text-lg mt-4 max-w-xl mx-auto">
           This is not another theory-heavy course. We focus on doing.
           You&apos;ll build real projects, get feedback, and learn by doing.
-        </p>
+        </p> */}
       </div>
 
       <div className="overflow-hidden">

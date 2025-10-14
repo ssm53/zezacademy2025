@@ -45,34 +45,7 @@ const SixHundred = () => {
     >
       <div className="lg:flex lg:justify-between lg:items-center max-w-[1300px] mx-auto">
         {/* Left Section */}
-        {/* <motion.div
-          className="lg:w-1/2"
-          initial="hidden"
-          animate={isInView ? "visible" : "hidden"}
-          variants={leftSectionVariants}
-        >
-          <h3 className="text-sm font-semibold text-[#0F243DCC] uppercase mb-2">
-            600+ HOURS OF MATERIAL
-          </h3>
-          <h2 className="text-4xl font-bold text-primary mb-4">
-            Get Full Bootcamp Material
-            <span className="text-secondary">Access For Free</span>
-          </h2>
-          <p className="text-[#0F243DCC] mb-6">
-            From complete beginner to building full-stack apps. 7 actual
-            projects (not just your normal build a to-do list).
-          </p>
-          <p className="text-[#0F243DCC] mb-8">
-            Click the button below, fill up a few questions, and get your free
-            access! We will email you your login credentials within a day.
-          </p>
-          <button
-            href="#enrollement-section"
-            className="bg-primary text-white py-3 px-6 rounded-[5px] hover:bg-secondary transition w-full sm:w-auto"
-          >
-            Get Free Access
-          </button>
-        </motion.div> */}
+        
         <motion.div
           className="lg:w-1/2"
           initial="hidden"
@@ -85,14 +58,11 @@ const SixHundred = () => {
           <h2 className="text-4xl font-bold text-primary mb-4">
             Our <span className="text-secondary">Syllabus</span>
           </h2>
-          <p className="text-[#0F243DCC] mb-6">
-            Our expertly crafted syllabus is designed to take you from a
-            complete beginner to a job-ready coder, step by step.
-          </p>
+         
           <p className="text-[#0F243DCC] mb-8">
             This isn&lsquo;t your typical YouTube or Udemy experience—here,
-            you&lsquo;ll master coding the right way, with structure and
-            real-world applications.
+            you&lsquo;ll master coding the right way, with structure,
+            real-world applications and most importantly, live support when you are stuck.
           </p>
 
           {/* <button

@@ -46,15 +46,14 @@ const TeachingMethod = () => {
             animate={firstSectionInView ? "visible" : "hidden"}
           >
             <h2 className="text-2xl sm:text-4xl font-bold text-primary">
-              The Zez Method
+              Teaching Method
             </h2>
-            <p className="text-[16px] text-gray-600">
-              We help you when you get stuck and we get you building apps fast.
-            </p>
+           
             <ul className="list-disc ml-6 space-y-2 text-[16px] text-gray-600">
-              <li>80% practical, 20% theory.</li>
-              <li>We dive deep into building projects very fast.</li>
-              <li>Personalised help when you get stuck (you will get stuck)</li>
+              <li>Build projects from day 1</li>
+              <li>Personalised help you when you are stuck, but no spoon feeding</li>
+              <li>No boring lectures</li>
+             
             </ul>
           </motion.div>
 
@@ -107,20 +106,23 @@ const TeachingMethod = () => {
               Career Support
             </h2>
             <p className="text-[16px] text-gray-600">
-              Upon graduation, you will get:
+              Of course, you&apos;ll get a certificate but more importantly, you&apos;ll get a portfolio! And together, we will build you a
             </p>
             <ul className="flex gap-[2rem] list-disc ml-6 space-y-2 text-[16px] text-gray-600">
               <div>
-                <li>Graduation certificate</li>
-                <li>Resume templates</li>
-                <li>Cover letter templates</li>
-                <li>Portfolio templates</li>
+                <li>multiple resumes</li>
+                <li>multiple cover letters</li>
+                <li>your own website portfolio</li>
+                  <li>A great recommendation letter</li>
+                   <li>Real-life interview practice</li>
+                <li>Step by step process of getting a job FAST.</li>
+
               </div>
-              <div>
+              {/* <div>
                 <li>A great recommendation letter</li>
                 <li>Real-life interview practice</li>
                 <li>Step by step process of getting a job FAST.</li>
-              </div>
+              </div> */}
             </ul>
           </motion.div>
         </div>
