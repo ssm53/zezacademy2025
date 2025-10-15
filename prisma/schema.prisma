@@ -24,3 +24,10 @@ model Applicant {
   fullorpart       String?
   remoteoronsite   String?
 }
+
+model StarterPack {
+  id               Int     @id @default(autoincrement())
+  fullname         String?
+  email            String
+  whatsapp         String?
+}
