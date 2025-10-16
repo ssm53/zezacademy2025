@@ -8,9 +8,13 @@ const inter = Inter({
   variable: "--font-inter",
 });
 
+// export const metadata = {
+//   title: "Zez Academy",
+//   description: "Full-Stack Coding & AI Bootcamp",
+// };
 export const metadata = {
   title: "Zez Academy",
-  description: "Full-Stack Coding Bootcamp",
+  description: "Full-Stack Coding & AI Bootcamp",
 };
 
 export default function RootLayout({ children }) {
