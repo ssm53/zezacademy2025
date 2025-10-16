@@ -317,9 +317,9 @@ const ApplyNow = () => {
                 </div>
               </div>
 
-              <div className="mt-6 text-xs sm:text-sm text-white/70">
+              {/* <div className="mt-6 text-xs sm:text-sm text-white/70">
                 By applying, you agree to be contacted via email/WhatsApp about your application status and next steps.
-              </div>
+              </div> */}
             </div>
           </div>
 
@@ -457,9 +457,9 @@ const ApplyNow = () => {
                       )}
                     </button>
 
-                    <p className="text-xs text-gray-500 text-center">
+                    {/* <p className="text-xs text-gray-500 text-center">
                       By submitting, you agree to our application terms. You can opt out of communication anytime.
-                    </p>
+                    </p> */}
                   </form>
                 )}
               </div>

@@ -41,7 +41,7 @@ const ContactUs = () => {
                   </p>
                 </a>
               </div>
-              <div className="flex items-center">
+              {/* <div className="flex items-center">
                 <a
                   href="mailto:shaun@zezacademy.com"
                   className="flex items-center"
@@ -51,7 +51,7 @@ const ContactUs = () => {
                     shaun@zezacademy.com
                   </p>
                 </a>
-              </div>
+              </div> */}
             </div>
           </div>
           {/* <div className="flex space-x-3 mt-4">

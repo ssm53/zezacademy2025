@@ -5,7 +5,7 @@ import { FaChevronUp, FaChevronDown } from "react-icons/fa"; // Import the icons
 const faqs = [
   {
     question: "Do I need any coding experience to join?",
-    answer: "You really dont. Zez Academy is catered for complete beginners. ",
+    answer: "No. Zez Academy is catered for complete beginners. ",
   },
   {
     question: "Do you have installment payment options?",
@@ -40,16 +40,16 @@ const faqs = [
     answer:
       "For full-time students, both options are available. On-site location is in Kinrara, Selangor, Malaysia. For students with the part-time option, it is fully remote.",
   },
-  {
-    question: "How can you teach us so fast and get us a job?",
-    answer:
-      "I did it myself. I get rid of alot of unneccessary theory and throw you to the deep end of building projects. Thats where you learn. Too many courses focus on the theory, and not on the practical side of coding. I teach all that I have learnt so far.",
-  },
-  {
-    question: "What happens after completing the bootcamp?",
-    answer:
-      "It depends on your goal. If you want a developer job, we will support you with alot of material and weekly calls to keep you accountable.",
-  },
+  // {
+  //   question: "How can you teach us so fast and get us a job?",
+  //   answer:
+  //     "I did it myself. I get rid of alot of unneccessary theory and throw you to the deep end of building projects. Thats where you learn. Too many courses focus on the theory, and not on the practical side of coding. I teach all that I have learnt so far.",
+  // },
+  // {
+  //   question: "What happens after completing the bootcamp?",
+  //   answer:
+  //     "It depends on your goal. If you want a developer job, we will support you with alot of material and weekly calls to keep you accountable.",
+  // },
 ];
 
 export default function FaqAccordian() {

@@ -85,7 +85,7 @@ const Hero = () => {
             animate="visible"
             variants={textVariants}
           >
-            For complete beginners
+            No Experience Needed
           </motion.p>
         </motion.div>
         <motion.div className="flex items-center mt-6 justify-center">

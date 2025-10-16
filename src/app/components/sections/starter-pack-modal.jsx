@@ -65,14 +65,14 @@ export default function StarterPackModal({ open, onClose }) {
         <div className="flex items-start justify-between p-6 border-b border-gray-100">
           <div>
             <span className="inline-flex items-center gap-2 rounded-full bg-[#0F243D]/5 px-3 py-1 text-[11px] font-semibold text-[#0F243D]">
-              🎁 Free Starter Pack
+              🎁 Free Coding Jumpstart Kit
             </span>
             <h3 className="mt-2 text-xl sm:text-2xl font-bold text-[#0F243D]">
-              Get Your Free Starter Pack
+              Get Your Jumpstart Kit 
             </h3>
-            <p className="mt-1 text-sm text-gray-500">
+            {/* <p className="mt-1 text-sm text-gray-500">
               Enter your details to receive:
-            </p>
+            </p> */}
           </div>
           <button
             onClick={onClose}
@@ -92,7 +92,7 @@ export default function StarterPackModal({ open, onClose }) {
             </li>
             <li className="flex items-start gap-2">
               <svg className="h-5 w-5 mt-0.5" viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.2l-3.5-3.5 1.4-1.4L9 13.4l7.1-7.1 1.4 1.4z"/></svg>
-              A free 1:1 consultation on learning to code & career paths
+              A free 1:1 consultation on learning to code yourself
             </li>
           </ul>
 
@@ -152,9 +152,9 @@ export default function StarterPackModal({ open, onClose }) {
                 {loading ? "Submitting..." : "Send me the Starter Pack"}
               </button>
 
-              <p className="text-center text-xs text-gray-500">
+              {/* <p className="text-center text-xs text-gray-500">
                 We’ll email/WhatsApp your starter pack. You can opt out anytime.
-              </p>
+              </p> */}
             </form>
           )}
         </div>

@@ -40,7 +40,7 @@ export default function Home() {
       <BootcampSection />
       <OurFounder />
       <OurCohorts />
-      <InfoSection />
+      {/* <InfoSection /> */}
       <SixHundred />
       {/* <WhyChoose /> */}
       <TeachingMethod />

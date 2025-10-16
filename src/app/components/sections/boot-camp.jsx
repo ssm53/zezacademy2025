@@ -53,13 +53,13 @@ export default function BootcampSection() {
         </p> */}
         <ul className="mt-4 space-y-2 text-gray-600 list-disc pl-4">
           <li className="text-base sm:text-lg leading-relaxed">
-            a beginner at coding
+            complete beginner at coding. 
           </li>
           <li className="text-base sm:text-lg leading-relaxed">
             serious about learning tech, AI and software development
           </li>
           <li className="text-base sm:text-lg leading-relaxed">
-            want to get a tech job / build your own app / build apps for others
+            want to get a tech job / have the skills to build your own apps from scratch
           </li>
         </ul>
       </div>
@@ -92,7 +92,7 @@ export default function BootcampSection() {
             </div>
           </div>
           <h3 className="text-[18px] sm:text-lg font-semibold text-primary mb-2">
-            Land a Tech/Developer Job
+            Land a Tech Job
           </h3>
           {/* <p className="text-[16px] sm:text-gray-600">
             Go from complete beginner to job-ready developer. Launch your career
@@ -117,7 +117,7 @@ export default function BootcampSection() {
             </div>
           </div>
           <h3 className="text-[18px] sm:text-lg font-semibold text-primary mb-2">
-            Build Your Own Apps From Scratch
+            You want to build apps from scratch.
           </h3>
           {/* <p className="text-[16px] sm:text-gray-600">
             Remember that app idea you had? Well, you&lsquo;ll have the skills

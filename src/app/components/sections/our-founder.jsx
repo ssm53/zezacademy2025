@@ -74,7 +74,7 @@ const OurFounder = () => {
             <span className="font-bold">Zez Academy</span>
           </p>
           <p className="mb-4 text-[#E9EAEB]">
-            Learning to code sounds cool but, here are the problems{" "}
+            This is why learning to code seems &apos;hard&apos;:{" "}
           </p>
           <ul className="mb-4 text-[#E9EAEB] list-disc pl-5">
             <li>Degree or Masters is too long & expensive</li>
@@ -91,7 +91,7 @@ const OurFounder = () => {
             My Aim
           </p>
           <p className="mb-4 text-[#E9EAEB]">
-            Make sure you learn to code through actual live help, at an affordable price.
+            Everyday, I will personally teach you how to code... for months... at an affordable price.
           </p>
           {showFullText ? (
             <>
@@ -112,7 +112,7 @@ const OurFounder = () => {
                 Degree or a Master’s.
               </p>
               <p className="mb-6 text-[#E9EAEB]">
-                I currently run a tech marketing agency. We built software for 40+ healthcare practices and VC-backed tech startups.
+                Now, I have a tech agency. Built software for 40+ clients.
               </p>
                <p className="mb-6 text-[#E9EAEB]">
                 Learning to code is the best thing I&apos;ve done.

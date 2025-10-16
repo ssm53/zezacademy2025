@@ -145,20 +145,20 @@ const Footer = () => {
               <p>+6 012 339 7028</p>
             </a>
 
-            <a
+            {/* <a
               href="mailto:shaun@zezacademy.com"
               className="mt-2 flex items-center justify-center"
             >
               <FaEnvelope className="text-xl mr-3" />
               <p>shaun@zezacademy.com</p>
-            </a>
+            </a> */}
           </div>
 
           {/* Future columns can go here if you re-enable Site Map / Social */}
         </div>
 
         <div className="text-center text-sm mt-8 text-gray-400">
-          © 2024 Zez Academy. All rights reserved.
+          © 2025 Zez Academy. All rights reserved.
         </div>
       </footer>
     </div>

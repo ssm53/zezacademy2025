@@ -2,7 +2,7 @@ const data = [
   {
     label: "Duration",
     fullTime: "3-4 months",
-    partTime: "4-6 months",
+    partTime: "4-7 months",
   },
   {
     label: "Study Hours",
@@ -18,8 +18,8 @@ const data = [
   },
   {
     label: "Cost",
-    fullTime: "USD 1.6K-USD 2.8K",
-    partTime: "USD 1.6K-USD 2.8K",
+    fullTime: "Same",
+    partTime: "Same",
   },
   {
     label: "On-site",
@@ -27,7 +27,7 @@ const data = [
     partTime: "X",
   },
   {
-    label: "Full Curricullum (AI projects, e-commerce marketplace etc.)",
+    label: "Full Curricullum",
     fullTime: "✔️",
     partTime: "✔️",
   },

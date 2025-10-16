@@ -53,17 +53,17 @@ const SixHundred = () => {
           variants={leftSectionVariants}
         >
           <h3 className="text-sm font-semibold text-[#0F243DCC] uppercase mb-2">
-            600+ HOURS OF MATERIAL
-          </h3>
-          <h2 className="text-4xl font-bold text-primary mb-4">
-            Our <span className="text-secondary">Syllabus</span>
-          </h2>
-         
-          <p className="text-[#0F243DCC] mb-8">
-            This isn&lsquo;t your typical YouTube or Udemy experience—here,
-            you&lsquo;ll master coding the right way, with structure,
-            real-world applications and most importantly, live support when you are stuck.
-          </p>
+  600+ HOURS OF GUIDED LEARNING
+</h3>
+<h2 className="text-4xl font-bold text-primary mb-4">
+  Our <span className="text-secondary">Syllabus</span>
+</h2>
+<p className="text-[#0F243DCC] mb-8">
+  Not another YouTube playlist. You’ll learn coding with a clear roadmap,
+  hands-on projects, and live support whenever you’re stuck—so you actually
+  finish and build real things.
+</p>
+
 
           {/* <button
             href="#enrollement-section"

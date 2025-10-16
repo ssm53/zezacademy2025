@@ -58,7 +58,7 @@ const TeachingMethod = () => {
           </motion.div>
 
           {/* Right Section - Image */}
-          <motion.div
+          {/* <motion.div
             className="flex justify-center md:justify-end"
             variants={leftToRightVariant}
             initial="hidden"
@@ -71,7 +71,25 @@ const TeachingMethod = () => {
               height={300}
               className="w-[450px] h-auto object-cover rounded-[15px]"
             />
-          </motion.div>
+          </motion.div> */}
+          {/* Right Section - Image */}
+<motion.div
+  className="flex justify-center md:justify-end"
+  variants={leftToRightVariant}
+  initial="hidden"
+  animate={firstSectionInView ? "visible" : "hidden"}
+>
+  <Image
+    src="/teaching-method1.png"
+    alt="Teaching Method"
+    width={800}
+    height={600}
+    sizes="(min-width: 768px) 500px, 100vw"
+    className="w-full max-w-[500px] md:max-w-[500px] h-auto object-cover rounded-[15px]"
+    priority={false}
+  />
+</motion.div>
+
         </div>
 
         {/* Career Support Section */}
@@ -80,7 +98,7 @@ const TeachingMethod = () => {
           className="grid grid-cols-1 md:grid-cols-2 gap-8 items-start mt-16"
         >
           {/* Left Section - Image */}
-          <motion.div
+          {/* <motion.div
             className="flex justify-center md:justify-start order-2 md:order-1"
             variants={leftToRightVariant}
             initial="hidden"
@@ -93,7 +111,24 @@ const TeachingMethod = () => {
               height={300}
               className="w-[450px] h-auto object-cover rounded-[15px]"
             />
-          </motion.div>
+          </motion.div> */}
+          {/* Left Section - Image */}
+<motion.div
+  className="flex justify-center md:justify-start order-2 md:order-1"
+  variants={leftToRightVariant}
+  initial="hidden"
+  animate={secondSectionInView ? "visible" : "hidden"}
+>
+  <Image
+    src="/teaching-method2.png"
+    alt="Done For You — Resume, Cover Letter, Interview Prep, Job Hunting"
+    width={800}
+    height={800}
+    sizes="(min-width: 768px) 500px, 90vw"
+    className="w-full max-w-[500px] h-auto object-contain rounded-[15px]"
+  />
+</motion.div>
+
 
           {/* Right Section - Career Support Content */}
           <motion.div
@@ -136,7 +171,7 @@ const TeachingMethod = () => {
           animate={guaranteeInView ? "visible" : "hidden"}
         >
           <h2 className="text-[32px] sm:text-4xl font-bold">
-            100% Money-back <br /> Guarantee
+            Money-back <br /> Guarantee
           </h2>
           <p className="mt-4 text-[16px] sm:text-[#FFFFFFCC]">
             We wil only if you win
