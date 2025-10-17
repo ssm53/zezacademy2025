@@ -141,7 +141,7 @@ const TeachingMethod = () => {
               Career Support
             </h2>
             <p className="text-[16px] text-gray-600">
-              You’ll get a certificate—but more importantly, a portfolio that wins interviews. You'll also get:
+              You'll get a certificate—but more importantly, a portfolio that wins interviews. You'll also get:
             </p>
             <ul className="flex gap-[2rem] list-disc ml-6 space-y-2 text-[16px] text-gray-600">
               <div>

@@ -204,7 +204,7 @@ const OurCohorts = () => {
           </span>
 
           <h3 className="text-lg sm:text-2xl font-bold text-[#0D2138] leading-snug">
-            1 December 2025 – 31 March 2026
+            1 December 2025 - 31 March 2026
           </h3>
 
           <div className="h-px w-full bg-gray-200" />
@@ -222,7 +222,7 @@ const OurCohorts = () => {
                   Full-time
                 </p>
                 <p className="text-sm sm:text-base text-gray-700">
-                  Mon–Fri · <span className="font-medium">10:00am – 5:00pm</span>
+                  Mon-Fri · <span className="font-medium">10:00am - 5:00pm</span>
                 </p>
                 {/* <p className="text-[11px] sm:text-xs text-gray-500 mt-1">
                   ~7 hours instruction within the day (incl. breaks)
@@ -234,7 +234,7 @@ const OurCohorts = () => {
                   Part-time
                 </p>
                 <p className="text-sm sm:text-base text-gray-700">
-                  Mon–Fri · <span className="font-medium">7:00pm – 10:00pm</span>
+                  Mon-Fri · <span className="font-medium">7:00pm - 10:00pm</span>
                 </p>
                 {/* <p className="text-[11px] sm:text-xs text-gray-500 mt-1">
                   Evening classes for working professionals

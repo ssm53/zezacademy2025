@@ -88,7 +88,7 @@ const OurFounder = () => {
               <p className="mb-6 text-[#E9EAEB]">
                 So, in Aug 2023, I picked up coding seriously, and by Dec 2023,
                 I had 4 software developer job offers. This was done without a
-                Degree or a Master’s.
+                Degree or a Master's.
               </p>
               <p className="mb-6 text-[#E9EAEB]">
                 Now, I have a tech agency. Built software for 40+ clients.

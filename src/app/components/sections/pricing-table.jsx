@@ -12,7 +12,7 @@ const data = [
   },
   {
     label: "Time Commitment",
-    degree: "3–4 years (Bachelor) • 1.5–2 years (Master’s)",
+    degree: "3-4 years (Bachelor) • 1.5-2 years (Master's)",
     ourBootcamp: "3-4 months",
   },
 
@@ -50,7 +50,7 @@ export function TableDemo() {
             <tr>
               <th className="py-4 px-6"></th>
               <th className="py-4 px-6 text-gray-700 border-l">
-                Degree / Master’s
+                Degree / Master's
               </th>
               <th className="py-4 px-6 bg-secondary text-white font-bold">
                 Our Program

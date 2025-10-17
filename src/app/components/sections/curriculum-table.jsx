@@ -14,7 +14,7 @@ const data = [
     label: "Class Hours",
     fullTime: "Mon - Fri: 10am - 5pm (local time)",
     partTime:
-      "Mon–Fri · 7:00pm–10:00pm (local time)",
+      "Mon-Fri · 7:00pm-10:00pm (local time)",
   },
   {
     label: "Cost",

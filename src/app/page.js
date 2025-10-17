@@ -30,7 +30,7 @@ export default function Home() {
   const [showStarterModal, setShowStarterModal] = useState(false);
 
   useEffect(() => {
-    const t = setTimeout(() => setShowStarterModal(true), 5000);
+    const t = setTimeout(() => setShowStarterModal(true), 15000);
     return () => clearTimeout(t);
   }, []);
   return (

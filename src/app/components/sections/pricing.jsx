@@ -78,13 +78,13 @@ const Pricing = () => {
         price: "A$ 4,000",
         badge: "Job Guarantee",
         blurb:
-          "If you don’t land a software developer role, we refund 50% of tuition.",
+          "If you don't land a software developer role, we refund 50% of tuition.",
       }
     : {
         price: "A$ 3,000",
         badge: "Standard Tuition",
         blurb:
-          "Same curriculum, same support—ideal if you don’t need the Job Guarantee.",
+          "Same curriculum, same support—ideal if you don't need the Job Guarantee.",
       };
 
   return (
@@ -113,7 +113,7 @@ const Pricing = () => {
               <span className="text-sm sm:text-base text-gray-800">
                 <span className="font-semibold">Add Job Guarantee</span>{" "}
                 <span className="text-gray-600">
-                  — 50% refund if you don’t land a software developer role.
+                  — 50% refund if you don't land a software developer role.
                 </span>
               </span>
             </label>
