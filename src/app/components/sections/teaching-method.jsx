@@ -50,7 +50,7 @@ const TeachingMethod = () => {
             </h2>
            
             <ul className="list-disc ml-6 space-y-2 text-[16px] text-gray-600">
-              <li>Build projects from day 1</li>
+              <li>Build real projects from Day 1</li>
               <li>Personalised help you when you are stuck, but no spoon feeding</li>
               <li>No boring lectures</li>
              
@@ -141,16 +141,16 @@ const TeachingMethod = () => {
               Career Support
             </h2>
             <p className="text-[16px] text-gray-600">
-              Of course, you&apos;ll get a certificate but more importantly, you&apos;ll get a portfolio! And together, we will build you a
+              You’ll get a certificate—but more importantly, a portfolio that wins interviews. You'll also get:
             </p>
             <ul className="flex gap-[2rem] list-disc ml-6 space-y-2 text-[16px] text-gray-600">
               <div>
-                <li>multiple resumes</li>
-                <li>multiple cover letters</li>
-                <li>your own website portfolio</li>
-                  <li>A great recommendation letter</li>
-                   <li>Real-life interview practice</li>
-                <li>Step by step process of getting a job FAST.</li>
+                <li>Multiple tailored resumes (by role/company)</li>
+                <li>Targeted cover letters</li>
+                <li>Your personal website portfolio </li>
+                  <li>Strong recommendation letter</li>
+                   <li>Interview prep</li>
+                <li>A step-by-step job hunt plan to move fast</li>
 
               </div>
               {/* <div>
@@ -171,10 +171,10 @@ const TeachingMethod = () => {
           animate={guaranteeInView ? "visible" : "hidden"}
         >
           <h2 className="text-[32px] sm:text-4xl font-bold">
-            Money-back <br /> Guarantee
+            Guaranteed Software Developer Job or 50% Refund <br /> 
           </h2>
           <p className="mt-4 text-[16px] sm:text-[#FFFFFFCC]">
-            We wil only if you win
+            If you dont get a software developer job within 12 months of graduation, get a 50% refund.
           </p>
           <ul className="w-full sm:w-1/2 text-[16px] sm:text-[#FFFFFFCC] list-disc ml-[-1px] mt-4 space-y-2 border border-[#19395F] p-8 rounded-[15px]">
             <p>

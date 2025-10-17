@@ -49,7 +49,7 @@ const Hero = () => {
           </span>
           {/* <span className="block md:hidden">in 4 months</span> */}
           <span className="block md:hidden">
-            Get a tech job or its free{" "}
+            Get a software developer job or a 50% refund{" "}
             {/* <span className="text-secondary whitespace-nowrap">100% FREE</span> */}
           </span>
           {/* For desktop - inline layout */}
@@ -60,7 +60,7 @@ const Hero = () => {
           </span>{" "}
           <span className="hidden md:inline">in 4 months</span>{" "} */}
           <br className="hidden md:block" />
-          <span className="hidden md:inline">Get a tech job or its free</span>{" "}
+          <span className="hidden md:inline">Get a software developer job or a 50% refund</span>{" "}
           {/* <span className="hidden md:inline text-secondary">free</span> */}
         </motion.h1>
 
@@ -133,7 +133,7 @@ const Hero = () => {
             animate="visible"
             variants={textVariants}
           >
-            Remote / On-site
+            Remote
           </motion.p>
         </motion.div>
 

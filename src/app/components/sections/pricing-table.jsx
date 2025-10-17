@@ -1,33 +1,33 @@
 const data = [
   {
-    label: "Total Cost",
-    degree: "USD 20K-100K",
-    ourBootcamp: "< USD 3K",
+    label: "Total Tuition (AUD)",
+    degree: "AUD 25K-500K",
+    ourBootcamp: "< AUD 4K",
   },
 
   {
-    label: "Money-Back-Guarantee",
+    label: "Job Guarantee",
     degree: "X",
     ourBootcamp: "✔️",
   },
   {
     label: "Time Commitment",
-    degree: "4 years",
+    degree: "3–4 years (Bachelor) • 1.5–2 years (Master’s)",
     ourBootcamp: "3-4 months",
   },
 
   {
-    label: "Number of Students per Cohort",
+    label: "Cohort Size",
     degree: "100+",
-    ourBootcamp: "Max of 6",
+    ourBootcamp: "Max 6",
   },
   {
-    label: "Practical Skills",
+    label: "Project-Based, Job-Ready Skills",
     degree: "X",
     ourBootcamp: "✔️",
   },
   {
-    label: "Proper Career Support",
+    label: "Dedicated Career Support",
     degree: "X",
     ourBootcamp: "✔️",
   },
@@ -97,7 +97,7 @@ const PricingTable = () => {
         <h2 className="text-primary text-4xl font-bold">
           Zez Academy vs <br /> University
         </h2>
-        <p className="text-gray-500 mt-2">Compare the differences yourself</p>
+        <p className="text-gray-500 mt-2">Compare the differences</p>
       </div>
 
       <TableDemo />

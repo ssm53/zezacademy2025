@@ -6,25 +6,25 @@ const data = [
   },
   {
     label: "Study Hours",
-    fullTime: "6-7 hrs a day",
+    fullTime: "6-7 hrs/day",
     partTime:
-      "Up to You! Regardless, we are available between 10am-5pm & 7pm-10pm mon-fri to teach you.",
+      "2-3 hrs/day",
   },
   {
     label: "Class Hours",
-    fullTime: "Mon - Fri: 10am - 5pm",
+    fullTime: "Mon - Fri: 10am - 5pm (local time)",
     partTime:
-      "Up to You! Regardless, we are available between 10am-5pm & 7pm-10pm mon-fri to teach you.",
+      "Mon–Fri · 7:00pm–10:00pm (local time)",
   },
   {
     label: "Cost",
-    fullTime: "Same",
-    partTime: "Same",
+    fullTime: "Same for both options",
+    partTime: "Same for both options",
   },
   {
-    label: "On-site",
-    fullTime: "✔️ (Selangor, Malaysia)",
-    partTime: "X",
+    label: "Location",
+    fullTime: "Remote",
+    partTime: "Remote",
   },
   {
     label: "Full Curricullum",

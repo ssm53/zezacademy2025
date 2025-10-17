@@ -8,11 +8,11 @@ const faqs = [
     answer: "No. Zez Academy is catered for complete beginners. ",
   },
   {
-    question: "Do you have installment payment options?",
+    question: "Are there installment payment options?",
     answer: "We can arrange one for you.",
   },
   {
-    question: "Its too expensive.",
+    question: "It is too expensive.",
     answer:
       "There are 0 programs out there offering a lower price, with a job guarantee and actual live support. If this is too expensive for you, even with the installment payment options, I then suggest that you learn through self-studying. Its possible, but its difficult.",
   },

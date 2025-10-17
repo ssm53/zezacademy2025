@@ -59,9 +59,7 @@ const SixHundred = () => {
   Our <span className="text-secondary">Syllabus</span>
 </h2>
 <p className="text-[#0F243DCC] mb-8">
-  Not another YouTube playlist. You’ll learn coding with a clear roadmap,
-  hands-on projects, and live support whenever you’re stuck—so you actually
-  finish and build real things.
+ This isn’t passive learning. It’s a step-by-step plan, practical projects, and live mentorship—so you complete it and create real products.
 </p>
 
 

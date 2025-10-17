@@ -40,7 +40,21 @@ const ContactUs = () => {
                     +6 012 339 7028 (Shaun Menezes)
                   </p>
                 </a>
+                
               </div>
+              <div className="flex items-center mt-3">
+  <a
+    href="https://www.linkedin.com/in/shaun-shanil-menezes/"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="inline-flex items-center text-[#0F243DCC] hover:text-primary transition-colors"
+    aria-label="Shaun Menezes on LinkedIn"
+  >
+    <FaLinkedin className="text-xl mr-3" />
+    <span className="text-lg font-medium">Connect on LinkedIn</span>
+  </a>
+</div>
+
               {/* <div className="flex items-center">
                 <a
                   href="mailto:shaun@zezacademy.com"
