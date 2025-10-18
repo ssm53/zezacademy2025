@@ -113,7 +113,7 @@ const Pricing = () => {
               <span className="text-sm sm:text-base text-gray-800">
                 <span className="font-semibold">Add Job Guarantee</span>{" "}
                 <span className="text-gray-600">
-                  — 50% refund if you don't land a software developer role.
+                  — 50% refund if you don&apos;t land a software developer role.
                 </span>
               </span>
             </label>

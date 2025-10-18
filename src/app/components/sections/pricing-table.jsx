@@ -50,7 +50,7 @@ export function TableDemo() {
             <tr>
               <th className="py-4 px-6"></th>
               <th className="py-4 px-6 text-gray-700 border-l">
-                Degree / Master's
+                Degree / Master&apos;ss
               </th>
               <th className="py-4 px-6 bg-secondary text-white font-bold">
                 Our Program
