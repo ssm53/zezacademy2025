@@ -56,7 +56,7 @@ export default function BootcampSection() {
             A complete beginner at coding. 
           </li>
           <li className="text-base sm:text-lg leading-relaxed">
-            willing to attend our live classes (minimum of 15 hours a week). This means you're serious.
+            willing to attend our live classes (minimum of 15 hours a week). This means you&apos;re serious.
           </li>
           <li className="text-base sm:text-lg leading-relaxed">
             want to get a software developer job / build your own apps from scratch

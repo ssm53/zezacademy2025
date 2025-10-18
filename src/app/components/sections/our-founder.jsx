@@ -88,13 +88,13 @@ const OurFounder = () => {
               <p className="mb-6 text-[#E9EAEB]">
                 So, in Aug 2023, I picked up coding seriously, and by Dec 2023,
                 I had 4 software developer job offers. This was done without a
-                Degree or a Master's.
+                Degree or a Master&apos;s.
               </p>
               <p className="mb-6 text-[#E9EAEB]">
                 Now, I have a tech agency. Built software for 40+ clients.
               </p>
                <p className="mb-6 text-[#E9EAEB]">
-                By no means am I a master developer but I know the struggle of learning to code from scratch. Now that I've done it and know the journey, I'd like to help others do the same too. 
+                By no means am I a master developer but I know the struggle of learning to code from scratch. Now that I&apos;ve done it and know the journey, I&apos;d like to help others do the same too. 
               </p>
                <p className="mb-6 text-[#E9EAEB]">
                 
