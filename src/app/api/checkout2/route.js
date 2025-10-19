@@ -14,7 +14,7 @@ export async function POST(request) {
             product_data: {
               name: "One-time Payment",
             },
-            unit_amount: 3000 * 100, // RM 1000 in cents
+            unit_amount: 4000 * 100, // RM 1000 in cents
           },
           quantity: 1,
         },

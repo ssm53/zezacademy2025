@@ -5,7 +5,7 @@ import { useState } from "react"
 export default function Home() {
   const [loading, setLoading] = useState(false)
   const [message, setMessage] = useState("")
-  const [amount, setAmount] = useState("3000")
+  const [amount, setAmount] = useState("4000")
 
 
   const handlePayment = async () => {
@@ -13,7 +13,7 @@ export default function Home() {
     setMessage("")
 
     try {
-      const response = await fetch("/api/checkout", {
+      const response = await fetch("/api/checkout2", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
