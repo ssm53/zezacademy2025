@@ -28,7 +28,7 @@ export default function PaymentPage() {
     setMessage("");
 
     try {
-      const response = await fetch("/api/checkout2", {
+      const response = await fetch("/api/checkout3", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         // If you need to pass amount/plan, include it in the body:
