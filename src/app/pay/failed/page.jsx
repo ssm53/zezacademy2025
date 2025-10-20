@@ -38,7 +38,7 @@ export default async function FailedPage({ searchParams }) {
       <h1 className="text-2xl font-bold">Payment Failed</h1>
       <p className="mt-2 text-center max-w-md">
         Your payment could not be processed.
-        Please try again or contact our support team.
+        Please try again or contact our support team on Whatsapp - +60123397028
       </p>
       <a
         href="/pay"
