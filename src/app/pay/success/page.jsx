@@ -37,8 +37,8 @@ export default async function SuccessPage({ searchParams }) {
       </svg>
       <h1 className="text-2xl font-bold">Payment Successful!</h1>
       <p className="mt-2 text-center max-w-md">
-        Thank you for your payment, {session.customer_details?.email}.
-        You’re now enrolled in our upcoming cohort.
+        Thank you for your payment.
+        You are now enrolled in our Full Stack & AI Coding Bootcamp.
       </p>
       <a
         href="/"

@@ -5,7 +5,7 @@
 // export default function Home() {
 //   const [loading, setLoading] = useState(false)
 //   const [message, setMessage] = useState("")
-//   const [amount, setAmount] = useState("3000")
+//   const [amount, setAmount] = useState("4000")
 
 
 //   const handlePayment = async () => {
@@ -13,7 +13,7 @@
 //     setMessage("")
 
 //     try {
-//       const response = await fetch("/api/checkout", {
+//       const response = await fetch("/api/checkout2", {
 //         method: "POST",
 //         headers: {
 //           "Content-Type": "application/json",
@@ -123,7 +123,7 @@ export default function PaymentPage() {
   const [loading, setLoading] = useState(false);
   const [message, setMessage] = useState("");
   // Amount is fixed here; your /api/checkout should set the currency to AUD
-  const [amount] = useState(3000); // A$ 3,000
+  const [amount] = useState(4000); // A$ 3,000
 
   const formattedAmount = useMemo(() => {
     try {
@@ -142,7 +142,7 @@ export default function PaymentPage() {
     setMessage("");
 
     try {
-      const response = await fetch("/api/checkout", {
+      const response = await fetch("/api/checkout2", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         // If you need to pass amount/plan, include it in the body:

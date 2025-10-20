@@ -17,7 +17,7 @@ const stripe = new Stripe(stripeSecretKey, {
   apiVersion: process.env.STRIPE_API_VERSION || undefined,
 });
 
-const amountInMajor = 3000; // aud 1000
+const amountInMajor = 4000; // aud 4000
 const currency = "aud";
 const unitAmount = Math.round(amountInMajor * 100);
 
