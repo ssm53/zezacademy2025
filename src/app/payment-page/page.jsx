@@ -170,7 +170,7 @@ export default function PaymentPage() {
         {/* Left: Offer/Features */}
         <section className="bg-white rounded-[15px] shadow-lg p-8">
           <h1 className="text-2xl sm:text-3xl font-bold text-primary">
-            Zez Academy's Full-Stack & AI Coding Bootcamp
+            Zez Academy&apos;s Full-Stack & AI Coding Bootcamp
           </h1>
           <p className="mt-2 text-sm sm:text-base text-[#0F243DCC]">
             Complete your enrolment for the upcoming cohort. 
