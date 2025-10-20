@@ -34,7 +34,7 @@ export default function PaymentPage() {
         // If you need to pass amount/plan, include it in the body:
         // body: JSON.stringify({ amount }),
         body: JSON.stringify({}),
-      });
+      }); //
 
       const data = await response.json();
 
@@ -60,7 +60,7 @@ export default function PaymentPage() {
           </h1>
           <p className="mt-2 text-sm sm:text-base text-[#0F243DCC]">
             Complete your enrolment for the upcoming cohort. 
-          </p>
+          </p> 
 
           <div className="mt-6 space-y-3">
             <div className="flex items-start gap-3">
