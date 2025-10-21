@@ -80,8 +80,7 @@ const OurFounder = () => {
               <p className="mb-4 text-[#E9EAEB]">
                 I was an accountant working at Deloitte, UK and it was great,
                 but I was bored and unsatisfied. So, I left my job to start a
-                crypto startup which had a 7-figure yearly profit, but I made mistakes and it
-                ultimately failed in 2023. I was a bit lost and I did not
+                crypto startup which had a 7-figure yearly profit. In 2023, I moved on from the startup and I was a bit lost and I did not
                 want to go back to accounting, but that was the only skill I
                 had!
               </p>
@@ -100,7 +99,7 @@ const OurFounder = () => {
                 
               </p>
                 <a
-                href="https://www.linkedin.com/in/shaun"
+                href="https://www.linkedin.com/in/shaun-shanil-menezes/"
                 target="_blank"
                 className="bg-white text-primary font-medium py-2 px-4 rounded-lg flex items-center space-x-2 hover:bg-gray-100 transition w-max" // Add w-max to limit width to content
               >

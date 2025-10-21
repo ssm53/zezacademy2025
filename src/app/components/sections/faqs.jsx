@@ -38,7 +38,7 @@ const faqs = [
   {
     question: "Is this remote or in-person?",
     answer:
-      "For full-time students, both options are available. On-site location is in Kinrara, Selangor, Malaysia. For students with the part-time option, it is fully remote.",
+      "This is remote.",
   },
   // {
   //   question: "How can you teach us so fast and get us a job?",

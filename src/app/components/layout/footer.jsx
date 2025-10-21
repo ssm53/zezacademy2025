@@ -145,13 +145,13 @@ const Footer = () => {
               <p>+6 012 339 7028</p>
             </a>
 
-            {/* <a
+            <a
               href="mailto:shaun@zezacademy.com"
               className="mt-2 flex items-center justify-center"
             >
               <FaEnvelope className="text-xl mr-3" />
               <p>shaun@zezacademy.com</p>
-            </a> */}
+            </a>
           </div>
 
           {/* Future columns can go here if you re-enable Site Map / Social */}
