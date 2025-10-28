@@ -80,7 +80,7 @@ const TeachingMethod = () => {
   animate={firstSectionInView ? "visible" : "hidden"}
 >
   <Image
-    src="/teaching-method1.png"
+    src="/teaching-method1a.png"
     alt="Teaching Method"
     width={800}
     height={600}
@@ -120,7 +120,7 @@ const TeachingMethod = () => {
   animate={secondSectionInView ? "visible" : "hidden"}
 >
   <Image
-    src="/teaching-method2.png"
+    src="/teaching-method2a.png"
     alt="Done For You — Resume, Cover Letter, Interview Prep, Job Hunting"
     width={800}
     height={800}

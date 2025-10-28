@@ -339,7 +339,7 @@ const ApplyNow = () => {
             Zez Academy&apos;s Full-Stack & AI Coding Bootcamp
           </h1>
           <p className="mt-2 text-sm sm:text-base text-white/80">
-            For complete beginners and career switchers. Live classes • Mentorship • Job-ready projects
+            For complete beginners • Live classes • Mentorship • Job-ready projects
           </p>
         </div>
 
@@ -383,7 +383,7 @@ const ApplyNow = () => {
                   Start your coding journey
                 </h3>
                 <p className="mt-1 text-sm text-gray-500">
-                  Fill in the form below. It takes less than 3 minutes.
+                  Fill in the form below. (1 min)
                 </p>
               </div>
 
@@ -446,7 +446,7 @@ const ApplyNow = () => {
 
                     <div>
                       <label className="block text-sm font-medium text-gray-700">
-                        Why do you want to learn to code?*
+                        Why do you want to learn to code? (Max 100 words)*
                       </label>
                       <textarea
                         name="reason"

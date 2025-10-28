@@ -27,12 +27,12 @@ const Header = dynamic(() => import("./components/layout/header"), {
 });
 
 export default function Home() {
-  const [showStarterModal, setShowStarterModal] = useState(false);
+  // const [showStarterModal, setShowStarterModal] = useState(false);
 
-  useEffect(() => {
-    const t = setTimeout(() => setShowStarterModal(true), 15000);
-    return () => clearTimeout(t);
-  }, []);
+  // useEffect(() => {
+  //   const t = setTimeout(() => setShowStarterModal(true), 15000);
+  //   return () => clearTimeout(t);
+  // }, []);
   return (
     <>
       <Header />
@@ -56,10 +56,10 @@ export default function Home() {
       <Footer />
 
         {/* Starter Pack Modal */}
-      <StarterPackModal
+      {/* <StarterPackModal
         open={showStarterModal}
         onClose={() => setShowStarterModal(false)}
-      />
+      /> */}
     </>
   );
 }

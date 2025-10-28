@@ -49,7 +49,7 @@ const Hero = () => {
           </span>
           {/* <span className="block md:hidden">in 4 months</span> */}
           <span className="block md:hidden">
-            Get a software developer job or a 50% refund{" "}
+            Get a tech job or a 50% refund{" "}
             {/* <span className="text-secondary whitespace-nowrap">100% FREE</span> */}
           </span>
           {/* For desktop - inline layout */}
@@ -60,7 +60,7 @@ const Hero = () => {
           </span>{" "}
           <span className="hidden md:inline">in 4 months</span>{" "} */}
           <br className="hidden md:block" />
-          <span className="hidden md:inline">Get a software developer job or a 50% refund</span>{" "}
+          <span className="hidden md:inline">Get a tech job or a 50% refund</span>{" "}
           {/* <span className="hidden md:inline text-secondary">free</span> */}
         </motion.h1>
 
@@ -86,6 +86,30 @@ const Hero = () => {
             variants={textVariants}
           >
             No Experience Needed
+          </motion.p>
+        </motion.div>
+        <motion.div className="flex items-center mt-6 justify-center">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            className="h-5 w-5 text-green-500 flex-shrink-0"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={2}
+              d="M5 13l4 4L19 7"
+            />
+          </svg>
+          <motion.p
+            className="ml-2 text-sm md:text-lg text-gray-300 text-center"
+            initial="hidden"
+            animate="visible"
+            variants={textVariants}
+          >
+            Small Class (6 students)
           </motion.p>
         </motion.div>
         <motion.div className="flex items-center mt-6 justify-center">
