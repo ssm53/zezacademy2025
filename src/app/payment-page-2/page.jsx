@@ -9,7 +9,7 @@ export default function PaymentPage() {
   const [loading, setLoading] = useState(false);
   const [message, setMessage] = useState("");
   // Amount is fixed here; your /api/checkout should set the currency to AUD
-  const [amount] = useState(4000); // A$ 3,000
+  const [amount] = useState(5000); // A$ 3,000
 
   const formattedAmount = useMemo(() => {
     try {
